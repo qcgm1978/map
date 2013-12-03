@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--todo annotated when development-->
+<!--<html manifest='poi.manifest'>-->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=570886583"/>
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="wechat/resources/style/map.css">
+    <link rel="stylesheet" href="wechat/resources/style/map_poi.css">
+    <link rel="stylesheet" href="wechat/resources/style/path_info.css">
+    <link rel="stylesheet" href="wechat/resources/style/poiList.css">
+    <link rel="stylesheet" href="styles/public.css">
+    <link rel="stylesheet" href="styles/webInfo.css">
+    <link rel="stylesheet" href="styles/toolbar.css">
+    <link rel="stylesheet" href="styles/layer.css">
+    <link href='styles/route.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/common_480.css"
+          media="screen and (max-width: 480px), screen and (max-device-width: 480px)">
+    <link rel="stylesheet" type="text/css" href="wechat/resources/style/mobile480.css"
+          media="screen and (max-width: 480px), screen and (max-device-width: 480px)">
+    <link rel="stylesheet" href="styles/ratio-common.css"
+          media="screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="stylesheet" href="styles/common_320.css"
+          media="screen and (max-width: 320px), screen and (max-device-width: 320px)">
+    <link rel="stylesheet" href="wechat/resources/style/mobile320.css"
+          media="screen and (max-width: 320px), screen and (max-device-width: 320px)">
+    <title>西湖之声路况</title>
+</head>
+<body>
+<div id="start">
+    <img src='wechat/resources/images_poi/splash.png'>
+</div>
+
+<div id="map_layer"></div>
+
+<div id="main">
+    <div id="search_box">
+        <div id="top-search-box-wrapper" class="search-box-wrapper">
+            <div class="search-box">
+                <div class="search-form-container">
+                    <form class="search-form empty">
+                        <div class="input-container">
+                            <input id="keyword" name="q" class="q" value="" autocomplete="off" placeholder="">
+                            <input type="hidden" name="src" value="srp">
+                            <div class="search-box-reset"></div>
+                        </div>
+                        <input type="submit" class="search-button" value="" >
+                    </form>
+                    <div id="searchInputBoxHistory" class="suggest-container suggest-history" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--todo-->
+    <!--<div id='page_header_test'></div>-->
+    <div id='map_container'>
+
+    </div>
+    <div id="mask_layer">
+        <div class="logo"></div>
+
+        <div class="toolbar css3center" id="toolbar_first"><span class="showMap active"></span><span
+                class="showRoute"></span>
+        </div>
+        <div id="tmc_btn"></div>
+        <div id="positioning">
+            <div id="positionLight">
+
+            </div>
+        </div>
+        <div id="zoom_in"></div>
+        <div id="zoom_out"></div>
+        <div id="path_info">
+            <div id="route_tmc" class="path_info css3center route_selected" data-theme="4"><img class="level_light"
+                                                                                                src="images/icon_tmc_letter.png">
+                <blockquote id="tmc_traffic_index" class="traffic_index"></blockquote>
+                <span id='tmc_distance' class="f24 white"></span><span id="tmc_time" class="f24 white"></span>
+                <blockquote id="save_time" class="white">
+                    <blockquote id="save_time_number"></blockquote>
+                </blockquote>
+            </div>
+            <div id="route_normal" class="path_info css3center route_unselected" data-theme="0">
+                <img class="level_light" src="images/icon_normal_letter.png">
+                <blockquote id="normal_traffic_index" class="traffic_index"></blockquote>
+                <span id='normal_distance' class="f24 white"></span><span id="normal_time" class="f24 white"></span>
+            </div>
+        </div>
+        <div id="route">
+            <div class="header">
+                <div class="logo"></div>
+                <div class="toolbar css3center"><span class="showMap"></span><span class="showRoute active"></span>
+                </div>
+                <ul id="route_tabs">
+                    <li data-tab="A" class="route_tabs_a"></li>
+                    <li data-tab="B" class="route_tabs_b"></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div id="tabsContent">
+                    <div data-tab="A">
+                        <table class="tabsContent_table">
+                            <thead>
+                            <tr>
+                                <th>转向</th>
+                                <th>道路信息</th>
+                                <th>平均车速</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div id="scroll_first">
+                            <table class="tabsContent_table tabsContent_table_content">
+
+                            </table>
+                        </div>
+                    </div>
+                    <div data-tab="B">
+                        <table class="tabsContent_table">
+                            <thead>
+                            <tr>
+                                <th>转向</th>
+                                <th>道路信息</th>
+                                <th>平均车速</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div id="scroll_second">
+                            <table class="tabsContent_table tabsContent_table_content">
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="css3center hidden" id="loading">
+        <img src="images/loading.gif" width="27px" height="27px">
+
+        <div id="loading_text">规划中...</div>
+    </div>
+    <div id="no_get_gps" class="css3center hidden bg_sprite"></div>
+    <div id="no_get_path" class="css3center hidden">规划失败！等会再试^^</div>
+    <div id="no_get_net" class="css3center hidden">亲，需要网络，快检查一下^^</div>
+    <div id="no_get_gps_other_browser" class="css3center hidden"></div>
+    <div class="info css3center" id="link_bar">
+        <div class="bottom_logo"><img src="images/bottom_logo.png"></div>
+        <div class="link">
+            <ul>
+                <li class="enterSite"><a class="linkSite" href="http://www.flynavi.cn/">进入官网</a></li>
+                <li class="instructions"><a class="linkVersion"
+                                            href="http://www.flynavi.cn/version/android.html">产品介绍</a></li>
+            </ul>
+        </div>
+        <div class="download"><a href="#"><img src="images/download_btn.png"></a></div>
+        <div class="download_right"><img src="images/download_right.png"></div>
+
+    </div>
+    <!-- poi列表区域-->
+    <div id='poi_div' class="shrink">
+        <ul class="poi_divControl">
+            <li class="poi-page-prev bg_sprite"><a href="javsscript:void(0);"></a></li>
+            <li class="poi-list-control bg_sprite openList"><a href="javsscript:void(0);"></a></li>
+            <li class="poi-page-next bg_sprite"><a href="javsscript:void(0);"></a></li>
+        </ul>
+
+        <div id="poi-list">
+            <table class="tabsContent_table tabsContent_table_content">
+
+            </table>
+        </div>
+    </div>
+    <!-- 弹出层-->
+    <div class="layer" id="layer">
+        <div class="layer-sub">
+            <div class="layer-sub-header">
+                飞路快导航
+            </div>
+            <div class="layer-sub-content">
+
+            </div>
+            <div class="layer-sub-button">
+                <div class="layer-sub-button-greed">确定</div>
+                <div class="layer-sub-button-red">取消</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--template of shared infoWindow element html, parsed by buildEleStrByTmpl in mapUtil.js-->
+<script type="text/html" id="share_ele">
+    <div id="share_div">
+        <table>
+        <colgroup>
+            <col>
+            <col width="32%">
+        </colgroup>
+        <tr>
+            <td id="col_first">
+                <p id="share_p">
+                <span id="share_name"><%=name%></span><br>
+                 <span id="share_address"><%=address%></span>
+                 </p>
+            </td>
+            <td><img id="icon_request_path" src="wechat/resources/images_poi/icon_request_path.png">
+        </td>
+        </tr>
+        </table>
+        <img id="info_arrow" src="images/inforwindow_arrow.png">
+    </div>
+</script>
+<script src="http://webapi.amap.com/maps?v=1.2&key=0aa17a679101794a2bc8979b3eb332a7"></script>
+<script src="bower_components/requirejs/require.js"></script>
+<script src="scripts/main.js"></script>
+<script src="wechat/app/app_wechat.js"></script>
+<!--todo local machine debug with weinre which ip is 170:8081-->
+<!--<script src="http://192.168.2.170:8081/target/target-script-min.js#anonymous"></script>-->
+<!--<script src="http://192.168.2.25:8080/target/target-script-min.js#anonymous"></script>-->
+</body>
+</html>
+

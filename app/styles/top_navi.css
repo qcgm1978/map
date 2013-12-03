@@ -1,0 +1,161 @@
+
+#header {
+  position: absolute;
+  z-index: 9999;
+  height: 40px;
+  width: 100%;
+   top: 0;
+  overflow: hidden;
+  background: -webkit-linear-gradient(top, #e6e6e6 50%, #d1d5d6 100%);
+  background: -moz-linear-gradient(top, #e6e6e6 50%, #d1d5d6 100%);
+  background: linear-gradient(to bottom, #e6e6e6 50%, #d1d5d6 100%);
+    /*compatible AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1*/
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#E6E6E6), to(#D1D5D6));
+  -webkit-box-shadow: 0 2px 1px 0 #A3A5A8;
+  -moz-box-shadow: 0 2px 1px 0 #A3A5A8;
+  box-shadow: 0 2px 1px 0 #A3A5A8;
+}
+
+#header .a-inav,
+#header .c-inav,
+#header .e-inav {
+  height: 40px;
+  display: -webkit-box;
+}
+
+#header .a-inav.none,
+#header .c-inav.none,
+#header .e-inav.none {
+  display: none;
+}
+
+#header .a-inav section,
+#header .c-inav section,
+#header .e-inav section {
+  overflow: hidden;
+}
+
+#header .a-inav section:first-child,
+#header .c-inav section:first-child,
+#header .e-inav section:first-child {
+  min-width: 45px;
+}
+
+#header .a-inav section:nth-child(2) {
+  text-align: center;
+  -webkit-box-flex: 1;
+}
+
+#header .c-inav section:nth-child(2),
+#header .e-inav section:nth-child(2) {
+  text-align: center;
+  -webkit-box-flex: 1;
+}
+
+#header .c-inav section:last-child {
+  min-width: 50px;
+}
+
+#header .a-inav section:first-child .logo {
+  width: 40px;
+  height: 40px;
+  background: url(../flynavi/resources/images/public.png) no-repeat 0 0px;
+  -moz-background-size: 72px 310px;
+  background-size: 72px 310px;
+  border: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#header .c-inav section:first-child .back,
+#header .e-inav section:first-child .back {
+  width: 45px;
+  height: 40px;
+  background: url(../flynavi/resources/images/back.png) no-repeat 0 0;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  border: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 1px solid #B7BABD;
+}
+
+#header .c-inav section:first-child .back.active,
+#header .e-inav section:first-child .back.active {
+  background: url(../flynavi/resources/images/back.png) no-repeat 0 0, url(../flynavi/resources/images/bg-press.png) no-repeat 0 0;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+#header a {
+  color: #333;
+  text-decoration: none;
+}
+
+#header .a-inav section:nth-child(2) span,
+#header .c-inav section:nth-child(2) span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#header .e-inav section:nth-child(2) span {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#header .c-inav section:last-child .other {
+  width: 45px;
+  height: 40px;
+  background: url(../flynavi/resources/images/route-normal-button.png) no-repeat 0 0;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  border: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  border-left: 1px solid #B7BABD;
+}
+
+#header .e-inav section:last-child .other,#header .a-inav section:last-child .other {
+  width: 45px;
+  height: 40px;
+  border: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#header .c-inav section:last-child .other.active {
+  background: url(../flynavi/resources/images/route-normal-button.png) no-repeat 0 0, url(../flynavi/resources/images/bg-press.png) no-repeat 0 0;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+#header .c-inav section:last-child .other nav,
+#header .c-inav section:last-child .other a {
+  color: #666;
+  display: inline-block;
+  text-align: center;
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}

@@ -1,0 +1,154 @@
+@media screen and (max-width: 320px), screen and (max-device-width: 320px) {
+
+    #route .route_info {
+        font-size: 13px;
+        height: 40px;
+    }
+
+    #route .route_info .num {
+        font-size: 16px;
+    }
+
+    #route .tabsContent_table thead {
+        font-size: 15px;
+    }
+
+    #route .tabsContent_table_content td p:first-of-type {
+        font-size: 16px;
+    }
+
+    #route .tabsContent_table_content td p:last-of-type, #route .tabsContent_table_content td:last-of-type .unit {
+        font-size: 12px;
+    }
+
+    #route .tabsContent_table_content td:last-of-type .number {
+        font-size: 18px;
+    }
+
+    #route .tabsContent_table th:first-of-type, #route .tabsContent_table td:first-of-type {
+        width: 60px;
+    }
+
+    #route .tabsContent_table th:last-of-type, #route .tabsContent_table td:last-of-type {
+        width: 90px;
+    }
+
+    #layer {
+        width: 220px;
+        margin-left: -110px;
+    }
+
+    /*style for pathinfo*/
+    #path_info {
+        padding: 7px 0;
+    }
+
+    #path_info .same_height {
+        height: 115px;
+    }
+
+    #path_info .select {
+        background-size: 36px 27px;
+    }
+
+    #path_info .route_tmc_container {
+        margin-right: 3px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    #path_info .route_normal_container {
+        margin-left: 3px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    #path_info .route_tmc_title {
+        font-size: 13px;
+    }
+
+    #path_info .route_normal_title {
+        font-size: 13px;
+    }
+
+    #path_info .route_tmc_detail, #path_info .route_normal_detail {
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 5px;
+    }
+
+    #route_tmc, #route_normal {
+        padding: 0px 5px;
+        font-size: 12px;
+    }
+
+    #path_info .route_clock, #path_info .route_distance {
+        line-height: 20px;
+        height: 20px;
+    }
+
+    #path_info .loadingProgressBar {
+        height: 50px;
+    }
+
+    #path_info .loadingProgressBar .firstImg, #path_info .notSupportPredictionTips .firstImg {
+        width: 40px;
+        height: 30px;
+    }
+
+    #path_info .notSupportPredictionTips .tips {
+        max-width: 150px;
+    }
+
+    #path_info .loadingProgressBar .lastImg {
+        width: 90px;
+        height: 30px;
+    }
+
+    #save_time {
+        font-size: 12px;
+    }
+
+    #save_time_number {
+        font-size: 15px;
+        padding: 0 2px;
+    }
+
+    #tmc_time, #tmc_distance, #normal_time, #normal_distance {
+        font-size: 14px;
+    }
+
+    #path_info .prediction_model_one, #path_info .prediction_model_two {
+        height: 25px;
+        line-height: 25px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+
+    #path_info .loadingProgressBar {
+        font-size: 12px;
+    }
+
+    #path_info .notSupportPredictionTips {
+        height: 50px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+
+    #path_info .tmc_prediction_time {
+        right: 5px;
+    }
+
+    #path_info .normal_prediction_time {
+        left: 5px;
+    }
+
+    #path_info .heigh_time {
+        font-size: 12px;
+    }
+
+    .pd10 {
+        padding: 5px;
+    }
+}

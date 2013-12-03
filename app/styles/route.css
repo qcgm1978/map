@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+#route {
+    pointer-events:auto;
+    height: 0.1%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility:hidden;
+    z-index: 9000;
+    font-family: '黑体';
+}
+#route .route_info{
+    margin: 0px 5px;
+    height: 56px;
+    font-size: 20px;
+    color: #333;
+}
+#route .route_info_flex{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: center;
+    padding: 5px 0;
+    margin: 5px 0;
+    border: 1px solid #B6B6B6;
+}
+#route .route_info_flex_start{
+    border-right-style: none;
+}
+#route .route_info_flex_end{
+    border-left-style: none;
+}
+#route .route_info .num{
+    color: #38B600;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    padding: 2px;
+}
+#route .h50{
+    height: 40px;
+}
+#route .content {
+    height: 100%;
+    background-color: #E6EBEF;
+}
+
+#tabsContent, #tabsContent div {
+    height: 100%;
+}
+
+#tabsContent div[data-tab*="A"], #tabsContent div[data-tab*="B"] {
+    display: none;
+}
+
+#tabsContent div.active {
+    display: block;
+}
+
+#route .tabsContent_table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+    color: #4D4D4D;
+}
+
+#route .tabsContent_table thead {
+    background-color: #666666;
+    color: #fff;
+    font-size: 22px;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+#route .tabsContent_table th:last-of-type, .tabsContent_table td:last-of-type{
+    width: 100px;
+}
+#route .tabsContent_table_content tr{
+    height: 60px;
+}
+#route .tabsContent_table_content td {
+    border-bottom: 1px solid #B6B6B6;
+}
+
+#route .tabsContent_table_content td p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+#route .tabsContent_table_content td p:first-of-type {
+    font-size: 24px;
+}
+
+#route .tabsContent_table_content td:last-of-type .number {
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+}
+#route .tabsContent_table_content td:last-of-type .unit{
+    font-size: 18px;
+}
+#route .tabsContent_table th:first-of-type, .tabsContent_table td:first-of-type {
+    width: 60px;
+}
+
+#route .tabsContent_table th:nth-of-type(2), .tabsContent_table td:nth-of-type(2) {
+    text-align: left;
+}
+#route .tabsContent_table td:last-of-type {
+    width: 136px;
+    text-align: right;
+    padding-right: 2px;
+    letter-spacing: -1px;
+}

@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Arial, sans-serif;
+    color: #666;
+    cursor: pointer;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    outline: none;
+    -webkit-touch-callout: none;
+}
+
+/*a{
+    outline: none;
+    text-decoration: none;
+}*/
+#start {
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../images/start-320-460.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2001;
+}
+
+#start img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+#mask_layer img {
+    max-height: 100%;
+}
+/*
+todo canary supports the latest flexbox spec, chrome not. so vendor prefix preserved
+see: https://f.cloud.github.com/assets/284476/516126/49b8cd6e-be9c-11e2-964d-253a303f8f7b.png
+*/
+.css3center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.css3vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

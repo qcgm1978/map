@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#mask_layer .traffic_index {
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+}
+#share_title, #share_name {
+    font-size: 16px;
+}

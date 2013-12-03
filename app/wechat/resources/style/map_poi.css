@@ -1,0 +1,251 @@
+.tc{
+    text-align: center;
+}
+.tl{
+    text-align: left;
+}
+.p_e_n{
+    pointer-events: none;
+}
+#no_get_path,#no_get_net,#no_get_gps_other_browser {
+    z-index: 3002;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    background-image: url('../../../images/bg_positiong_no.png');
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    width: 179px;
+    height: 57px;
+    margin-left: -90px;
+    font-size: 12px;
+}
+#positionLight {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('../../../images/positionLight.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+#share_content {
+    margin-top: 10px;
+}
+#zoom_in, #zoom_out, #positioning {
+    width: 45px;
+    height: 45px;
+    left: 7px;
+    position: absolute;
+    border-radius: 5px;
+    pointer-events: auto;
+    -webkit-transition:bottom .5s;
+    transition:bottom .5s;
+}
+#share_title, #share_name {
+    font-size: 16px;
+}
+#share_address {
+    font-size: 16px;
+    color: #dee9e8;
+}
+#icon_request_path {
+    /*set imgage width and height original metrics / 1.5, because original metrics designed for 480*800*/
+    width: auto;
+    height: auto;
+}
+#share_div {
+    width: 160px;
+    font-size: 14px;
+    color: #4eff00;
+}
+
+.address_twoline {
+    position: relative;
+    bottom: 9px;
+}
+
+#icon_request_path {
+    width: 55px;
+    height: 41px;
+}
+
+div[id^="poi_marker_"] {
+
+    background: url('../../resources/images_poi/bg_sprite.png');
+    background-size: 320px 300px;
+    width: 35px;
+    height: 51px;
+}
+.bg_sprite {
+    background: url('../../resources/images_poi/bg_sprite.png');
+}
+
+/*serarch_box css*/
+#search_box {
+    z-index: 2000;
+    position: absolute;
+    left: 50%;
+    color: white;
+    font-weight: bold;
+    /*width: 221px;*/
+    /*height: 26px;*/
+    margin-left: -110px;
+    font-size: 13px;
+    /*background-position: -6px -6px;*/
+    /*background-size: 230px 220px;*/
+    /*background-repeat: no-repeat;*/
+    top: 5px;
+}
+
+.search-box-wrapper {
+    background-color: #F1F1F1;
+    position: relative;
+    z-index: 1;
+}
+
+.search-box {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+    -webkit-box-flex: 1;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    padding: 0 5px 0 5px;
+}
+
+.search-form-container {
+    -webkit-box-flex: 1;
+    height: 30px;
+}
+
+.search-form {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: stretch;
+    -webkit-box-sizing: border-box;
+    border: solid 2px #2DC01B;
+}
+
+.suggest-container {
+    display: none;
+    border: 1px solid #BBB;
+    border-top: 0;
+    z-index: 1100;
+    background: #FFF;
+}
+
+.suggest-container, .suggest-container * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.input-container {
+    -webkit-box-flex: 1;
+    height: 28px;
+    position: relative;
+}
+
+.search-button {
+    display: block;
+    width: 38px;
+    height: 28px;
+    background: url('../images_poi/searchicon.png') no-repeat scroll center;
+    background-size: cover;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+input {
+    outline-style: none;
+}
+
+input, select {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    border-style: none;
+}
+
+.q {
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 28px;
+    font-size: 16px;
+    line-height: normal; /* for non-ie */
+    line-height: 28 px\9; /* for ie */
+    color: #A9A9A9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, .22);
+    padding: 0 6px;
+    -webkit-user-select: text;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#no_get_gps {
+    /*delete this after css combination */
+    /*background: url('../../resources/images_poi/bg_sprite.png');*/
+    width: 165px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-position: -5px -110px;
+    background-repeat: no-repeat;
+    background-size: 320px 257px;
+    font-size: 14px;
+    z-index: 3002;
+    padding: 2px 6px;
+    color: #76f43c;
+}
+
+#poi_marker_a {
+    background-position: -215px -160px;
+}
+
+#poi_marker_b {
+    background-position: -248px -160px;
+}
+
+#poi_marker_c {
+    background-position: -287px -160px;
+}
+
+#poi_marker_d {
+    background-position: 1px -205px;
+}
+
+#poi_marker_e {
+    background-position: -33px -205px;
+}
+
+#poi_marker_f {
+    background-position: -69px -205px;
+}
+
+#poi_marker_g {
+    background-position: -104px -205px;
+}
+
+#poi_marker_h {
+    background-position: -139px -205px;
+}
+
+#poi_marker_i {
+    background-position: -175px -205px;
+}
+
+#poi_marker_j {
+    background-position: -210px -211px;
+    margin-top: 6px;
+}

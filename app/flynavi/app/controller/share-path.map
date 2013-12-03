@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "share-path.js",
+  "sourceRoot": "",
+  "sources": [
+    "share-path.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,CAEA,CAAU,GAAV,GAAU;CACT,GAAA,CAAkH,CAAjC,CAA9D,EAAsC,CAA5B,GAA1B;CACC,WAAA;MADJ;CAEA,MAAA,IAAA,CAAA,QAAA;CAHD,EAAU;CAFV"
+}

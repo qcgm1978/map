@@ -1,0 +1,113 @@
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) {
+    #share_title, #share_name {
+        font-size: 20px;
+    }
+
+    #share_address {
+        font-size: 19px;
+        /*padding-right: 6px;*/
+    }
+
+    /*for prediction*/
+    #path_info {
+        padding: 10px 0;
+    }
+
+    #path_info .same_height {
+        height: 172px;
+    }
+
+    #path_info .select {
+        background-size: 54px 40px;
+    }
+
+    #path_info .route_tmc_container {
+        margin-right: 4.5px;
+    }
+
+    #path_info .route_normal_container {
+        margin-left: 4.5px;
+    }
+
+    #path_info .route_tmc_title {
+        font-size: 19px;
+    }
+
+    #path_info .route_normal_title {
+        font-size: 19px;
+    }
+
+    #path_info .route_tmc_detail, #path_info .route_normal_detail {
+        font-size: 19px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 7.5px;
+    }
+
+    #route_tmc, #route_normal {
+        padding: 0px 7.5px;
+        font-size: 18px;
+    }
+
+    .route_clock, .route_distance {
+        line-height: 30px;
+        height: 30px;
+    }
+
+    #path_info .loadingProgressBar {
+        height: 75px;
+    }
+
+    #path_info .loadingProgressBar .firstImg {
+        width: 60px;
+        height: 45px;
+    }
+
+    #path_info .loadingProgressBar .lastImg {
+        width: 135px;
+        height: 45px;
+    }
+
+    #save_time {
+        font-size: 18px;
+    }
+
+    #save_time_number {
+        font-size: 22.5px;
+        padding: 0 3px;
+    }
+
+    #tmc_time, #tmc_distance, #normal_time, #normal_distance {
+        font-size: 21px;
+    }
+
+    #path_info .prediction_model_one, #path_info .prediction_model_two {
+        height: 37.5px;
+        line-height: 37.5px;
+        padding: 0 7.5px;
+        font-size: 18px;
+    }
+
+    #path_info .notSupportPredictionTips {
+        height: 75px;
+        line-height: 75px;
+        padding: 0 8px;
+        font-size: 18px;
+    }
+
+    #path_info .tmc_prediction_time {
+        right: 7.5px;
+    }
+
+    #path_info .normal_prediction_time {
+        left: 7.5px;
+    }
+
+    #path_info .heigh_time {
+        font-size: 18px;
+    }
+
+    .pd10 {
+        padding: 7.5px;
+    }
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: scripts/util/tools.js</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Source: scripts/util/tools.js</h1>
+    
+    
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source"><code>/**
+ * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
+ * @Title:
+ * @Description:
+ * @author wangyonggang qq:135274859
+ * @date 13-1-11 下午12:14
+ * @version V1.0
+ * Modification History:
+ */
+define([ 'jquerymx'], function () {
+    /**
+     A utility that common model
+     @class common
+     @constructor
+     **/
+    $.Class.extend('Util.common', {},
+        {
+            /**
+             The method is to conversion unit
+             @method unitConversion.
+             @param config object
+             @return {Object}
+             **/
+            unitConversion: function (config) {
+                var configUnit = {};
+                try {
+                    configUnit.length = this.unit_conversion(config.length, 1),
+                        configUnit.time = this.formatMinute(config.time)
+                }
+                catch (e) {
+                    configUnit.length = '' , configUnit.time = '';
+                }
+                return configUnit;
+            },
+            /**
+             The method is to format time
+             @method formatMinute.
+             @param newM number
+             @return {String}
+             **/
+            formatMinute: function (newM) {
+                if (typeof newM !== 'undefined' && newM != Infinity) {
+                    var minute = Math.round(newM);
+                    if (minute &lt; 61)
+                        return minute + " 分";
+                    else {
+                        var h = Math.floor(minute / 60);
+                        var m = minute % 60;
+                        return h + "小时" + m + "分钟";
+                    }
+                } else {
+                    return '未知';
+                }
+            },
+            /**
+             The method is to conversion unit
+             @method unit_conversion.
+             @param m number
+             @param decimal number
+             @return {String}
+             **/
+            unit_conversion: function (m, decimal) {
+                if (m == Infinity)
+                    return "未知";
+                if (m &lt; 1000) {
+                    if (m >= 1) {
+                        return parseInt(m) + 'm';
+                    } else {
+                        return '1m';
+                    }
+                }
+                else {
+                    //number的字符串表示，不采用指数计数法，小数点后有固定的digics位数字。如果 必要，该数字会被舍入，也可以用0补足，以便它达到指定的长度。
+                    var k = 0;
+                    //如果大于等于100公里，不显示小数
+                    if (m / 1000 >= 100) {
+                        k = (m / 1000).toFixed(0);
+                    }
+                    else {
+                        k = (m / 1000).toFixed(decimal);
+                    }
+                    return k + ' km';
+                }
+
+            },
+            /**
+             The method is to get dpi
+             @method js_getDPI.
+             @return {Array}
+             **/
+            js_getDPI: function () {
+                var arrDPI = new Array();
+                if (window.screen.deviceXDPI != undefined) {
+                    arrDPI[0] = window.screen.deviceXDPI;
+                    arrDPI[1] = window.screen.deviceYDPI;
+                }
+                else {
+                    var tmpNode = document.createElement("DIV");
+                    tmpNode.style.cssText = "width:1in;height:1in;position:absolute;left:0px;top:0px;z-index:99;visibility:hidden";
+                    document.body.appendChild(tmpNode);
+                    arrDPI[0] = parseInt(tmpNode.offsetWidth);
+                    arrDPI[1] = parseInt(tmpNode.offsetHeight);
+                    tmpNode.parentNode.removeChild(tmpNode);
+                }
+                return arrDPI;
+            },
+            /**
+             The method is to parse url
+             @method parseUrl.
+             @param url string
+             @return {Object}
+             **/
+            parseUrl: function (url) {
+                var str = decodeURI(url),
+                    reg = /.*\?(.*)/;
+                var match = /.*\?(.*)/.exec(str);
+                if (match == null) {
+                    return null;
+                }
+                var arr = match[1].split('&'),
+                    obj = {};
+                $.each(arr, function (i, n) {
+                    var arrItem = n.split('=');
+                    obj[arrItem[0]] = arrItem[1];
+                });
+                return obj;
+
+            },
+            /**
+             This method is to determine whether the air
+             @method judgeVal.
+             @param val object
+             @return {Blooean}
+             **/
+            judgeVal: function (val) {
+                return val != '' && val != 'undefined' && val != null;
+            },
+            /**
+             This method is to truncate string
+             @method truncateStr.
+             @param str string
+             @param maxLength number
+             @return {String}
+             **/
+            truncateStr: function (str, maxLength) {
+
+                if (str.length > maxLength) {
+                    return str.slice(0, maxLength - 3) + '...';
+                }
+                return str;
+            },
+            /**
+             This method is toset touch event
+             @method setTouchEvent.
+             @param elector string
+             @param eventCallback function
+             @param eventEndCallback function
+             **/
+            setTouchEvent: function (elector, eventCallback, eventEndCallback) {
+
+
+                $(elector).on({
+                    'touchstart': function () {
+                        eventCallback.call(this);
+                    },
+                    'touchend': function () {
+                        eventEndCallback.call(this);
+                    },
+                    'touchmove': function () {
+                        $(elector).removeClass('active');
+                    }/* ,
+                     'mousedown':function () {
+                     eventCallback.call(this);
+                     },
+                     'mouseup':function () {
+                     eventEndCallback.call(this);
+                     },
+                     'mouseleave':function () {
+                     eventEndCallback.call(this);
+                     }*/
+                });
+            },
+            /**
+             This method is to get position
+             @method getPos.
+             @param obj object
+             **/
+            getPos: function (obj) {
+                if (obj == null) {
+                    return;
+                }
+                var pos = {"top": 0, "left": 0};
+                if (obj.offsetParent) {
+                    while (obj.offsetParent) {
+                        pos.top += obj.offsetTop;
+                        pos.left += obj.offsetLeft;
+                        obj = obj.offsetParent;
+                    }
+                } else if (obj.x) {
+                    pos.left += obj.x;
+                } else if (obj.x) {
+                    pos.top += obj.y;
+                }
+                return pos;
+            },
+            /**
+             This method is to set animate ele visibility
+             @method animateDisplayLayer.
+             @param $ele object
+             @param top number
+             @param height number
+             **/
+             animateDisplayLayer: function ($ele, top, height) {
+                $ele.stop(true, false).animate({top: top, height: height}, { speed: "slow", queue: false });
+            },
+            /**
+             This method is to set swithc ele state
+             @method promptUser.
+             @param id string
+             **/
+            promptUser: function (id) {
+                $('#' + id).removeClass('hidden');
+                setTimeout(function () {
+                    $('#' + id).addClass('hidden');
+                }, 4000);
+            }
+
+        });
+})
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="mapHandler.html">mapHandler</a></li><li><a href="MapModel.Constant.html">Constant</a></li><li><a href="_.html">RequestPathFrame类</a></li><li><a href="RequestTraffic.html">RequestTraffic</a></li></ul><h3>Global</h3><ul><li><a href="global.html#_calCarAngle_">_calCarAngle_</a></li><li><a href="global.html#_CheckGPS_">_CheckGPS_</a></li><li><a href="global.html#_CheckGPSSpeed_">_CheckGPSSpeed_</a></li><li><a href="global.html#_CheckGPSTime_">_CheckGPSTime_</a></li><li><a href="global.html#_decode_">_decode_</a></li><li><a href="global.html#_getPath_">_getPath_</a></li><li><a href="global.html#_getPos_">_getPos_</a></li><li><a href="global.html#_getTime_">_getTime_</a></li><li><a href="global.html#_hasCrossingImage_">_hasCrossingImage_</a></li><li><a href="global.html#_hasDetailedInfo_">_hasDetailedInfo_</a></li><li><a href="global.html#_hasUserData_">_hasUserData_</a></li><li><a href="global.html#_matchProc_">_matchProc_</a></li><li><a href="global.html#_notifyNaviRoute_">_notifyNaviRoute_</a></li><li><a href="global.html#_PruneList_">_PruneList_</a></li><li><a href="global.html#_resetVP_">_resetVP_</a></li><li><a href="global.html#_setCarLoc_">_setCarLoc_</a></li><li><a href="global.html#_setNaviRoute_">_setNaviRoute_</a></li><li><a href="global.html#_switchType_">_switchType_</a></li><li><a href="global.html#_tParseTrafficRadio_">_tParseTrafficRadio_</a></li><li><a href="global.html#_updateCarLoc_">_updateCarLoc_</a></li><li><a href="global.html#_updateLaneInfo_">_updateLaneInfo_</a></li><li><a href="global.html#_updatePlayToken_">_updatePlayToken_</a></li><li><a href="global.html#addIcon.">addIcon.</a></li><li><a href="global.html#addMarker.">addMarker.</a></li><li><a href="global.html#addOnePolyline.">addOnePolyline.</a></li><li><a href="global.html#addTmcLayer.">addTmcLayer.</a></li><li><a href="global.html#animateDisplayLayer.">animateDisplayLayer.</a></li><li><a href="global.html#arcTan">arcTan</a></li><li><a href="global.html#buildEleStrByTmpl.">buildEleStrByTmpl.</a></li><li><a href="global.html#buildInfowindowStr.">buildInfowindowStr.</a></li><li><a href="global.html#byte2text">byte2text</a></li><li><a href="global.html#calcNearestPtId">calcNearestPtId</a></li><li><a href="global.html#calcRoadClass">calcRoadClass</a></li><li><a href="global.html#callback.">callback.</a></li><li><a href="global.html#CarLocationChange.">CarLocationChange.</a></li><li><a href="global.html#CloseTMC">CloseTMC</a></li><li><a href="global.html#CloseTrafficRadio">CloseTrafficRadio</a></li><li><a href="global.html#createTMCBar">createTMCBar</a></li><li><a href="global.html#CreateTMCBar">CreateTMCBar</a></li><li><a href="global.html#decodebase64">decodebase64</a></li><li><a href="global.html#decodePreviewInfo">decodePreviewInfo</a></li><li><a href="global.html#decryptBin">decryptBin</a></li><li><a href="global.html#defaults">defaults</a></li><li><a href="global.html#Destroy">Destroy</a></li><li><a href="global.html#distUpdate">distUpdate</a></li><li><a href="global.html#drawNormalPath.">drawNormalPath.</a></li><li><a href="global.html#drawPath.">drawPath.</a></li><li><a href="global.html#drawRapidPath.">drawRapidPath.</a></li><li><a href="global.html#ecryptBin">ecryptBin</a></li><li><a href="global.html#enableDragInfoWin.">enableDragInfoWin.</a></li><li><a href="global.html#flushNaviSound">flushNaviSound</a></li><li><a href="global.html#formatMinute.">formatMinute.</a></li><li><a href="global.html#generateInfoWindow.">generateInfoWindow.</a></li><li><a href="global.html#generateLngLat.">generateLngLat.</a></li><li><a href="global.html#generateMap.">generateMap.</a></li><li><a href="global.html#getAngle">getAngle</a></li><li><a href="global.html#getAssistAction">getAssistAction</a></li><li><a href="global.html#getBackgroundImage">getBackgroundImage</a></li><li><a href="global.html#getBackgroundLane">getBackgroundLane</a></li><li><a href="global.html#getBasicAction">getBasicAction</a></li><li><a href="global.html#getBestPath">getBestPath</a></li><li><a href="global.html#getCameras">getCameras</a></li><li><a href="global.html#getCameraType">getCameraType</a></li><li><a href="global.html#getContent">getContent</a></li><li><a href="global.html#getCoordinate">getCoordinate</a></li><li><a href="global.html#getCoordsArray.">getCoordsArray.</a></li><li><a href="global.html#getDetailedCoors">getDetailedCoors</a></li><li><a href="global.html#getDetailedCoorsLngLat">getDetailedCoorsLngLat</a></li><li><a href="global.html#getDetailedPoint">getDetailedPoint</a></li><li><a href="global.html#getDetailedPointsCount">getDetailedPointsCount</a></li><li><a href="global.html#getDistance">getDistance</a></li><li><a href="global.html#getDriveTimeMinute">getDriveTimeMinute</a></li><li><a href="global.html#getEndCoorIndex">getEndCoorIndex</a></li><li><a href="global.html#getEndPointName">getEndPointName</a></li><li><a href="global.html#getEstimateTime">getEstimateTime</a></li><li><a href="global.html#getForegroundImage">getForegroundImage</a></li><li><a href="global.html#getForegroundLane">getForegroundLane</a></li><li><a href="global.html#getGroup">getGroup</a></li><li><a href="global.html#getIntersectionName">getIntersectionName</a></li><li><a href="global.html#getIntX">getIntX</a></li><li><a href="global.html#getIntY">getIntY</a></li><li><a href="global.html#getIsDivided">getIsDivided</a></li><li><a href="global.html#getLaneCount">getLaneCount</a></li><li><a href="global.html#getLastPtId">getLastPtId</a></li><li><a href="global.html#getLCode">getLCode</a></li><li><a href="global.html#getLength">getLength</a></li><li><a href="global.html#getLengthString">getLengthString</a></li><li><a href="global.html#getLink">getLink</a></li><li><a href="global.html#GetLinkCoor">GetLinkCoor</a></li><li><a href="global.html#getLinkCount">getLinkCount</a></li><li><a href="global.html#getLinkForm">getLinkForm</a></li><li><a href="global.html#GetLinkFormWay">GetLinkFormWay</a></li><li><a href="global.html#getLinkId">getLinkId</a></li><li><a href="global.html#getLinkLength">getLinkLength</a></li><li><a href="global.html#GetLinkLength">GetLinkLength</a></li><li><a href="global.html#GetLinkLinkType">GetLinkLinkType</a></li><li><a href="global.html#getLinkName">getLinkName</a></li><li><a href="global.html#GetLinkNum">GetLinkNum</a></li><li><a href="global.html#GetLinkRoadClass">GetLinkRoadClass</a></li><li><a href="global.html#GetLinkRoadName">GetLinkRoadName</a></li><li><a href="global.html#getLinks">getLinks</a></li><li><a href="global.html#getLinkTime">getLinkTime</a></li><li><a href="global.html#GetLinkTime">GetLinkTime</a></li><li><a href="global.html#getLinkType">getLinkType</a></li><li><a href="global.html#getLocationCode">getLocationCode</a></li><li><a href="global.html#getLocCodeList">getLocCodeList</a></li><li><a href="global.html#getMainActionVoiceID">getMainActionVoiceID</a></li><li><a href="global.html#GetNaviGuideList">GetNaviGuideList</a></li><li><a href="global.html#getNavSegLength">getNavSegLength</a></li><li><a href="global.html#getNavSegTime">getNavSegTime</a></li><li><a href="global.html#getNextRoadName">getNextRoadName</a></li><li><a href="global.html#getNormalPathInfo.">getNormalPathInfo.</a></li><li><a href="global.html#getOrigDriveTime">getOrigDriveTime</a></li><li><a href="global.html#getPaths">getPaths</a></li><li><a href="global.html#getPos.">getPos.</a></li><li><a href="global.html#getPreviewCoors">getPreviewCoors</a></li><li><a href="global.html#getPreviewPointsCount">getPreviewPointsCount</a></li><li><a href="global.html#getPriviewPoint">getPriviewPoint</a></li><li><a href="global.html#getRapidPathInfo.">getRapidPathInfo.</a></li><li><a href="global.html#getRawAngle">getRawAngle</a></li><li><a href="global.html#getRecentPt">getRecentPt</a></li><li><a href="global.html#getRemainDistAndTime">getRemainDistAndTime</a></li><li><a href="global.html#getRemainLinkDist">getRemainLinkDist</a></li><li><a href="global.html#getRemainRouteDist">getRemainRouteDist</a></li><li><a href="global.html#getRemainSegDist">getRemainSegDist</a></li><li><a href="global.html#getRemainTMCTime">getRemainTMCTime</a></li><li><a href="global.html#getRoadClass">getRoadClass</a></li><li><a href="global.html#getRoadName">getRoadName</a></li><li><a href="global.html#getRoadSigns">getRoadSigns</a></li><li><a href="global.html#GetRoadStatus">GetRoadStatus</a></li><li><a href="global.html#GetRouteLength">GetRouteLength</a></li><li><a href="global.html#getRouteLength.">getRouteLength.</a></li><li><a href="global.html#GetRouteTime">GetRouteTime</a></li><li><a href="global.html#getRouteTime.">getRouteTime.</a></li><li><a href="global.html#GetSegChargeLength">GetSegChargeLength</a></li><li><a href="global.html#GetSegCoor">GetSegCoor</a></li><li><a href="global.html#GetSegLength">GetSegLength</a></li><li><a href="global.html#GetSegLocationCode">GetSegLocationCode</a></li><li><a href="global.html#GetSegLocationCodeNum">GetSegLocationCodeNum</a></li><li><a href="global.html#getSegmentCount">getSegmentCount</a></li><li><a href="global.html#GetSegmentDescribe">GetSegmentDescribe</a></li><li><a href="global.html#GetSegmentNum">GetSegmentNum</a></li><li><a href="global.html#getSegments">getSegments</a></li><li><a href="global.html#GetSegTime">GetSegTime</a></li><li><a href="global.html#getSignpost">getSignpost</a></li><li><a href="global.html#getSomeLenRouteTraffic">getSomeLenRouteTraffic</a></li><li><a href="global.html#getStartCoorIndex">getStartCoorIndex</a></li><li><a href="global.html#getStartDirection">getStartDirection</a></li><li><a href="global.html#getStartPtId">getStartPtId</a></li><li><a href="global.html#getStrategy">getStrategy</a></li><li><a href="global.html#getTime">getTime</a></li><li><a href="global.html#getTimeStamp">getTimeStamp</a></li><li><a href="global.html#getTmcInfo">getTmcInfo</a></li><li><a href="global.html#getTmcTime">getTmcTime</a></li><li><a href="global.html#getTmcTimeMinute">getTmcTimeMinute</a></li><li><a href="global.html#getTollDistance">getTollDistance</a></li><li><a href="global.html#getTrafficIndiceCol">getTrafficIndiceCol</a></li><li><a href="global.html#getType">getType</a></li><li><a href="global.html#getUserData">getUserData</a></li><li><a href="global.html#getX">getX</a></li><li><a href="global.html#getY">getY</a></li><li><a href="global.html#getZoom.">getZoom.</a></li><li><a href="global.html#GPSTimer_Tick">GPSTimer_Tick</a></li><li><a href="global.html#handleZoomChangeEve.">handleZoomChangeEve.</a></li><li><a href="global.html#hasMixFork">hasMixFork</a></li><li><a href="global.html#hasTrafficLight">hasTrafficLight</a></li><li><a href="global.html#init.">init.</a></li><li><a href="global.html#initialize">initialize</a></li><li><a href="global.html#initMapZoom.">initMapZoom.</a></li><li><a href="global.html#isAtService">isAtService</a></li><li><a href="global.html#isBestPath">isBestPath</a></li><li><a href="global.html#isCityRoad">isCityRoad</a></li><li><a href="global.html#isConnected.">isConnected.</a></li><li><a href="global.html#isConnectLocalNet.">isConnectLocalNet.</a></li><li><a href="global.html#isContain">isContain</a></li><li><a href="global.html#isIOS.">isIOS.</a></li><li><a href="global.html#isLineSimplified">isLineSimplified</a></li><li><a href="global.html#isMobileDev.">isMobileDev.</a></li><li><a href="global.html#isQqBrowser.">isQqBrowser.</a></li><li><a href="global.html#isRouteBlocked">isRouteBlocked</a></li><li><a href="global.html#isToll">isToll</a></li><li><a href="global.html#js_getDPI.">js_getDPI.</a></li><li><a href="global.html#judgeVal.">judgeVal.</a></li><li><a href="global.html#lastRerouteNotifyTime">lastRerouteNotifyTime</a></li><li><a href="global.html#m_eRPNetState">m_eRPNetState</a></li><li><a href="global.html#m_nArriveSegId">m_nArriveSegId</a></li><li><a href="global.html#oldVal">oldVal</a></li><li><a href="global.html#onPreviewOk">onPreviewOk</a></li><li><a href="global.html#onResetting">onResetting</a></li><li><a href="global.html#onSegmentOk">onSegmentOk</a></li><li><a href="global.html#openInfoWin.">openInfoWin.</a></li><li><a href="global.html#OpenTMC">OpenTMC</a></li><li><a href="global.html#OpenTrafficRadio">OpenTrafficRadio</a></li><li><a href="global.html#ParserTmc">ParserTmc</a></li><li><a href="global.html#parseUrl.">parseUrl.</a></li><li><a href="global.html#PauseNavi">PauseNavi</a></li><li><a href="global.html#playAction">playAction</a></li><li><a href="global.html#playAssitAction">playAssitAction</a></li><li><a href="global.html#playCountCommon">playCountCommon</a></li><li><a href="global.html#playCountRound">playCountRound</a></li><li><a href="global.html#playFixedDist">playFixedDist</a></li><li><a href="global.html#playMainAction">playMainAction</a></li><li><a href="global.html#PlayNaviManual">PlayNaviManual</a></li><li><a href="global.html#playProximity">playProximity</a></li><li><a href="global.html#playRandomDist">playRandomDist</a></li><li><a href="global.html#playRouteReady">playRouteReady</a></li><li><a href="global.html#PlayTrafficRadioManual">PlayTrafficRadioManual</a></li><li><a href="global.html#promptNoNet.">promptNoNet.</a></li><li><a href="global.html#promptUser.">promptUser.</a></li><li><a href="global.html#pushGPSInfo">pushGPSInfo</a></li><li><a href="global.html#pushGPSLogLatLon">pushGPSLogLatLon</a></li><li><a href="global.html#receiveNetData">receiveNetData</a></li><li><a href="global.html#ReceiveNetData">ReceiveNetData</a></li><li><a href="global.html#recoverRequestState.">recoverRequestState.</a></li><li><a href="global.html#removePolylines.">removePolylines.</a></li><li><a href="global.html#removeTmcLayer.">removeTmcLayer.</a></li><li><a href="global.html#requestPath.">requestPath.</a></li><li><a href="global.html#RequestRoute">RequestRoute</a></li><li><a href="global.html#RequestRouteHaveStart">RequestRouteHaveStart</a></li><li><a href="global.html#requestTouchstartEvent.">requestTouchstartEvent.</a></li><li><a href="global.html#Reroute">Reroute</a></li><li><a href="global.html#reset">reset</a></li><li><a href="global.html#ResumeNavi">ResumeNavi</a></li><li><a href="global.html#returnFloat1.">returnFloat1.</a></li><li><a href="global.html#RouteDestroy.">RouteDestroy.</a></li><li><a href="global.html#routeGuide.">routeGuide.</a></li><li><a href="global.html#SelectRoute">SelectRoute</a></li><li><a href="global.html#SetCarLocation">SetCarLocation</a></li><li><a href="global.html#setContent">setContent</a></li><li><a href="global.html#setCurDisplayPath.">setCurDisplayPath.</a></li><li><a href="global.html#setCurOverlayDirectionUp.">setCurOverlayDirectionUp.</a></li><li><a href="global.html#setEleyePrompt">setEleyePrompt</a></li><li><a href="global.html#SetEleyePrompt">SetEleyePrompt</a></li><li><a href="global.html#setEmulatorSpeed">setEmulatorSpeed</a></li><li><a href="global.html#SetEmulatorSpeed">SetEmulatorSpeed</a></li><li><a href="global.html#setFitView.">setFitView.</a></li><li><a href="global.html#SetGPSInfo">SetGPSInfo</a></li><li><a href="global.html#setGpsInfo.">setGpsInfo.</a></li><li><a href="global.html#setMapRange.">setMapRange.</a></li><li><a href="global.html#SetNaviRoute">SetNaviRoute</a></li><li><a href="global.html#SetNaviType">SetNaviType</a></li><li><a href="global.html#SetNmea">SetNmea</a></li><li><a href="global.html#setNorthDirctionUp.">setNorthDirctionUp.</a></li><li><a href="global.html#setPathPileOrder.">setPathPileOrder.</a></li><li><a href="global.html#setPathWeight.">setPathWeight.</a></li><li><a href="global.html#SetPlayOneWordUseTime">SetPlayOneWordUseTime</a></li><li><a href="global.html#SetRequestRouteState.">SetRequestRouteState.</a></li><li><a href="global.html#setRequestRouteType.">setRequestRouteType.</a></li><li><a href="global.html#SetRoute">SetRoute</a></li><li><a href="global.html#setScrollEleHeight.">setScrollEleHeight.</a></li><li><a href="global.html#setScrollUpdated.">setScrollUpdated.</a></li><li><a href="global.html#SetTmcReqParam">SetTmcReqParam</a></li><li><a href="global.html#setTouchEvent.">setTouchEvent.</a></li><li><a href="global.html#setType">setType</a></li><li><a href="global.html#setUrl.">setUrl.</a></li><li><a href="global.html#setZoom.">setZoom.</a></li><li><a href="global.html#show.">show.</a></li><li><a href="global.html#showRoadSegInfo.">showRoadSegInfo.</a></li><li><a href="global.html#showRouteInfo.">showRouteInfo.</a></li><li><a href="global.html#StartEmulatorNavi">StartEmulatorNavi</a></li><li><a href="global.html#StartGpsNavi">StartGpsNavi</a></li><li><a href="global.html#startRequest.">startRequest.</a></li><li><a href="global.html#StopEmulatorNavi">StopEmulatorNavi</a></li><li><a href="global.html#StopNavi">StopNavi</a></li><li><a href="global.html#toggleLoadingEffect.">toggleLoadingEffect.</a></li><li><a href="global.html#toggleMarker.">toggleMarker.</a></li><li><a href="global.html#toString">toString</a></li><li><a href="global.html#triggerRequestEvent.">triggerRequestEvent.</a></li><li><a href="global.html#truncateStr.">truncateStr.</a></li><li><a href="global.html#unit_conversion.">unit_conversion.</a></li><li><a href="global.html#unitConversion.">unitConversion.</a></li><li><a href="global.html#UpdatePF">UpdatePF</a></li><li><a href="global.html#updateRouteInfo">updateRouteInfo</a></li><li><a href="global.html#zoomOut.">zoomOut.</a></li><li><a href="global.html#轮询gps信息的参数设置">轮询gps信息的参数设置</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a> on Tue Jul 30 2013 13:40:16 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

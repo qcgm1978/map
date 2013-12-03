@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "micro-sharing.js",
+  "sourceRoot": "",
+  "sources": [
+    "micro-sharing.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,CACA,CAAoE,GAApE,GAAoE,iBAA7D,KAAA;CAES,UADJ,eAAA;CACI,CAAU,CAAmD,CAAnD,EAAV,CAAU,CAAV,CAAsD,CAAV,CAAvB;CAArB,CACQ,IAAR,gCADA;CAAA,CAEY,IAAZ,IAAA,kBAFA;CAAA,CAGI,CAAJ,GAAA,sCAHA;CAFoD,KACxD;CADZ,EAAoE;CADpE"
+}

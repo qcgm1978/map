@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+#route {
+    pointer-events:auto;
+    height: 0.1%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility:hidden;
+    z-index: 9000;
+}
+
+#route .header {
+    height: 45px;
+    background: #e3e3e3;
+    position: relative;
+}
+
+#route_tabs {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 54px;
+    bottom: 0;
+}
+
+#route_tabs li {
+    float: left;
+    width: 80px;
+    height: 40px;
+}
+
+.route_tabs_a {
+    background:url('../../../images/public_icons.png');
+    background-position: 0 -401px;
+}
+
+.route_tabs_b {
+    background:url('../../../images/public_icons.png');
+    background-position: 0 -486px;
+}
+
+.route_tabs_a.active {
+    background:url('../../../images/public_icons.png');
+    background-position: 0 -358px;
+}
+
+.route_tabs_b.active {
+    background:url('../../../images/public_icons.png');
+    background-position: 0 -443px;
+}
+
+.content {
+    height: 100%;
+}
+
+#tabsContent, #tabsContent div {
+    height: 100%;
+}
+
+#tabsContent div[data-tab*="A"], #tabsContent div[data-tab*="B"] {
+    display: none;
+    background-color: #EDEEED;
+}
+
+#tabsContent div.active {
+    display: block;
+}
+
+.tabsContent_table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+.tabsContent_table thead {
+    background-image: url('../../../images/public/list/th_bg.png');
+    background-repeat: repeat-x;
+    color: #fff;
+    font-size: 22px;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+.tabsContent_table_content td {
+    background-color: #EDEEED;
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.tabsContent_table_content td p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.tabsContent_table_content td p:first-of-type {
+    font-size: 24px;
+    color: #4d4d4d;
+}
+
+.tabsContent_table_content td p:last-of-type {
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.tabsContent_table_content td:last-of-type {
+    color: #4d4d4d;
+}
+
+.tabsContent_table_content td:last-of-type .number {
+    font-size: 24px;
+}
+
+.tabsContent_table_content td:last-of-type .unit {
+    font-size: 18px;
+}
+
+.tabsContent_table th:first-of-type, .tabsContent_table td:first-of-type {
+    width: 80px;
+}
+
+.tabsContent_table th:nth-of-type(2), .tabsContent_table td:nth-of-type(2) {
+    text-align: left;
+}
+
+.tabsContent_table th:last-of-type, .tabsContent_table td:last-of-type {
+    width: 134px;
+    text-align: right;
+    padding-right: 7px;
+}

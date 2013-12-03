@@ -1,0 +1,43 @@
+/* CSS Document */
+
+.toolbar {
+    z-index: 80;
+    width: 84px;
+    height: 35px;
+    position: absolute;
+    pointer-events:auto;
+    right: 7px;
+    top: 7px;
+    background:url('../images/public_icons.png');
+    background-position: 0 -249px;
+}
+#toolbar_first{
+    visibility: hidden;;
+}
+.toolbar span {
+    width: 36px;
+    height: 33px;
+    display: inline-block;
+}
+
+.showMap {
+    background:url('../images/public_icons.png');
+    background-position: -47px -324px;
+    position: absolute;
+    left: 0px;
+}
+
+.showRoute {
+    background:url('../images/public_icons.png');
+    background-position: 2px -324px;
+    position: absolute;
+    right: 0px;
+}
+
+.showMap.active {
+    background: url('../images/public_icons.png')  -47px -288px,url('../images/public_icons.png') -90px -249px;
+}
+
+.showRoute.active {
+    background: url('../images/public_icons.png')   2px -288px,url('../images/public_icons.png') -90px -249px;
+}

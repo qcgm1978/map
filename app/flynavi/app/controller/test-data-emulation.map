@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "test-data-emulation.js",
+  "sourceRoot": "",
+  "sources": [
+    "test-data-emulation.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,KAAA,cAAA;;CAAA,CAEA,CAAc,MAAC,CAAD,CAAd;CACC,GAAA,IAAA;AAAO,CAAP,EAAO,CAAP,MAAO;CACN,EAAO,CAAP,EAAA,8OAAA;CAAA,CAG+B,CAA/B,CAAI,EAAJ,CAAI,KAA2B,CAA3B;MAJL;CADa,UAMb;CARD,EAEc;;CAFd,CASA,CAAU,CATV,GASA;;CATA,CAUA,CAAsB,IAAf,IAAP;CAVA"
+}

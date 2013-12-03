@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list readonly="true" id="42351ee3-21ec-4428-b08e-55c178485539" name="Default" comment="" />
+    <list id="8bdaea3a-2c20-4b3f-a036-e2c54419e7e9" name="New changelist" comment="" />
+    <list default="true" id="8672855c-ca51-480b-ac39-114d8b1ba196" name="Failed commit: Default" comment="test data modularize">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/02-img01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/02-img02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/03-img01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/03-img02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/03-img03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/04-img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/05-link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/help/06-flynavi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/640 920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/9.0home.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/9.2路书.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/analysis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/banner-bottom-nobtn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/bg-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/bg_loading.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/bg_path_info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/bg_positiong_no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/bg_save_time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/bg_save_time_num.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/bg_selected_info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/bg_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/bottom-content-shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/bottom_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/button-green-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/button-green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/button-red-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/button-red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/cur_position.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/download_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/download_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/download_btn_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/download_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/downloadbtn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/end_point.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/end_point.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/failureAnalysis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon_normal_letter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon_request_path.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/icon_request_path.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon_request_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon_tmc_letter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/inforwindow_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/inforwindow_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/inforwindow_middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/inforwindow_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/inforwindow_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/layerBg-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/layerBg-middle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/layerBg-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/loading-a1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/loading-b1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/navi-press-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/path-navi-normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/path-navi-press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/positionLight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/press-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/public.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/requestPath-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/route-normal-button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/route-normal-checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/route-normal-unCheck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/route-tmc-checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/route-tmc-unCheck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/save-time-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/searchicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/share_position.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/share_position.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/images_poi/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/start-320-460.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/start-320-460.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/start-640-920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/start-640-920.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/start_point.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/start_point.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/public/list/th_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/time_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/top-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/top_logo.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/top_logo.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/resources/images/wap-banner-bottom1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/启动页面320 460.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/规划 甩堵线路.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/relative-files/img/web效果图/规划-常规线路.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/scripts/prettify/Apache-License-2.0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/Layer.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/Layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/Link.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/Link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/Map.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/Map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/MapModel.Constant.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/MaskerLayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/controller/PathInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/RequestTraffic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/Tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/Toolbar.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/Toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/_.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/app.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/app_flynavi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/app_wechat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/base64-handler.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/base64-handler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/boardcast.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/vendor/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/js/broadcast.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/chai.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/common_320.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/common_320.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/common_480.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/common_480.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/controller/controller_list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_maskerlayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_navControl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_naviInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/controller/controller_poi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_start.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_toolbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/expect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/expression.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/test/gPSLog2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/global.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/help-send.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/help.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/help.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/js/help.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/help.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controller/historyController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/styles/jsdoc-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/scripts/prettify/lang-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/scripts/linenumber.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/model/map-model-wechat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/map-model.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/map-model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/map.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/map.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/map1.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/mapApi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/mapApi_modularize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/mapHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/mapHandler.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/model/mapHandler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/mapUtil.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/mapUtil.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/map_poi.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/micro-message-bridge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/micro-share.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/micro-sharing.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/micro-sharing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/micro-sharing.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/mobile320.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/mobile480.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/mobile480.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/mocha/mocha.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/mocha/mocha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/navi.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/navi.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/navi.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/navi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/navi_info.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/networkCommunication-raxtone.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/networkCommunication-raxtone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/networkCommunication.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/model/networkCommunication.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/pathDrawing.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/model/pathDrawing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/path_info.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/model/poi-model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/poi.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/poi.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/poiList.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/styles/prettify-jsdoc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/styles/prettify-tomorrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/scripts/prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/public.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/ratio-common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/ratio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/report.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/route-view-backup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/route-view.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/route-view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/model/route-view.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/route.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/resources/style/route.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/routeInfo.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/model/routeInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/share-path.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/share-path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/share-path.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/tasks.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/tasks.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/tbt.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/tbt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/tools.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/util/tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/tools_flynavi.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/flynavi/app/util/tools_flynavi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/app/util/tools_wechat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/top_navi.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/traffic-radio.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/traffic-radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/utility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/wechat/help/view.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/webInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc/webroute.js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/webroute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/lib/webroute_full.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="map1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="false" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="map1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="portalPc.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../portal_new/portalPc.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="27" selection-start="13" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="2223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="205" column="100" selection-start="5516" selection-end="5516" vertical-scroll-proportion="1.1220472" vertical-offset="3762" max-vertical-offset="5301">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twoCoffee.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twoCoffee.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="0" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="399">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/utility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="35" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/tasks.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="15" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="874">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/scripts/controller/Map.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/dist/start.html" />
+        <option value="$PROJECT_DIR$/dist/scripts/util/cache.js" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/app_flynavi.js" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/share-path.coffee" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.coffee" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js" />
+        <option value="$PROJECT_DIR$/grunt-utility/test.js" />
+        <option value="$PROJECT_DIR$/grunt-utility/param-config.coffee" />
+        <option value="$PROJECT_DIR$/tasks/utility.js" />
+        <option value="$PROJECT_DIR$/tasks/task.coffee" />
+        <option value="$PROJECT_DIR$/../portal_new/portalPc/tasks-portal.coffee" />
+        <option value="$PROJECT_DIR$/tasks/tasks.coffee" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.coffee" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="bare" pattern="file:Gruntfile1.coffee" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1231" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TaskProblemsInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="false" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flynavi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flynavi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="bare" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="64" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="58" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="42" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="184" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="86" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="73" />
+    <property name="last_opened_file_path" value="F:/Program Files/Notepad++/notepad++.exe" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="72" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="759" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="75" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="72" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="101" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="688" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.CoffeeScript" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="flynavi_test" serverId="90c32f65-50e3-4997-846e-722de45f1233">
+    <servers>
+      <server id="35502e25-4406-4541-a360-d126ecbe5de0">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="58a9aac2-f025-43c4-a060-ac99785e433d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="5bfec6f3-676f-40fa-966d-542852d9d141">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6a764e80-a501-4f55-98ba-f07ce3037fb5">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="8340898a-5131-44f7-8352-e2f7f8ea37d5">
+        <serverdata />
+      </server>
+      <server id="8587b6da-bb72-4e8f-ba3e-f39987af617b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="90c32f65-50e3-4997-846e-722de45f1233">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/flynavi-web-mobile" local="$PROJECT_DIR$/dist" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="9d897dd3-6c29-4465-a600-fbfe1e76aabb">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="bb61cadb-dc12-4bb4-a171-83e8eba3ffa3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e0de170b-7dca-4377-bbca-c40afd96f6ab">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PHPnow-1.5.6\htdocs\map" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\dist\scripts\util" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\flynavi\app\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\styles" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\wechat\resources\style" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\relative-files" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <test-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>BDD</ui>
+      <require />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="commandLine" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\qcgm1978\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42351ee3-21ec-4428-b08e-55c178485539" name="Default" comment="" />
+      <changelist id="8bdaea3a-2c20-4b3f-a036-e2c54419e7e9" name="New changelist" comment="" />
+      <created>1372224729996</created>
+      <updated>1372224729996</updated>
+    </task>
+    <task id="LOCAL-00001" summary="extract img to common folder">
+      <created>1372239424108</created>
+      <updated>1372239424108</updated>
+    </task>
+    <task id="LOCAL-00002" summary="extract img to common folder">
+      <created>1372239439107</created>
+      <updated>1372239439107</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build file optimization">
+      <created>1372751366108</created>
+      <updated>1372751366108</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modfiy gruntfile">
+      <created>1372758306107</created>
+      <updated>1372758306107</updated>
+    </task>
+    <task id="LOCAL-00005" summary="perhaps webstorm ide info">
+      <created>1384251733278</created>
+      <updated>1384251733278</updated>
+    </task>
+    <task id="LOCAL-00006" summary="perhaps webstorm ide info">
+      <created>1384251763522</created>
+      <updated>1384251763522</updated>
+    </task>
+    <task id="LOCAL-00007" summary="safari not support requestAnimationFram, so no execute it">
+      <created>1384257018539</created>
+      <updated>1384257018539</updated>
+    </task>
+    <task id="LOCAL-00008" summary="set ui of scale btn">
+      <created>1384313675708</created>
+      <updated>1384313675708</updated>
+    </task>
+    <task id="LOCAL-00009" summary="recover setInterval for compatibility">
+      <created>1384319588025</created>
+      <updated>1384319588025</updated>
+    </task>
+    <task id="LOCAL-00010" summary="recover style of scale btn">
+      <created>1384323162922</created>
+      <updated>1384323162922</updated>
+    </task>
+    <task id="LOCAL-00011" summary="recover setTimeout method">
+      <created>1384323472113</created>
+      <updated>1384323472113</updated>
+    </task>
+    <task id="LOCAL-00012" summary="environment replaced dynamically">
+      <created>1384326561312</created>
+      <updated>1384326561312</updated>
+    </task>
+    <task id="LOCAL-00013" summary="execute hiding directly">
+      <created>1384331301222</created>
+      <updated>1384331301222</updated>
+    </task>
+    <task id="LOCAL-00014" summary="environment param integrated into grunt cli">
+      <created>1384334178502</created>
+      <updated>1384334178502</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create route-view again">
+      <created>1384397244087</created>
+      <updated>1384397244087</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create route-view again">
+      <created>1384397260507</created>
+      <updated>1384397260507</updated>
+    </task>
+    <task id="LOCAL-00017" summary="change environment param">
+      <created>1384746396660</created>
+      <updated>1384746396660</updated>
+    </task>
+    <task id="LOCAL-00018" summary="format unified">
+      <created>1384746450231</created>
+      <updated>1384746450231</updated>
+    </task>
+    <task id="LOCAL-00019" summary="route-view.js added">
+      <created>1384746590797</created>
+      <updated>1384746590797</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix markdown bug">
+      <created>1384751862918</created>
+      <updated>1384751862918</updated>
+    </task>
+    <task id="LOCAL-00021" summary="micro sharing module added">
+      <created>1384862239005</created>
+      <updated>1384862239005</updated>
+    </task>
+    <task id="LOCAL-00022" summary="micro sharing module added">
+      <created>1384942386510</created>
+      <updated>1384942386510</updated>
+    </task>
+    <task id="LOCAL-00023" summary="micro sharing module added">
+      <created>1384942402437</created>
+      <updated>1384942402437</updated>
+    </task>
+    <task id="LOCAL-00024" summary="micro sharing module added">
+      <created>1384942466556</created>
+      <updated>1384942466556</updated>
+    </task>
+    <task id="LOCAL-00025" summary="building optimization">
+      <created>1385022136307</created>
+      <updated>1385022136307</updated>
+    </task>
+    <task id="LOCAL-00026" summary="exclude jpg file as bug of imagemin">
+      <created>1385090401784</created>
+      <updated>1385090401784</updated>
+    </task>
+    <task id="LOCAL-00027" summary="replace ref in cache.js dynamically when building">
+      <created>1385346444832</created>
+      <updated>1385346444832</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Access project-specific configuration data defined in the Gruntfile when building">
+      <created>1385352218062</created>
+      <updated>1385352218062</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Static file asset revisioning through content hashing">
+      <created>1385358893992</created>
+      <updated>1385358893992</updated>
+    </task>
+    <task id="LOCAL-00030" summary="excluding img assert revisioning in js files">
+      <created>1385363177554</created>
+      <updated>1385363177554</updated>
+    </task>
+    <task id="LOCAL-00031" summary="del uselessness">
+      <created>1385364998652</created>
+      <updated>1385364998652</updated>
+    </task>
+    <task id="LOCAL-00032" summary="manifest generated automatically">
+      <created>1385367452150</created>
+      <updated>1385367452150</updated>
+    </task>
+    <task id="LOCAL-00033" summary="svn optimization">
+      <created>1385367943529</created>
+      <updated>1385367943529</updated>
+    </task>
+    <task id="LOCAL-00034" summary="move file">
+      <created>1385534219298</created>
+      <updated>1385534219298</updated>
+    </task>
+    <task id="LOCAL-00035" summary="an online whitelist wildcard flag is added about manifest">
+      <created>1385540060287</created>
+      <updated>1385540060287</updated>
+    </task>
+    <task id="LOCAL-00036" summary="css files optimization">
+      <created>1385543107210</created>
+      <updated>1385543107210</updated>
+    </task>
+    <task id="LOCAL-00037" summary="building optimization">
+      <created>1385620939346</created>
+      <updated>1385620939346</updated>
+    </task>
+    <task id="LOCAL-00038" summary="building optimization">
+      <created>1385621242822</created>
+      <updated>1385621242822</updated>
+    </task>
+    <task id="LOCAL-00039" summary="remove unused css">
+      <created>1385626672329</created>
+      <updated>1385626672329</updated>
+    </task>
+    <task id="LOCAL-00040" summary="exclude html tag about uncss">
+      <created>1385690251181</created>
+      <updated>1385690251181</updated>
+    </task>
+    <task id="LOCAL-00041" summary="not reference uncss for bugs">
+      <created>1385702770646</created>
+      <updated>1385702770646</updated>
+    </task>
+    <task id="LOCAL-00042" summary="optimization">
+      <created>1385704869731</created>
+      <updated>1385704869731</updated>
+    </task>
+    <task id="LOCAL-00043" summary="optimization">
+      <created>1385707044019</created>
+      <updated>1385707044019</updated>
+    </task>
+    <task id="LOCAL-00044" summary="handling path sharing">
+      <created>1385711209851</created>
+      <updated>1385711209851</updated>
+    </task>
+    <task id="LOCAL-00045" summary="pass source val to iphone app">
+      <created>1385716653839</created>
+      <updated>1385716653839</updated>
+    </task>
+    <task id="LOCAL-00046" summary="test data modularize">
+      <created>1385719643906</created>
+      <updated>1385719643906</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1231" height="1040" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33222592" sideWeight="0.49957156" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935733" sideWeight="0.61878455" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990575" sideWeight="0.65524864" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36246786" sideWeight="0.337763" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.662237" sideWeight="0.50042844" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8110497" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31893688" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3447514" sideWeight="0.49957156" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990575" sideWeight="0.6718232" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6629834" sideWeight="0.50042844" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8110497" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3200443" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935733" sideWeight="0.61878455" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2527849" sideWeight="0.65524864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="format unified" />
+    <MESSAGE value="route-view.js added" />
+    <MESSAGE value="fix markdown bug" />
+    <MESSAGE value="micro sharing module added" />
+    <MESSAGE value="exclude jpg file as bug of imagemin" />
+    <MESSAGE value="replace ref in cache.js dynamically" />
+    <MESSAGE value="replace ref in cache.js dynamically when building" />
+    <MESSAGE value="Access project-specific configuration data defined in the Gruntfile when building" />
+    <MESSAGE value="Static file asset revisioning through content hashing" />
+    <MESSAGE value="excluding img assert revisioning in js files" />
+    <MESSAGE value="del uselessness" />
+    <MESSAGE value="manifest generated automatically" />
+    <MESSAGE value="svn optimization" />
+    <MESSAGE value="move img files" />
+    <MESSAGE value="move file" />
+    <MESSAGE value="an online whitelist wildcard flag is added about manifest" />
+    <MESSAGE value="css files optimization" />
+    <MESSAGE value="building optimization" />
+    <MESSAGE value="remove unused css" />
+    <MESSAGE value="exclude html tag about uncss" />
+    <MESSAGE value="not reference uncss for bugs" />
+    <MESSAGE value="optimization" />
+    <MESSAGE value="handling path sharing" />
+    <MESSAGE value="pass source val to iphone app" />
+    <MESSAGE value="test data modularize" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data modularize" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tasks/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/tasks.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="15" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/share-path.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/controller_start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/app_flynavi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3610" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="18" selection-start="1612" selection-end="1618" vertical-scroll-proportion="0.33333334" vertical-offset="613" max-vertical-offset="3895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="2470" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="776" selection-end="776" vertical-scroll-proportion="0.56173915" vertical-offset="57" max-vertical-offset="1064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portal_new/portalPc.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="13" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/tasks.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="15" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="557">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twoCoffee.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="0" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="100" selection-start="5516" selection-end="5516" vertical-scroll-proportion="1.1220472" vertical-offset="3762" max-vertical-offset="5301">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>bare</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="bare" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
