@@ -1,0 +1,5289 @@
+{
+    "project": {
+        "name": "scripts",
+        "description": "flynavi subproject of map development repository",
+        "version": "0.0.0",
+        "url": "testwww.flynavi.cn/webflynavi/start.html?name=地图选点&lng=116.309272&lat=39.979194#share"
+    },
+    "files": {
+        "app\\scripts\\controller\\Layer.js": {
+            "name": "app\\scripts\\controller\\Layer.js",
+            "modules": {},
+            "classes": {
+                "Layer": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\Link.js": {
+            "name": "app\\scripts\\controller\\Link.js",
+            "modules": {},
+            "classes": {
+                "Link": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\Map.js": {
+            "name": "app\\scripts\\controller\\Map.js",
+            "modules": {},
+            "classes": {
+                "Map": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\MaskerLayer.js": {
+            "name": "app\\scripts\\controller\\MaskerLayer.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\Tab.js": {
+            "name": "app\\scripts\\controller\\Tab.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\Toolbar.js": {
+            "name": "app\\scripts\\controller\\Toolbar.js",
+            "modules": {},
+            "classes": {
+                "Toolbar": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\controller\\historyController.js": {
+            "name": "app\\scripts\\controller\\historyController.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\lib\\base64-handler.js": {
+            "name": "app\\scripts\\lib\\base64-handler.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\lib\\navi.js": {
+            "name": "app\\scripts\\lib\\navi.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\lib\\tbt.js": {
+            "name": "app\\scripts\\lib\\tbt.js",
+            "modules": {},
+            "classes": {
+                "RequestPathFrame类": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\lib\\traffic-radio.js": {
+            "name": "app\\scripts\\lib\\traffic-radio.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\lib\\webroute.js": {
+            "name": "app\\scripts\\lib\\webroute.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\model\\mapHandler.js": {
+            "name": "app\\scripts\\model\\mapHandler.js",
+            "modules": {},
+            "classes": {
+                "mapHandler": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\model\\networkCommunication.js": {
+            "name": "app\\scripts\\model\\networkCommunication.js",
+            "modules": {},
+            "classes": {
+                "netService": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\model\\pathDrawing.js": {
+            "name": "app\\scripts\\model\\pathDrawing.js",
+            "modules": {},
+            "classes": {
+                "PathDrawing": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\model\\routeInfo.js": {
+            "name": "app\\scripts\\model\\routeInfo.js",
+            "modules": {},
+            "classes": {
+                "Route": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\util\\mapUtil.js": {
+            "name": "app\\scripts\\util\\mapUtil.js",
+            "modules": {},
+            "classes": {
+                "PublicModel": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\util\\tools.js": {
+            "name": "app\\scripts\\util\\tools.js",
+            "modules": {},
+            "classes": {
+                "common": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\scripts\\app.js": {
+            "name": "app\\scripts\\app.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Layer": {
+            "name": "Layer",
+            "shortname": "Layer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\controller\\Layer.js",
+            "line": 9,
+            "description": "A utility that simulation system of prompt box",
+            "is_constructor": 1
+        },
+        "Link": {
+            "name": "Link",
+            "shortname": "Link",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\controller\\Link.js",
+            "line": 9,
+            "description": "A utility that link controller",
+            "is_constructor": 1
+        },
+        "Map": {
+            "name": "Map",
+            "shortname": "Map",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\controller\\Map.js",
+            "line": 9,
+            "description": "A utility that Navigation event controller",
+            "is_constructor": 1
+        },
+        "Toolbar": {
+            "name": "Toolbar",
+            "shortname": "Toolbar",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\controller\\Toolbar.js",
+            "line": 15,
+            "description": "A utility that Toolbar event controller",
+            "is_constructor": 1
+        },
+        "RequestPathFrame类": {
+            "name": "RequestPathFrame类",
+            "shortname": "RequestPathFrame类",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 1,
+            "construct": "RequestPathFrame"
+        },
+        "mapHandler": {
+            "name": "mapHandler",
+            "shortname": "mapHandler",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 8,
+            "description": "A utility that mapHandler model",
+            "is_constructor": 1
+        },
+        "netService": {
+            "name": "netService",
+            "shortname": "netService",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 9,
+            "description": "A utility that net service model",
+            "is_constructor": 1
+        },
+        "PathDrawing": {
+            "name": "PathDrawing",
+            "shortname": "PathDrawing",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 8,
+            "description": "A utility that draw path model",
+            "is_constructor": 1
+        },
+        "Route": {
+            "name": "Route",
+            "shortname": "Route",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 10,
+            "description": "A utility that switch route tab controller",
+            "is_constructor": 1
+        },
+        "PublicModel": {
+            "name": "PublicModel",
+            "shortname": "PublicModel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 9,
+            "description": "A utility that public model",
+            "is_constructor": 1
+        },
+        "common": {
+            "name": "common",
+            "shortname": "common",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 11,
+            "description": "A utility that common model",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "app\\scripts\\controller\\Layer.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 2:32 PM\nUse:",
+            "class": "Layer"
+        },
+        {
+            "file": "app\\scripts\\controller\\Layer.js",
+            "line": 16,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "Layer"
+        },
+        {
+            "file": "app\\scripts\\controller\\Layer.js",
+            "line": 46,
+            "description": "show a simulation system of prompt box",
+            "itemtype": "method",
+            "name": "show.",
+            "class": "Layer"
+        },
+        {
+            "file": "app\\scripts\\controller\\Link.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 4:07 PM\nUse:",
+            "class": "Link"
+        },
+        {
+            "file": "app\\scripts\\controller\\Link.js",
+            "line": 16,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "Link"
+        },
+        {
+            "file": "app\\scripts\\controller\\Link.js",
+            "line": 23,
+            "description": "set link and download url",
+            "itemtype": "method",
+            "name": "setUrl.",
+            "class": "Link"
+        },
+        {
+            "file": "app\\scripts\\controller\\Map.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 2:44 PM\nUse:",
+            "class": "Map"
+        },
+        {
+            "file": "app\\scripts\\controller\\Map.js",
+            "line": 15,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "Map"
+        },
+        {
+            "file": "app\\scripts\\controller\\MaskerLayer.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 3:44 PM\nUse:",
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\Tab.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 4:04 PM\nUse:",
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\Toolbar.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-6-27 上午11:06",
+            "version": "V1.0\nModification History:",
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\Toolbar.js",
+            "line": 29,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\Toolbar.js",
+            "line": 39,
+            "description": "Method for show route info",
+            "itemtype": "method",
+            "name": "showRouteInfo.",
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\Toolbar.js",
+            "line": 62,
+            "description": "set scroll ele height",
+            "itemtype": "method",
+            "name": "setScrollEleHeight.",
+            "params": [
+                {
+                    "name": "arr",
+                    "description": "Array"
+                }
+            ],
+            "class": "Toolbar"
+        },
+        {
+            "file": "app\\scripts\\controller\\historyController.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-18 上午10:39",
+            "version": "V1.0\nModification History:",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\base64-handler.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:36 PM\nUse:",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\base64-handler.js",
+            "line": 8,
+            "description": "+------------------------------------------------------------------------------\n* Base64处理数据类\n+------------------------------------------------------------------------------",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\navi.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:22 PM\nUse:",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\navi.js",
+            "line": 121,
+            "description": "获取p1 -> p2 的角度。",
+            "return": {
+                "description": "返回角度的返回为[0,360)。"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\navi.js",
+            "line": 129,
+            "description": "获取内部使用的p1 -> p2 的角度。",
+            "return": {
+                "description": "返回角度的返回为[0,TRIGONOMETRIC_MAXS * 4)"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\navi.js",
+            "line": 137,
+            "description": "重置toString方法。将返回方向字符串，缺省为中文。",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\navi.js",
+            "line": 178,
+            "description": "计算向量方向角。",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "向量的x分量。"
+                },
+                {
+                    "name": "y",
+                    "description": "向量的y分量。"
+                }
+            ],
+            "return": {
+                "description": "返回以x正方向为0度方向的象限角，每个象限划分为TRIGONOMETRIC_MAXS度，因此\n返回值范围为[0, TRIGONOMETRIC_MAXS *4)。"
+            },
+            "exception": "ArithmeticException x与y的绝对值中较小的不能大于TRIGONOMETRIC_LIMIT，否则\n会抛出此异常。",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 18,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 30,
+            "description": "Method for switch elements of loading icon_request_path effect and isRequestPath attr",
+            "itemtype": "method",
+            "name": "triggerRequestEvent.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 39,
+            "description": "Method for switch elements of loading map_layer effect",
+            "itemtype": "method",
+            "name": "toggleLoadingEffect.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 47,
+            "description": "Method for requestTouchstartEvent",
+            "itemtype": "method",
+            "name": "requestTouchstartEvent.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 59,
+            "description": "Method for recoverRequestState",
+            "itemtype": "method",
+            "name": "recoverRequestState.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 67,
+            "description": "创建一个光柱\n当前路径有动态信息则返回分段路况信息",
+            "return": {
+                "description": "[Array1,Array2],Array1数组指示分段路长，Array2数组指示分段路况"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 78,
+            "description": "获得一个导航段的旅行时间,单位分钟，向上取整",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 86,
+            "description": "获得一个导航段的长度,单位：米，向上取整",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 94,
+            "description": "Method for set request route type",
+            "itemtype": "method",
+            "name": "setRequestRouteType.\n* @param iType 导航段路径类型",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 102,
+            "description": "Method for get route length",
+            "itemtype": "method",
+            "name": "getRouteLength.!~YUIDOC_LINE~!* @param iType 导航段路径类型!~YUIDOC_LINE~!* @return",
+            "type": "Number",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 112,
+            "description": "Method for get route time",
+            "itemtype": "method",
+            "name": "getRouteTime.!~YUIDOC_LINE~!* @param iType 导航段路径类型!~YUIDOC_LINE~!* @return",
+            "type": "Number",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 188,
+            "description": "Method for request path",
+            "itemtype": "method",
+            "name": "requestPath.\n* @param start 导航段路径起点\n* @param end 导航段路径终点",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 199,
+            "description": "Method for set gps info",
+            "itemtype": "method",
+            "name": "setGpsInfo.\n* @param curr 当前位置对象信息",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 207,
+            "description": "Method for start request",
+            "itemtype": "method",
+            "name": "startRequest.\n* @param start 请求路径的起点\n* @param end 请求路径的终点",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 217,
+            "description": "Method for destroy route",
+            "itemtype": "method",
+            "name": "RouteDestroy.",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 237,
+            "description": "使用log中的位置信息作为gps导航的位置来源",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 249,
+            "description": "读取GPS log文件中的记录并推送给tbt",
+            "params": [
+                {
+                    "name": "arrgps",
+                    "description": "log数组"
+                }
+            ],
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 271,
+            "description": "The method is called when the position changes",
+            "itemtype": "method",
+            "name": "CarLocationChange.\n* @param vpLocation 位置",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\tbt.js",
+            "line": 291,
+            "description": "The method is set request route state",
+            "itemtype": "method",
+            "name": "SetRequestRouteState.\n* @param eState 返回的状态",
+            "class": "RequestPathFrame类"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:45 PM\nUse:",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 55,
+            "description": "设置关联路径，",
+            "params": [
+                {
+                    "name": "path",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 63,
+            "description": "请求前方路况播报",
+            "params": [
+                {
+                    "name": "pcdData",
+                    "description": ""
+                },
+                {
+                    "name": "ptList",
+                    "description": "[I]前方路径的经纬度序列"
+                },
+                {
+                    "name": "bUpload",
+                    "description": ""
+                },
+                {
+                    "name": "bHand",
+                    "description": ""
+                }
+            ],
+            "is_constructor": 1,
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 87,
+            "description": "设置网络请求状态",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 95,
+            "description": "解析数据",
+            "params": [
+                {
+                    "name": "iConnectID",
+                    "description": ""
+                },
+                {
+                    "name": "data",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 136,
+            "description": "更新PCD或FCD数据",
+            "params": [
+                {
+                    "name": "data",
+                    "description": ""
+                },
+                {
+                    "name": "result",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 152,
+            "description": "设置请求参数",
+            "params": [
+                {
+                    "name": "x",
+                    "description": ""
+                },
+                {
+                    "name": "y",
+                    "description": ""
+                },
+                {
+                    "name": "iSegNo",
+                    "description": ""
+                },
+                {
+                    "name": "iStartSegLen",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\traffic-radio.js",
+            "line": 539,
+            "description": "解析数据",
+            "params": [
+                {
+                    "name": "data",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 47,
+            "description": "+------------------------------------------------------------------------------\n* 函数: extend\n* 复制源对象中所有所有属性到目标对象，以达到类继承的目的\n+------------------------------------------------------------------------------\n* \n* > extend(destination, source);\n+------------------------------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 73,
+            "description": "+----------------------------------------------------------\n* 请求发送类\n+----------------------------------------------------------\n* @return Number\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1027,
+            "description": "+----------------------------------------------------------\n* 经纬度对象对象\n+----------------------------------------------------------\n* \n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1039,
+            "description": "+------------------------------------------------------------------------------\n* 构建经纬度坐标\n+----------------------------------------------------------\n* @param lng {Number}\n* @param lat {Number}\n+------------------------------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1066,
+            "description": "+----------------------------------------------------------\n* 路径共有属性类。当一次请求多条路径时，存在一些路径的共有属性，为了减少冗余，这些属性统一存储，每条路径保存其应用。\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1079,
+            "description": "获取LocationCode。",
+            "deprecated": true,
+            "deprecationMessage": "为了兼容保留此接口，但以后不建议再使用，可以使用 getLCode()替代。",
+            "return": {
+                "description": "LocationCode对应的ID,低15位表示LCode，第16位表示方向，0为正向，1为反向。"
+            },
+            "author": "周琦",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1089,
+            "description": "获取LocationCode。原始值是双字节表示的，最高位是符号位，需要转成相应的整型，在请求时用转化后的数值请求",
+            "return": {
+                "description": "LocationCode对应的ID，如果是正向LocationCode，则返回值大于0，如果为负向LocationCode，返回值小于0。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1101,
+            "description": "获取此LocationCode对应的道路长度。",
+            "return": {
+                "description": "长度，单位：米。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1109,
+            "description": "获取此LocationCode路段所需的时间。",
+            "return": {
+                "description": "时间，单位：秒。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1118,
+            "description": "+----------------------------------------------------------\n* 路牌类型\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1133,
+            "description": "获取路牌类型。",
+            "return": {
+                "description": "返回路牌类型。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1141,
+            "description": "获取路牌内容。",
+            "return": {
+                "description": "返回路牌内容。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1149,
+            "description": "设置路牌类型",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "路牌类型，目前的取值范围为1-7。"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1157,
+            "description": "设置路牌内容。",
+            "params": [
+                {
+                    "name": "content",
+                    "description": "路牌内容，不能为null。"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1181,
+            "description": "+----------------------------------------------------------\n* BASE64解码数据为二进制\n+----------------------------------------------------------\n* @param input [base64]\n* @return [binary]\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1211,
+            "description": "+----------------------------------------------------------\n* 字节转文本\n+----------------------------------------------------------\n* @param buf 字节数组\n* @param offset 起始值\n* @param lenth 变化量\n* @return [String] 文本 \n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1235,
+            "description": "+----------------------------------------------------------\n* 字节解码\n+----------------------------------------------------------\n* @param buf 字节数组\n* @param offset 起始值\n* @param offset 变化量\n* @return [String] 文本 \n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1313,
+            "description": "从路径数据流中解析出一条路径的预览信息。",
+            "params": [
+                {
+                    "name": "is!~YUIDOC_LINE~!",
+                    "description": "路径数据流，必须从下个字节开始都是预览数据。"
+                }
+            ],
+            "return": {
+                "description": "预览数据的长度。"
+            },
+            "throws": [
+                "IOException\n            读取流发生错误，抛出此异常。",
+                "DecodeException\n            如果路径数据存在问题，无法按其解析出路径，则抛出此异常。",
+                "NullPointerException\n            如果is为null，抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1941,
+            "description": "重置解码器。如果此前使用本类对象成功解析完一条路径的所有信息，然后又重新使用本对象的decode方法解析一条新路径的数据，\n这时本解码器会自动先调用reset方法重置解码器。但如果上条路径未解析完或者解析中发生了错误，则不保证还以能用decode解析\n出新路径，而需要调用者先调用reset重置解码器，或者新生成一个PathDecoder对象进行解析。因此，如果希望复用一个解码器进\n行多个路径的解码，建议在每次解析完后调用reset方法重置解码器。但如果是对一条路径进行多次解析（例如先请求预览包，再\n请求详细包，这时需要对两次下载的数据各调用一次decode），则不应该在之间调用reset。本方法没有同步，不保证线程安全，\n调用者应自己注意在调用此方法时没有其他线程正在解析路径或访问解码器。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1956,
+            "description": "获取已解析的路径。可以在解析完一段预览数据包后，或者在另一线程访问此方法。",
+            "return": {
+                "description": "如果已经可以获取预览信息，返回路径数组，否则返回null。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1965,
+            "description": "获取指定策略的最佳路径。",
+            "params": [
+                {
+                    "name": "strategy!~YUIDOC_LINE~!",
+                    "description": "路径策略。"
+                }
+            ],
+            "return": {
+                "description": "如果找到这返回路径对象，如果没有找到或者路径未解析成功，则返回null"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1984,
+            "description": "预览解析完成时的回调。本方法在接码线程中调用，执行完之前不会进行进一步解码。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 1991,
+            "description": "当一个导航段解析完所有信息时的回调。本方法在接码线程中调用，执行完之前不会进行进一步解码。",
+            "params": [
+                {
+                    "name": "seg!~YUIDOC_LINE~!",
+                    "description": "解析完成的导航段对象。"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2001,
+            "description": "解码器重置之前的回调。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2009,
+            "description": "+----------------------------------------------------------\n* 导航时间\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2020,
+            "description": "用于求一个导航段或一组导航段的行驶时间， 单位：秒",
+            "params": [
+                {
+                    "name": "seg",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2039,
+            "description": "根据语言输出时间字符串。",
+            "params": [
+                {
+                    "name": "lang",
+                    "description": "目前支持\"cn\"与\"en\",即中文与英文，否则输出\"\"。"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2081,
+            "description": "获取驾驶时间。",
+            "return": {
+                "description": "驾驶时间，单位：分钟。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2091,
+            "description": "导航段共用属性类。当存在多条路径时，它们可能存在一些重复的导航段，而这些信息是多条路径\n共有的（包括长度，坐标点等），为了减少冗余，这些共用的导航段信息只保存一次，每条路径中\n的导航段仅保存其应用。本类只供本包内部使用，外部无法访问。",
+            "author": "周琦",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2137,
+            "description": "+----------------------------------------------------------\n* 导航段类，每条路径都是由多个导航段组成，每个导航段的结尾都存在导航动作，提示用户如何进入\n* 下一个导航段。\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2176,
+            "description": "获取指定位置的LinkId",
+            "params": [
+                {
+                    "name": "ptId",
+                    "description": "对应的形状点编号"
+                }
+            ],
+            "return": {
+                "description": "所求link编号",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2197,
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "指定的link序号"
+                }
+            ],
+            "return": {
+                "description": "对应编号的link",
+                "type": "MRoute.NaviLink"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2228,
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "当前link编号"
+                }
+            ],
+            "return": {
+                "description": "从当前形状点始符合条件的RoadClass",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2310,
+            "description": "计算指定点到seg终点的剩余距离",
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "当前link编号"
+                },
+                {
+                    "name": "ptId",
+                    "description": "当前形状点编号"
+                },
+                {
+                    "name": "stPoint",
+                    "description": "指定点"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2323,
+            "description": "计算指定点到link终点的剩余距离",
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "当前link编号"
+                },
+                {
+                    "name": "ptId",
+                    "description": "当前形状点编号"
+                },
+                {
+                    "name": "stPoint",
+                    "description": "指定点"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2352,
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "当前link编号"
+                }
+            ],
+            "return": {
+                "description": "所求link行车时间估计，单位分钟",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2371,
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "link长度, 单位米",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2382,
+            "description": "求当前link 中和已知点最近的形状点",
+            "params": [
+                {
+                    "name": "fx",
+                    "description": "当前点经度"
+                },
+                {
+                    "name": "fy",
+                    "description": "当前点纬度"
+                },
+                {
+                    "name": "linkId",
+                    "description": "当前所在link"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2420,
+            "return": {
+                "description": "所含link数目",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2431,
+            "params": [
+                {
+                    "name": "linkId",
+                    "description": "当前link"
+                }
+            ],
+            "return": {
+                "description": "查找本导航段的下一路名",
+                "type": "String"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2453,
+            "description": "获取导航段结束进入下一导航段时的基本导航动作。",
+            "return": {
+                "description": "基本导航动作，此信息预览解析后即可获得。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2462,
+            "description": "获取导航段结束进入下一导航段时的辅助导航动作。",
+            "return": {
+                "description": "辅助导航动作，此信息预览解析后即可获得。。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2470,
+            "description": "获取导航段长度。",
+            "return": {
+                "description": "整个导航段长度，单位：米，此信息预览解析后即可获得。。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2482,
+            "description": "获取导航段收费道路的长度。",
+            "return": {
+                "description": "整个导航段收费道路长度，单位：米，此信息预览解析后即可获得。。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2490,
+            "description": "获取导航段名称。",
+            "return": {
+                "description": "如果导航段存在名称，则返回该名称，否则返回null。此信息预览解析后即可获得。。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2498,
+            "description": "获取本导航段的预览坐标数组。此方法可以一次性获得原生坐标，无须生成NaviPoint对象，效率要远远高于对每个点调用getPreviewPoint()方法。",
+            "return": {
+                "description": "预览点数组。因为每个坐标的X与Y各占一个int，所以数组的长度必然为偶数。 注意：只有当\nNaviPath.hasLineSimplification()返回true时预览点才有作用，否则数组中只会包含每个导航段的起点。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2507,
+            "description": "获取本导航段的预览点的个数。",
+            "return": {
+                "description": "因为每个点两个坐标，所以应该为getPreviewCoors().length的一半。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2517,
+            "description": "获取本导航段的第index个预览点。",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "预览点索引，从0开始，小于getPreviewPointsCount()"
+                }
+            ],
+            "return": {
+                "description": "预览点对象。"
+            },
+            "exception": "ArrayIndexOutOfBoundsException 如果index超出范围则抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2529,
+            "description": "获取此导航段中TMC信息。",
+            "return": {
+                "description": "如果存在TMC信息，则返回包含TMC记录数组，否则返回null；"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2538,
+            "description": "获取此导航段服务端预计的行驶时间,方法只有在请求开启了TMC时才有效；",
+            "return": {
+                "description": "导航段的行驶时间, 单位：秒"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2546,
+            "description": "当服务端提供有tmc时间时采用tmc时间，反之采用本地估计时间",
+            "return": {
+                "description": "估计的行驶时间，单位：分钟",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2558,
+            "description": "获取此导航段服务端预计的行驶时间,单位：分钟",
+            "return": {
+                "description": "服务端提供的tmc时间转为分钟整数",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2566,
+            "description": "获取导航段的行驶时间",
+            "return": {
+                "description": "驾驶时间，单位：秒",
+                "type": "Number"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2576,
+            "description": "获取导航段的行驶时间",
+            "return": {
+                "description": "驾驶时间, 精确浮点数值，单位：秒"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2592,
+            "description": "获取本导航段是否已经解析出详细导航信息。\n采用分段下载模式时,并非所有导航段都含有详细信息,所以,在获取详细信息之前,一定有用此方法来检查是否含有详细信息",
+            "return": {
+                "description": "如果已经解析出详细信息，返回true，否则返回false。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2608,
+            "description": "获取是否存在路口放大图。",
+            "return": {
+                "description": "如果存在路口放大图则返回true，否则返回false。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2619,
+            "description": "获取是否存在用户数据。",
+            "return": {
+                "description": "如果存在用户数据则返回true，否则返回false。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2630,
+            "description": "获取用户数据。",
+            "return": {
+                "description": "如果用户数据则返回用户数据，否则返回null。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2640,
+            "description": "获取路口放大图背景图ID。",
+            "return": {
+                "description": "如果存在路口放大图则返回背景图的ID，否则返回-1。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2650,
+            "description": "获取路口放大图前景图的ID。",
+            "return": {
+                "description": "如果存在路口放大图则返回前景图的ID，否则返回-1。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2660,
+            "description": "获取路口名称。",
+            "return": {
+                "description": "如果存在路口名称，则返回名称，如果不存在则返回null；"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2671,
+            "description": "获取路牌名称。",
+            "return": {
+                "description": "如果存在路牌，则返回路牌信息，如果不存在则返回null；"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2682,
+            "description": "获取数组化的路牌列表。",
+            "return": {
+                "description": "如果存在路牌，则返回路牌信息列表，如果不存在则返回null；"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2725,
+            "description": "获取本导航段下的Link集合。",
+            "return": {
+                "description": "link集合，一个导航段至少含有一个Link；"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2736,
+            "description": "获取本导航段的详细坐标组。此方法可以一次性获得原生坐标，无须生成NaviPoint对象，效率要远远高于对每个点调用getDetailedPoint()方法。",
+            "return": {
+                "description": "详细坐标点数组。每个坐标占两个int（X与Y各占一个int，它们分别等于经度与纬度乘以NaviPoint.coorFactor），数组长度必为偶数。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2747,
+            "description": "获取本导航段的详细坐标点的个数。",
+            "return": {
+                "description": "因为每个点两个坐标，所以应该为getDetailedCoors().length的一半。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2758,
+            "description": "获取本导航段的第index个详细坐标点。",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "坐标点索引，从0开始，小于getDetailedPointsCount()。"
+                }
+            ],
+            "return": {
+                "description": "坐标点对象。"
+            },
+            "throws": [
+                "Error 此方法只能在解析完详细信息后，即hasDetailedInfo()返回true时才能调用，\n如果在此之前调用会抛出此异常。"
+            ],
+            "exception": "ArrayIndexOutOfBoundsException 如果index超出范围则抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2790,
+            "description": "取当前分段的前300米计算起始方向",
+            "return": {
+                "description": "当前导航段起始方向",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2870,
+            "description": "用详细坐标重算segment的实际长度， 代替下载数据中给定的长度\n同时更新各link的长度，以及link终点到本导航段末端的剩余距离",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2917,
+            "return": {
+                "description": "[Array]本导航段的详细经纬度坐标组"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2926,
+            "description": "+----------------------------------------------------------\n* 导航点类型\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2948,
+            "description": "获取浮点经度。",
+            "return": {
+                "description": "经度，单位：度。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2956,
+            "description": "获取浮点纬度。",
+            "return": {
+                "description": "纬度，单位：度。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2964,
+            "description": "获取整形经度。",
+            "return": {
+                "description": "整形经度，为浮点经度的coorFactor倍。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2972,
+            "description": "获取整形纬度。",
+            "return": {
+                "description": "整形纬度，为浮点纬度的coorFactor倍。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 2984,
+            "description": "+----------------------------------------------------------\n* 路径共有属性类。当一次请求多条路径时，存在一些路径的共有属性，为了减少冗余，这些属性统一存储，每条路径保存其应用。\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3001,
+            "description": "+----------------------------------------------------------\n* 导航路径。每个NaviPath对应一条导航路径。\n+----------------------------------------------------------\n* @return Number\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3031,
+            "description": "获取路径的GroupID。此属性在单策略多路径，或多策略多路径时有效。每种策略都可能返回多条路径，它们的\nGroup从0开始编号。",
+            "return": {
+                "description": "组号，每种策略的组号都从0开始编号。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3040,
+            "description": "获取路径的策略。",
+            "return": {
+                "description": "目前可能的值有：0.速度最快、1 费用最低、2距离最短、3耗油最少、4参考交通信息最快、5不走快速路、6国道优先、7省道优先"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3048,
+            "description": "判断是否本策略中的最佳路径。注意：此方法获得最佳路径并非多策略时的\"推荐道路\"（实际上，多策略时的最\n佳路径始终是strategy=0的路径），而是在多路径时有效，这时每种策略都可能存在一条最好的路径。例如：当\n策略为\"推荐道路\"时，仍然可能存在多条路径，但当中有一条是最好的。如果我们请求没有开启多路径，而是开\n启了多策略，那么返回不同策略的3条路径，它们都是本策略中最好的。",
+            "return": {
+                "description": "如果是本策略多条路径中最好的路径，则返回true，否则返回false。如果没有开启多路径或者本种策\n略只有一条路径，那么始终返回true。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3060,
+            "description": "获取服务器计算这条路径的时间戳。",
+            "return": {
+                "description": "时间戳。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3069,
+            "description": "获取终端名称。",
+            "return": {
+                "description": "如果存在终点名称，则返回名称，否则返回null。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3078,
+            "description": "获取路径是否经过抽稀。",
+            "return": {
+                "description": "如果服务端对预览形状点进行了抽稀，则返回true，否则返回false。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3088,
+            "description": "返回本路径的导航段数组。",
+            "return": {
+                "description": "导航段数组，调用方不应该对其进行修改。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3107,
+            "description": "获取导航段个数",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3118,
+            "description": "返回本条道路的驾驶时间。",
+            "return": {
+                "description": "驾驶时间。单位:秒",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3134,
+            "description": "获取取整后的驾驶时间，单位：秒",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3143,
+            "description": "获取参考实时路况算得的行车时间，单位：秒",
+            "return": {
+                "description": "根据TMC估计出的行车时间",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3164,
+            "description": "返回以分钟计的tmc时间",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3172,
+            "description": "更新路径信息， 服务端给出的距离值不准确，用坐标重算一遍",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3185,
+            "description": "获取本路径的长度。",
+            "return": {
+                "description": "本路径长度，单位：米。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3198,
+            "description": "获取本路径收费路径长度。",
+            "return": {
+                "description": "本收费路径的长度，单位：米。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3215,
+            "description": "获取本路径是否是分段路径,当分段下载时,对最后一段调用此方法会返回false;\n此方法可以用来获取此段路径是否是全路径的最后一段",
+            "return": {
+                "description": "如果此分段是全路径的最后一段,返回false,否则返回true"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3223,
+            "description": "获得此路径的详细导航段数,只有分段下载时调用此方法返回的值才有意义",
+            "return": {
+                "description": "分段下载模式下(isDivided返回为true时),返回此路径的详细导航段个数,否则,返回0"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3230,
+            "description": "获取此路径中是否包含下一次请求的起点坐标信息，只在分段下载模式下有效",
+            "return": {
+                "description": "如果是分段下载模式，且此路径包含有效的下一次请求起点信息，则返回true,否则，返回false。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3237,
+            "description": "获取本路径下一次请求的起点信息，只在分段模式下有效",
+            "return": {
+                "description": "如果是分段下载模式，且存在下一次请求的起点信息，则返回下一个点的信息,否则，返回null"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3248,
+            "description": "判别当前路段一定范围内是否拥堵\n两重判定：拥堵路段达到一定比例，时间较原来时间要长",
+            "params": [
+                {
+                    "name": "segId",
+                    "description": "当前导航段"
+                },
+                {
+                    "name": "segRemainDist",
+                    "description": "当前导航段剩余距离"
+                },
+                {
+                    "name": "sId",
+                    "description": "起始查找位置"
+                },
+                {
+                    "name": "codeList",
+                    "description": "经过转换的locationCode列表"
+                },
+                {
+                    "name": "stateList",
+                    "description": "当前路况列表, 和codeList等长匹配"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3366,
+            "description": "找到指定code 在数组中的位置编号",
+            "params": [
+                {
+                    "name": "startId",
+                    "description": ""
+                },
+                {
+                    "name": "code",
+                    "description": ""
+                },
+                {
+                    "name": "codeList",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3384,
+            "description": "计算剩余TMC时间",
+            "params": [
+                {
+                    "name": "segId",
+                    "description": ""
+                },
+                {
+                    "name": "segRemainDist",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3404,
+            "description": "获得整条路径的locCode（经转换），及对应的路段长度，各分段locCode起始位置",
+            "return": {
+                "description": "[Array, Array, Array]"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3456,
+            "description": "计算当前路径剩余距离",
+            "params": [
+                {
+                    "name": "nSegId",
+                    "description": ""
+                },
+                {
+                    "name": "nPtId",
+                    "description": ""
+                },
+                {
+                    "name": "stPoint",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3492,
+            "description": "计算当前路径及当前分段的剩余距离和剩余时间, 单位分别为米 和 分钟",
+            "params": [
+                {
+                    "name": "nSegId",
+                    "description": ""
+                },
+                {
+                    "name": "nPtId",
+                    "description": ""
+                },
+                {
+                    "name": "stPoint",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "[Array]"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3544,
+            "description": "+----------------------------------------------------------\n* 共用Link属性。由于Link的颗粒度很小，有时后可能连续多个Link都拥有许多相同的属性，为了减少冗余，我们\n* 把这些易重复的属性提取出来，单独组成一个共用属性，如果多个Link都含有相同属性，则它们会引用同一个共\n* 有属性。本类型只供本包内部使用，外部无法访问。\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3602,
+            "description": "获取LinkType。",
+            "return": {
+                "description": "Link的类型，取值范围为：0-3",
+                "type": "Number"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3615,
+            "description": "获取Link所在道路的类型。",
+            "return": {
+                "description": "Link的Form way，取值范围为：0-16。",
+                "type": "Number"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3627,
+            "description": "获取RoadClass",
+            "return": {
+                "description": "Road的类型",
+                "type": "Number"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3639,
+            "description": "获取Link所在道路是否城市道路。",
+            "return": {
+                "description": "如果是汽车双向路则返回true，单向路则返回false。",
+                "type": "Boolean"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3650,
+            "description": "获取Link所在道路是否收费。",
+            "return": {
+                "description": "收费返回true，否则返回false。",
+                "type": "Boolean"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3663,
+            "description": "获取Link所在道路的名称。",
+            "return": {
+                "description": "如果Link所在道路存在名称，则返回该道路的名称；如果不存在名称，则返回null。",
+                "type": "String"
+            },
+            "exception": "NullPointerException 如果Link属性没有被赋值，则会抛出此异常。",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3675,
+            "description": "给出点的索引，判定给定点是否位于本link段",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3684,
+            "return": {
+                "description": "首点在segment中的坐标编号",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3691,
+            "return": {
+                "description": "尾点在segment中的坐标编号",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3714,
+            "description": "获取此link上包含的电子眼信息个数",
+            "return": {
+                "description": "返回该Link上包含的电子眼信息个数,如果没有电子眼信息,返回0",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3725,
+            "description": "获取本Link中第idx个Camera对象,idx从0开始。",
+            "return": {
+                "description": "当本Link中存在摄像头时返回第idx个摄像头对象，不存在摄像头或idx不合法时返回null。",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3741,
+            "description": "获取本Link所在道路中是否存在服务区。",
+            "return": {
+                "description": "如果存在服务区则返回true，否则返回false。",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3749,
+            "description": "获取本Link是否含分叉路。",
+            "return": {
+                "description": "如果含分叉路则返回true，否则返回false。",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3757,
+            "description": "获取本Link结尾是否有交通灯。",
+            "return": {
+                "description": "如果有交通灯则返回true，否则返回false。",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3765,
+            "description": "获取Link所在道路的车道数。",
+            "return": {
+                "description": "车道数目。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3773,
+            "description": "获取车道信息的背景。",
+            "return": {
+                "description": "如果不存在则返回-1。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3781,
+            "description": "获取车道信息的前景转弯箭头。",
+            "return": {
+                "description": "如果不存在则返回-1。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3789,
+            "description": "获取Link中的路牌信息。目前服务端未提供此信息，只提供导航段级的路牌。",
+            "return": {
+                "description": "如果不存在路牌则返回null；",
+                "type": "String"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3797,
+            "description": "获取本Link坐标在导航段详细坐标数组的start index。",
+            "return": {
+                "description": "由于本Link的坐标为本导航段坐标的一部分，因此可以通过此索引直接在导航段的详细坐标数组中获取本Link的坐标。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3804,
+            "description": "获取本Link坐标在导航段详细坐标数组的end index（ 注意：本Link不包含这个结束坐标）。",
+            "return": {
+                "description": "坐标的结束索引。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3813,
+            "description": "获取本Link的详细坐标点的个数。",
+            "return": {
+                "description": "因为每个点两个坐标，所以应该为总长一半。",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3823,
+            "description": "获取该Link是否是进入不同动态交通城市的Link,主要用于跨城市的动态路径,当过了此Link时重新请求路径",
+            "return": {
+                "description": "如果该Link的最后一个点进入了另一个动态交通城市,返回true,否则,返回false",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3831,
+            "description": "判断该Link的尾部是否位于复杂结点处,该方法主要用于客户端解决长时间没有播报的问题.",
+            "return": {
+                "description": "如果该Link的尾部位于复杂结点处,则返回true;否则,返回false",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3854,
+            "description": "+----------------------------------------------------------\n* \n+----------------------------------------------------------\n* \n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3872,
+            "description": "获取摄像头类型。",
+            "return": {
+                "description": "摄像头类型。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3880,
+            "description": "获取摄像头的整形的坐标。",
+            "return": {
+                "description": "坐标。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3888,
+            "description": "获取整形的经度。",
+            "return": {
+                "description": "整形经度，为浮点经度的NaviPoint.coorFactor倍。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3896,
+            "description": "获取整形的纬度。",
+            "return": {
+                "description": "整形纬度，为浮点纬度的NaviPoint.coorFactor倍。"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3904,
+            "description": "获取该摄像头的限速信息(一般测速摄像头才有限速信息)",
+            "return": {
+                "description": "该摄像头的限速信息,单位:km/h,如果该摄像头没有限速信息,则返回0"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3914,
+            "description": "+----------------------------------------------------------\n* 导航抓路\n+----------------------------------------------------------",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3957,
+            "description": "判别gps数据是否有效，有效则保存到列表",
+            "params": [
+                {
+                    "name": "newGps",
+                    "description": "新GPS信息"
+                }
+            ],
+            "return": {
+                "description": "是否成功加入gps列表",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 3990,
+            "description": "裁减列表，仅维护短列表",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4010,
+            "description": "返回时间最近的有效GPS坐标",
+            "params": [
+                {
+                    "name": "num",
+                    "description": "请求的坐标点数目"
+                }
+            ],
+            "return": {
+                "description": "[Array] 按经纬度排列的最新GPS坐标，时间最近的在列表尾部"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4060,
+            "description": "判定数据是否合格",
+            "params": [
+                {
+                    "name": "newGps",
+                    "description": "新gps数据"
+                }
+            ],
+            "return": {
+                "description": "数据是否合格",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4089,
+            "description": "判断速度是否合格",
+            "params": [
+                {
+                    "name": "newGps",
+                    "description": "新gps数据"
+                }
+            ],
+            "return": {
+                "description": "速度是否满足要求",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4099,
+            "description": "判断时间是否合格",
+            "params": [
+                {
+                    "name": "newGps",
+                    "description": "新gps数据"
+                }
+            ],
+            "return": {
+                "description": "时间是否满足要求",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4206,
+            "description": "接收外部传入的GPS数据",
+            "params": [
+                {
+                    "name": "stNmea",
+                    "description": ""
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4285,
+            "description": "通过该接口给VP对象设置路径信息",
+            "params": [
+                {
+                    "name": "segments",
+                    "description": "被选路径的分段列表"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4297,
+            "description": "执行路径匹配",
+            "return": {
+                "description": "是否成功标志",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4363,
+            "description": "计算当前车的角度, 结合下一点求角度",
+            "params": [
+                {
+                    "name": "segments",
+                    "description": ""
+                },
+                {
+                    "name": "segId",
+                    "description": ""
+                },
+                {
+                    "name": "ptId",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4421,
+            "description": "更新车位，并获得路径与gps的最短距离",
+            "params": [
+                {
+                    "name": "gpsLon",
+                    "description": "当前gps经度"
+                },
+                {
+                    "name": "gpsLat",
+                    "description": "当前gps纬度"
+                }
+            ],
+            "return": {
+                "description": "路径与gps的最短距离",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4496,
+            "description": "在比较GPS点与每条几何道路的距离的时候,\n如果每一次的距离都比前一次的距离要近,则说明在逐步接近最匹配的位置\n\n如果每一次的距离都比前一次的距离要远,则说明在逐步远离最匹配的位置,\n如果连续三条道路都是远离的趋势,则可停止比较",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4560,
+            "description": "重置参数",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 4573,
+            "description": "重置车位信息",
+            "params": [
+                {
+                    "name": "gpsInfo",
+                    "description": ""
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5527,
+            "description": "设置模拟导航速度",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5534,
+            "description": "是否播报电子眼",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5549,
+            "description": "通知调用者TBT抵达途径点",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5751,
+            "description": "决定本段统一的信息播报标志位",
+            "params": [
+                {
+                    "name": "eMainAction",
+                    "description": ""
+                },
+                {
+                    "name": "eAssiAction",
+                    "description": ""
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5839,
+            "description": "更新车道信息，记录下一个要显示车道信息的link编号及其终点到导航段终点的距离\n将过滤无效车道信息的工作提前到DG中完成",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 5983,
+            "description": "计算当前车的角度, 结合下一点求角度",
+            "params": [
+                {
+                    "name": "segments",
+                    "description": ""
+                },
+                {
+                    "name": "segId",
+                    "description": ""
+                },
+                {
+                    "name": "ptId",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 6713,
+            "description": "环岛数路口播报",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 6736,
+            "description": "普通路混淆路口播报",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 6874,
+            "description": "重新请求路径后的reroute信息播报",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7388,
+            "description": "随机距离播报",
+            "params": [
+                {
+                    "name": "ePlayGrade",
+                    "description": "播报类别"
+                }
+            ],
+            "return": {
+                "description": "是否有播报内容",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7466,
+            "description": "固定距离播报",
+            "params": [
+                {
+                    "name": "ePlayGrade",
+                    "description": "播报类别"
+                }
+            ],
+            "return": {
+                "description": "是否有播报内容",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7521,
+            "description": "近接播报",
+            "params": [
+                {
+                    "name": "ePlayGrade",
+                    "description": "播报级别"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7732,
+            "description": "播报动作",
+            "params": [
+                {
+                    "name": "eMainAction",
+                    "description": "主导航动作"
+                },
+                {
+                    "name": "eAssistantAction",
+                    "description": "辅助导航动作"
+                },
+                {
+                    "name": "bCurrent",
+                    "description": "是否当前导航段"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7766,
+            "description": "播报主要动作",
+            "params": [
+                {
+                    "name": "eMAction",
+                    "description": "主导航动作"
+                },
+                {
+                    "name": "eAAction",
+                    "description": "辅助导航动作"
+                },
+                {
+                    "name": "bCurrent",
+                    "description": "是否当前导航段"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7836,
+            "description": "获得主要动作的预录音号",
+            "params": [
+                {
+                    "name": "eMAction",
+                    "description": "主导航动作"
+                }
+            ],
+            "return": {
+                "description": "预录音号",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 7850,
+            "description": "播报辅助动作",
+            "params": [
+                {
+                    "name": "eMAction",
+                    "description": "主导航动作"
+                },
+                {
+                    "name": "eAAction",
+                    "description": "辅助导航动作"
+                },
+                {
+                    "name": "bCurrent",
+                    "description": "是否当前导航段"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 8020,
+            "description": "将距离转化为字符串描述",
+            "params": [
+                {
+                    "name": "dist",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 8183,
+            "description": "播放声音，播报后清空播报内容，以便下次播报",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9159,
+            "description": "获取创建光柱所需信息",
+            "params": [
+                {
+                    "name": "iStart",
+                    "description": "到路径起点的距离"
+                },
+                {
+                    "name": "len",
+                    "description": "要获取路况的路段长度"
+                }
+            ],
+            "return": {
+                "description": "[Array, Array]      各段长度列表，各段路况列表"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9682,
+            "description": "字段\t\t大小（B）\t\t说明\t\t\t\t\t\t参考类型\nLatitude\t4\t\t当前浮动车的地理纬度，单位1/256秒\tDWORD\nLongitude\t4\t\t当前浮动车的地理经度，单位1/256秒\tDWORD\nTime\t\t2\t\t当前GPS采样的北京时间，单位秒\t\tWORD\nSpeed\t\t1\t\t当前GPS测位速度，单位km/h\t\t\tBYTE",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9703,
+            "description": "字段\t\t大小（B）\t\t说明\t\t\t\t\t参考类型\nLat_off\t\t2\t\tGPS采样纬度偏移值，单位1/256秒\tINT16\nLong_off\t2\t\tGPS采样经度偏移值，单位1/256秒\tINT16\nTime_off\t1\t\tGPS时间偏移差，单位秒\t\t\tBYTE\nSpeed\t\t1\t\tGPS测位速度\t\t\t\t\t\tBYTE",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9761,
+            "description": "字段\t\t\t\t\t大小（bit）\t\t\t说明\t\t\t\t\t参考类型\nState_Exist_ID\t\t\t1\t0x80\t表示是否存在ID字段，默认为0\n0：无ID  1：有ID\n\nState_is_Navi\t\t\t1\t0x40\t表示导航状态，默认为0\n0：非导航状态 1：导航状态\n\nState_is_TrfLgt\t\t\t1\t0x20\t表示是否有红绿灯，默认为0\n0：有红绿灯 1：无红绿灯\n\nState_carriage\t\t\t2 0x00| 0x08 | 0x10\t表示车道位置，默认为00\n00：直行车道\n01：左转车道\n10：右转车道\n\nState_is_Empty\t\t\t1\t0x04\t表示汽车是否空载，默认问0\n0:空载\n1:载客\n\nState_VP_Reliability\t1\t0x02\t表示匹配可信度\n0：不可信\n1： 可信\n\nReserved3\t\t\t\t1\t0x01\t上下午",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9927,
+            "description": "初始化, 必先于其他接口函数调用",
+            "params": [
+                {
+                    "name": "TBTFrame",
+                    "description": "由用户实现的外部支持类的引用"
+                },
+                {
+                    "name": "strWorkPath",
+                    "description": "工作路径，TBT的一些配置文件等资料，以及输出信息将输出到此路径下"
+                },
+                {
+                    "name": "usrCode",
+                    "description": "用户码，从高德申请的到"
+                },
+                {
+                    "name": "usrBatch",
+                    "description": "用户码，从高德申请的到"
+                },
+                {
+                    "name": "deviceId",
+                    "description": "每个设备号必须唯一，可以是SIM卡号，也可以是设备唯一ID"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9969,
+            "description": "接口函数，不再使用TBT时用来释放它管理的内部资源\n调用后不可调用其他接口",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9986,
+            "description": "接口函数，调用此接口告知TBT当前的车辆位置",
+            "params": [
+                {
+                    "name": "stLocation",
+                    "description": "车位所在经纬度，参见NavPoint定义"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 9995,
+            "description": "接口函数，设置模拟导航的速度\n在系统初始化时，以及模拟导航速度变化时调用此接口",
+            "params": [
+                {
+                    "name": "iEmulatorSpeed",
+                    "description": "所设置的车速，单位公里/小时"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10008,
+            "description": "接口函数，设置是否播报电子眼\n在系统初始化时，以及电子眼播报设置变化时调用此接口，默认播报电子眼",
+            "params": [
+                {
+                    "name": "iIsEleyePrompt",
+                    "description": "0 为不播报，1为播报"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10019,
+            "description": "接口函数，设置导航的播报类型\n在系统初始化时，以及播报类型设置变化时调用此接口，默认详细播报",
+            "params": [
+                {
+                    "name": "iNaviType",
+                    "description": "播报类型，1 简单播报，2 详细播报"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10032,
+            "description": "接口函数，设置TTS播报每个字需要的时间\n为了获得更好的播报效果，在导航前调用此接口来设置最准确的值",
+            "params": [
+                {
+                    "name": "useTime",
+                    "description": "播报每个字需要的时间，单位为毫秒"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10044,
+            "description": "接口函数，通知网络请求成功或失败",
+            "params": [
+                {
+                    "name": "connectID",
+                    "description": "连接号，区分不同连接"
+                },
+                {
+                    "name": "eNetState",
+                    "description": "请求状态,参见MRoute.NetRequestState定义\n       1    请求成功\n       2    请求失败\n       3    请求超时\n       4    用户手动结束请求"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10063,
+            "description": "接口函数，选择路径",
+            "params": [
+                {
+                    "name": "iRouteType",
+                    "description": "路径类型"
+                }
+            ],
+            "return": {
+                "description": "0-7 被选中道路的路径类型\n                       若没有指定类型，则选中首条路径，并返回其类型\n                 -1 没有任何道路可选",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10079,
+            "description": "设定导航路径",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10102,
+            "description": "将导航路径通知到各子模块",
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10204,
+            "description": "响应内部对象DG发出的重算路请求，转发请求给Frame",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10283,
+            "description": "接口函数，开始GPS导航",
+            "return": {
+                "description": "请求是否成功",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10314,
+            "description": "接口函数，开始模拟导航",
+            "return": {
+                "description": "请求是否成功",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10341,
+            "description": "接口函数，停止模拟导航\n路径信息仍然存在，可以再次导航",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10358,
+            "description": "接口函数，暂停导航",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10375,
+            "description": "接口函数，恢复导航",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10392,
+            "description": "接口函数，停止导航，不论是GPS还是Emulator导航\n路径被销毁，下次导航需要重新请求路径",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10447,
+            "description": "接口，接收外部gps信息",
+            "params": [
+                {
+                    "name": "longitude",
+                    "description": "经度, 单位度"
+                },
+                {
+                    "name": "latitude",
+                    "description": "纬度, 单位度"
+                },
+                {
+                    "name": "speed",
+                    "description": "速度，单位公里/小时？"
+                },
+                {
+                    "name": "direction",
+                    "description": "方向，单位度，以正北为基准，顺时针增加"
+                },
+                {
+                    "name": "year",
+                    "description": "年"
+                },
+                {
+                    "name": "month",
+                    "description": "月"
+                },
+                {
+                    "name": "day",
+                    "description": "日"
+                },
+                {
+                    "name": "hour",
+                    "description": "时"
+                },
+                {
+                    "name": "minute",
+                    "description": "分"
+                },
+                {
+                    "name": "second",
+                    "description": "秒"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10481,
+            "description": "请求路径\nTBT要将请求结果状态通过SetRequestRouteState通知TBTFrame",
+            "params": [
+                {
+                    "name": "eCalcType",
+                    "description": "路径类型，参见MRoute.CalcType\n   0    最优路径\n   1    快速路优先\n   2    距离优先\n   3    普通路优先\n   4    考虑实时路况的路线\n   5    多路径（一条考虑实时交通路况路线，一条最优路线（未考虑实时交通））"
+                },
+                {
+                    "name": "destList",
+                    "description": "[]途径点及终点数组，含各点经纬度信息，参见NaviPoint"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10553,
+            "description": "接口函数，带起点的路径请求 // need supply",
+            "params": [
+                {
+                    "name": "eCalcType",
+                    "description": "算路类型\n     0 最优路径 1 快速路优先 2 距离优先 3 普通路优先 4 考虑TMC路况 5 一条TMC路径，一条最优路（无TMC）"
+                },
+                {
+                    "name": "startList",
+                    "description": "[]起点数组，含各点经纬度信息，参见NaviPoint"
+                },
+                {
+                    "name": "destList",
+                    "description": "[]途径点及终点数组，含各点经纬度信息，参见NaviPoint"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10679,
+            "description": "将内部算路类型转化为服务器路径请求类型",
+            "params": [
+                {
+                    "name": "eCalcType",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "发往服务器的路径请求类型",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10729,
+            "description": "接口函数，负责接收解析各连接所请求到的数据",
+            "params": [
+                {
+                    "name": "modelID",
+                    "description": "模块号：1 移动交通台，2 TMC，3 在线导航"
+                },
+                {
+                    "name": "connectID",
+                    "description": "连接编号"
+                },
+                {
+                    "name": "postStream",
+                    "description": "数据流"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10797,
+            "description": "接收Traffic请求到的信息结果，并且解析，周期是1min",
+            "params": [
+                {
+                    "name": "postStream",
+                    "description": ""
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10839,
+            "params": [
+                {
+                    "name": "driveTime",
+                    "description": ""
+                },
+                {
+                    "name": "tmcTime",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "驾驶时间估计值",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10855,
+            "description": "接口函数，响应外部调用，执行路径重算",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10878,
+            "description": "接口函数，手动播报当前导航信息\n会视当前路况播报，不一定是前一条播报信息的重复",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10889,
+            "description": "接口函数，打开动态交通信息\n系统初始化完默认动态交通信息是打开的",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 10897,
+            "description": "接口函数，关闭动态交通信息\n关闭动态交通信息后CreateTMCBar与GetRoadStatus将不能使用",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11101,
+            "description": "接口函数，手动播报移动交通台信息",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11110,
+            "description": "接口函数，打开移动交通台功能, 系统初始化完默认路况是打开的",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11120,
+            "description": "接口函数，关闭路况",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11131,
+            "description": "按被选路径，导航路径，首条路径顺序 获取路径",
+            "return": {
+                "description": "成功则返回一条路径，失败返回null",
+                "type": "MRoute.NaviPath"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11147,
+            "description": "获得当前路径的长度，单位米",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11159,
+            "description": "获得指定导航段的导航描述信息",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11172,
+            "description": "接口函数，获得行程Guide列表",
+            "return": {
+                "description": "[Array] GuideItem数组,参见NaviGuideItem定义"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11203,
+            "description": "接口函数，获得当前路径的导航段个数\n只有在收到SetRequestRouteState发送的接收成功消息后可使用",
+            "return": {
+                "description": "有路径返回当前导航路径的导航段个数，否则返回0",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11217,
+            "description": "接口函数，获得当前路径的旅行时长，单位分钟",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11230,
+            "description": "接口函数，获得一个导航段中Link的数量",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11247,
+            "description": "接口函数，获得一个导航段的旅行时间,单位：分钟",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11264,
+            "description": "接口函数，获得一个导航段的长度,单位：米",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11281,
+            "description": "接口函数，获得一个导航段的收费长度,单位：米",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11298,
+            "description": "接口函数，获得一个导航段的LocationCode的数目",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11319,
+            "description": "接口函数，获得一个LocationCodeItem",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "导航段编号"
+                },
+                {
+                    "name": "iLocIndex",
+                    "description": "code编号"
+                }
+            ],
+            "return": {
+                "description": "参见LocationCodeItem定义",
+                "type": "MRoute.LocationCodeItem"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11342,
+            "description": "接口函数，获得一个导航段的形状坐标点列表\n当前iSegIndex小于总导航个数时返回形状点数组，否则返回null",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "[Array]坐标信息列表 ，按经度，纬度，经度，纬度顺序排列"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11363,
+            "description": "接口函数，获得一个Link的形状坐标点列表\n输入参数正确返回列表，否则返回空列表",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "[Array]坐标信息列表，按经度，纬度，经度，纬度顺序排列"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11389,
+            "description": "接口函数，获得一个Link的道路名称",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11411,
+            "description": "接口函数，获得一个Link的长度，单位：米",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11429,
+            "description": "接口函数，获得一个Link的旅行时长，单位：分钟",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11446,
+            "description": "接口函数，获得一个Link的FormWay",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "枚举变量，参见MRoute.Formway",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11467,
+            "description": "接口函数，获得一个Link的RoadClass",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "枚举变量，参见MRoute.RoadClass",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11488,
+            "description": "接口函数，获得一个Link的LinkType",
+            "params": [
+                {
+                    "name": "iSegIndex",
+                    "description": "要获取信息的导航段编号，编号从0开始"
+                },
+                {
+                    "name": "iLinkIndex",
+                    "description": "要获取信息的Link段编号，编号从0开始"
+                }
+            ],
+            "return": {
+                "description": "枚举变量，参见MRoute.LinkType",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11522,
+            "description": "接口函数，获得一个路段的状态  // need supply",
+            "params": [
+                {
+                    "name": "wLocCode",
+                    "description": "路段对应的LocationCode"
+                }
+            ],
+            "return": {
+                "description": "查询到的道路状态, 参见MRoute.RoadStatus",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\lib\\webroute.js",
+            "line": 11545,
+            "description": "接口函数，创建一个光柱",
+            "params": [
+                {
+                    "name": "iStart",
+                    "description": "到路径起点的距离"
+                },
+                {
+                    "name": "iLength",
+                    "description": "要获取路况的路段长度"
+                }
+            ],
+            "return": {
+                "description": "[Array, Array]      各段长度列表，各段路况列表"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/5/13\nTime: 11:51 AM\nUse:",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 14,
+            "description": "The method to init the map zoom level",
+            "itemtype": "method",
+            "name": "initMapZoom.",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 30,
+            "description": "The method to set the map zoom level",
+            "itemtype": "method",
+            "name": "setZoom.",
+            "params": [
+                {
+                    "name": "zoom",
+                    "description": "number"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 69,
+            "description": "The method to set the map rotation angle",
+            "itemtype": "method",
+            "name": "setCurOverlayDirectionUp.",
+            "params": [
+                {
+                    "name": "DGNaviInfor",
+                    "description": "object"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 81,
+            "description": "The method to set cur_pos element state",
+            "itemtype": "method",
+            "name": "setNorthDirctionUp.",
+            "params": [
+                {
+                    "name": "DGNaviInfor",
+                    "description": "object"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 91,
+            "description": "The method to add tmc layer",
+            "itemtype": "method",
+            "name": "addTmcLayer.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 164,
+            "description": "The method to set map range",
+            "itemtype": "method",
+            "name": "setMapRange.",
+            "params": [
+                {
+                    "name": "southWest",
+                    "description": "西南经纬度"
+                },
+                {
+                    "name": "northEast",
+                    "description": "东北经纬度"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 176,
+            "description": "The method to build infowindow string",
+            "itemtype": "method",
+            "name": "buildInfowindowStr.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "name"
+                },
+                {
+                    "name": "address",
+                    "description": "address"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 195,
+            "description": "The method to obtain the map zoom level",
+            "itemtype": "method",
+            "name": "getZoom.",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 203,
+            "description": "The method to set path weight",
+            "itemtype": "method",
+            "name": "setPathWeight.",
+            "params": [
+                {
+                    "name": "strokeWeight",
+                    "description": "number"
+                },
+                {
+                    "name": "polyline",
+                    "description": "object"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 215,
+            "description": "The method to generate map",
+            "itemtype": "method",
+            "name": "generateMap.",
+            "params": [
+                {
+                    "name": "_ret",
+                    "description": "object"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 237,
+            "description": "The method to remove tmc layer",
+            "itemtype": "method",
+            "name": "removeTmcLayer.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 244,
+            "description": "The method to set infowindow draggable. there are no parent selectors in CSS, so js code needed",
+            "itemtype": "method",
+            "name": "enableDragInfoWin.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 252,
+            "description": "The method to handle zoom change event",
+            "itemtype": "method",
+            "name": "handleZoomChangeEve.",
+            "params": [
+                {
+                    "name": "mapObj",
+                    "description": "object"
+                },
+                {
+                    "name": "callback",
+                    "description": "function"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 261,
+            "description": "The method to set map fitview",
+            "itemtype": "method",
+            "name": "setFitView.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 280,
+            "description": "The method to set map zoomout",
+            "itemtype": "method",
+            "name": "zoomOut.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 287,
+            "description": "The method to generate infowindow",
+            "itemtype": "method",
+            "name": "generateInfoWindow.",
+            "params": [
+                {
+                    "name": "info",
+                    "description": "object"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 295,
+            "description": "The method to generate lnglat object",
+            "itemtype": "method",
+            "name": "generateLngLat.",
+            "params": [
+                {
+                    "name": "lng",
+                    "description": "number"
+                },
+                {
+                    "name": "lat",
+                    "description": "number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 305,
+            "description": "The method to open infowindow",
+            "itemtype": "method",
+            "name": "openInfoWin.",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\mapHandler.js",
+            "line": 312,
+            "description": "The method to switch marker state",
+            "itemtype": "method",
+            "name": "toggleMarker.",
+            "params": [
+                {
+                    "name": "isVisibility",
+                    "description": "Blooean"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/4/13\nTime: 5:31 PM\nUse:",
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 15,
+            "description": "netService property description.",
+            "itemtype": "property",
+            "name": "isJsApi",
+            "type": "{Object}",
+            "default": "\"\"",
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 32,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 39,
+            "description": "network status for chrome or safari(mobile environment) and browser's offline mode for firefox and ie",
+            "itemtype": "method",
+            "name": "isConnectLocalNet.",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 47,
+            "description": "Whether the network connection",
+            "itemtype": "method",
+            "name": "isConnected.",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\networkCommunication.js",
+            "line": 55,
+            "description": "Pop-up boxes",
+            "itemtype": "method",
+            "name": "promptNoNet.",
+            "class": "netService"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/5/13\nTime: 5:45 PM\nUse:",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 19,
+            "description": "unselected path color",
+            "itemtype": "property",
+            "name": "unselectedCol",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 52,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 206,
+            "description": "This method is to add path",
+            "itemtype": "method",
+            "name": "drawPath.",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 225,
+            "description": "This method is to remove multi path",
+            "itemtype": "method",
+            "name": "removePolylines.",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 237,
+            "description": "This method is to add the rapid path",
+            "itemtype": "method",
+            "name": "drawRapidPath.",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\pathDrawing.js",
+            "line": 248,
+            "description": "This method is to add the normal path",
+            "itemtype": "method",
+            "name": "drawNormalPath.",
+            "class": "PathDrawing"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/4/13\nTime: 5:22 PM\nUse:",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 32,
+            "description": "Method for automatic call instantiated",
+            "itemtype": "method",
+            "name": "init.",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 82,
+            "description": "The method is called when the element scroll",
+            "itemtype": "method",
+            "name": "setScrollUpdated.\n* @param newCurDisplayPath the new value\n* @param success callback\n* @param error callback",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 101,
+            "description": "The method is set current display path",
+            "itemtype": "method",
+            "name": "setCurDisplayPath.\n* @param newCurDisplayPath the new value\n* @param success callback\n* @param error callback",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 119,
+            "description": "The method shows road seginfo",
+            "itemtype": "method",
+            "name": "showRoadSegInfo.!~YUIDOC_LINE~!* @return",
+            "type": "Object",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 133,
+            "description": "This method returns an analytical results",
+            "itemtype": "method",
+            "name": "callback.!~YUIDOC_LINE~!* @param data a object!~YUIDOC_LINE~!* @return",
+            "type": "Object",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 175,
+            "description": "This method returns a number with a decimal",
+            "itemtype": "method",
+            "name": "returnFloat1.!~YUIDOC_LINE~!* @param value a Number!~YUIDOC_LINE~!* @return",
+            "type": "Number",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\model\\routeInfo.js",
+            "line": 187,
+            "description": "This method returns an object about traffic light beam",
+            "itemtype": "method",
+            "name": "routeGuide.!~YUIDOC_LINE~!* @param obj a object!~YUIDOC_LINE~!* @return",
+            "type": "Object",
+            "class": "Route"
+        },
+        {
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: mac\nDate: 13-1-13\nTime: 下午9:25\nTo change this template use File | Settings | File Templates.",
+            "class": "PublicModel"
+        },
+        {
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 15,
+            "description": "The method is Determine whether the mobile device",
+            "itemtype": "method",
+            "name": "isMobileDev.",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "PublicModel"
+        },
+        {
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 24,
+            "description": "The method is Determine whether the ios device",
+            "itemtype": "method",
+            "name": "isIOS.",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "PublicModel"
+        },
+        {
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 33,
+            "description": "The method is Determine whether the qq browser",
+            "itemtype": "method",
+            "name": "isQqBrowser.",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "PublicModel"
+        },
+        {
+            "file": "app\\scripts\\util\\mapUtil.js",
+            "line": 51,
+            "description": "The method is build string by tmpl",
+            "itemtype": "method",
+            "name": "buildEleStrByTmpl.",
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": "PublicModel"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-1-11 下午12:14",
+            "version": "V1.0\nModification History:",
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 18,
+            "description": "The method is to conversion unit",
+            "itemtype": "method",
+            "name": "unitConversion.",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 35,
+            "description": "The method is to format time",
+            "itemtype": "method",
+            "name": "formatMinute.",
+            "params": [
+                {
+                    "name": "newM",
+                    "description": "number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 55,
+            "description": "The method is to conversion unit",
+            "itemtype": "method",
+            "name": "unit_conversion.",
+            "params": [
+                {
+                    "name": "m",
+                    "description": "number"
+                },
+                {
+                    "name": "decimal",
+                    "description": "number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 86,
+            "description": "The method is to get dpi",
+            "itemtype": "method",
+            "name": "js_getDPI.",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 107,
+            "description": "The method is to parse url",
+            "itemtype": "method",
+            "name": "parseUrl.",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "string"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 129,
+            "description": "This method is to determine whether the air",
+            "itemtype": "method",
+            "name": "judgeVal.",
+            "params": [
+                {
+                    "name": "val",
+                    "description": "object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Blooean"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 138,
+            "description": "This method is to truncate string",
+            "itemtype": "method",
+            "name": "truncateStr.",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "string"
+                },
+                {
+                    "name": "maxLength",
+                    "description": "number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 152,
+            "description": "This method is toset touch event",
+            "itemtype": "method",
+            "name": "setTouchEvent.",
+            "params": [
+                {
+                    "name": "elector",
+                    "description": "string"
+                },
+                {
+                    "name": "eventCallback",
+                    "description": "function"
+                },
+                {
+                    "name": "eventEndCallback",
+                    "description": "function"
+                }
+            ],
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 183,
+            "description": "This method is to get position",
+            "itemtype": "method",
+            "name": "getPos.",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "object"
+                }
+            ],
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 206,
+            "description": "This method is to set animate ele visibility",
+            "itemtype": "method",
+            "name": "animateDisplayLayer.",
+            "params": [
+                {
+                    "name": "$ele",
+                    "description": "object"
+                },
+                {
+                    "name": "top",
+                    "description": "number"
+                },
+                {
+                    "name": "height",
+                    "description": "number"
+                }
+            ],
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\util\\tools.js",
+            "line": 216,
+            "description": "This method is to set swithc ele state",
+            "itemtype": "method",
+            "name": "promptUser.",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "string"
+                }
+            ],
+            "class": "common"
+        },
+        {
+            "file": "app\\scripts\\app.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 5/29/13\nTime: 11:31 AM\nModified:   2013-6-27\nUse:",
+            "class": ""
+        },
+        {
+            "file": "app\\scripts\\app.js",
+            "line": 83,
+            "description": "bind handler if get prediction data",
+            "params": [
+                {
+                    "name": "newVal",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "example": [
+                "\nObject {requestTime: 1374124220041, timeExtend10: 1490, timeExtend20: 1490}\nget seconds: (new Date(1374124220041)).getSeconds()\nget request type: this.getPlanType()"
+            ],
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\scripts\\controller\\Toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\scripts\\controller\\Toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\scripts\\controller\\Toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\scripts\\controller\\historyController.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\scripts\\controller\\historyController.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\scripts\\controller\\historyController.js:1"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\navi.js:178"
+        },
+        {
+            "message": "unknown tag: construct",
+            "line": " app\\scripts\\lib\\tbt.js:1"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:2517"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:2758"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " app\\scripts\\lib\\webroute.js:3404"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3602"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3615"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3627"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3639"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3650"
+        },
+        {
+            "message": "unknown tag: exception",
+            "line": " app\\scripts\\lib\\webroute.js:3663"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\scripts\\util\\tools.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\scripts\\util\\tools.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\scripts\\util\\tools.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\scripts\\app.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 2:32 PM\nUse:",
+            "line": " app\\scripts\\controller\\Layer.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 4:07 PM\nUse:",
+            "line": " app\\scripts\\controller\\Link.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 2:44 PM\nUse:",
+            "line": " app\\scripts\\controller\\Map.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 3:44 PM\nUse:",
+            "line": " app\\scripts\\controller\\MaskerLayer.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/3/13\nTime: 4:04 PM\nUse:",
+            "line": " app\\scripts\\controller\\Tab.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\scripts\\controller\\Toolbar.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\scripts\\controller\\historyController.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:36 PM\nUse:",
+            "line": " app\\scripts\\lib\\base64-handler.js:1"
+        },
+        {
+            "message": "Missing item type\n+------------------------------------------------------------------------------\n* Base64处理数据类\n+------------------------------------------------------------------------------",
+            "line": " app\\scripts\\lib\\base64-handler.js:8"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:22 PM\nUse:",
+            "line": " app\\scripts\\lib\\navi.js:1"
+        },
+        {
+            "message": "Missing item type\n获取p1 -> p2 的角度。",
+            "line": " app\\scripts\\lib\\navi.js:121"
+        },
+        {
+            "message": "Missing item type\n获取内部使用的p1 -> p2 的角度。",
+            "line": " app\\scripts\\lib\\navi.js:129"
+        },
+        {
+            "message": "Missing item type\n重置toString方法。将返回方向字符串，缺省为中文。",
+            "line": " app\\scripts\\lib\\navi.js:137"
+        },
+        {
+            "message": "Missing item type\n计算向量方向角。",
+            "line": " app\\scripts\\lib\\navi.js:178"
+        },
+        {
+            "message": "Missing item type\n创建一个光柱\n当前路径有动态信息则返回分段路况信息",
+            "line": " app\\scripts\\lib\\tbt.js:67"
+        },
+        {
+            "message": "Missing item type\n获得一个导航段的旅行时间,单位分钟，向上取整",
+            "line": " app\\scripts\\lib\\tbt.js:78"
+        },
+        {
+            "message": "Missing item type\n获得一个导航段的长度,单位：米，向上取整",
+            "line": " app\\scripts\\lib\\tbt.js:86"
+        },
+        {
+            "message": "Missing item type\n使用log中的位置信息作为gps导航的位置来源",
+            "line": " app\\scripts\\lib\\tbt.js:237"
+        },
+        {
+            "message": "Missing item type\n读取GPS log文件中的记录并推送给tbt",
+            "line": " app\\scripts\\lib\\tbt.js:249"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/24/13\nTime: 3:45 PM\nUse:",
+            "line": " app\\scripts\\lib\\traffic-radio.js:1"
+        },
+        {
+            "message": "Missing item type\n设置关联路径，",
+            "line": " app\\scripts\\lib\\traffic-radio.js:55"
+        },
+        {
+            "message": "Missing item type\n请求前方路况播报",
+            "line": " app\\scripts\\lib\\traffic-radio.js:63"
+        },
+        {
+            "message": "Missing item type\n设置网络请求状态",
+            "line": " app\\scripts\\lib\\traffic-radio.js:87"
+        },
+        {
+            "message": "Missing item type\n解析数据",
+            "line": " app\\scripts\\lib\\traffic-radio.js:95"
+        },
+        {
+            "message": "Missing item type\n更新PCD或FCD数据",
+            "line": " app\\scripts\\lib\\traffic-radio.js:136"
+        },
+        {
+            "message": "Missing item type\n设置请求参数",
+            "line": " app\\scripts\\lib\\traffic-radio.js:152"
+        },
+        {
+            "message": "Missing item type\n解析数据",
+            "line": " app\\scripts\\lib\\traffic-radio.js:539"
+        },
+        {
+            "message": "Missing item type\n+------------------------------------------------------------------------------\n* 函数: extend\n* 复制源对象中所有所有属性到目标对象，以达到类继承的目的\n+------------------------------------------------------------------------------\n* \n* > extend(destination, source);\n+------------------------------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:47"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 请求发送类\n+----------------------------------------------------------\n* @return Number\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:73"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 经纬度对象对象\n+----------------------------------------------------------\n* \n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1027"
+        },
+        {
+            "message": "Missing item type\n+------------------------------------------------------------------------------\n* 构建经纬度坐标\n+----------------------------------------------------------\n* @param lng {Number}\n* @param lat {Number}\n+------------------------------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1039"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 路径共有属性类。当一次请求多条路径时，存在一些路径的共有属性，为了减少冗余，这些属性统一存储，每条路径保存其应用。\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1066"
+        },
+        {
+            "message": "Missing item type\n获取LocationCode。",
+            "line": " app\\scripts\\lib\\webroute.js:1079"
+        },
+        {
+            "message": "Missing item type\n获取LocationCode。原始值是双字节表示的，最高位是符号位，需要转成相应的整型，在请求时用转化后的数值请求",
+            "line": " app\\scripts\\lib\\webroute.js:1089"
+        },
+        {
+            "message": "Missing item type\n获取此LocationCode对应的道路长度。",
+            "line": " app\\scripts\\lib\\webroute.js:1101"
+        },
+        {
+            "message": "Missing item type\n获取此LocationCode路段所需的时间。",
+            "line": " app\\scripts\\lib\\webroute.js:1109"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 路牌类型\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1118"
+        },
+        {
+            "message": "Missing item type\n获取路牌类型。",
+            "line": " app\\scripts\\lib\\webroute.js:1133"
+        },
+        {
+            "message": "Missing item type\n获取路牌内容。",
+            "line": " app\\scripts\\lib\\webroute.js:1141"
+        },
+        {
+            "message": "Missing item type\n设置路牌类型",
+            "line": " app\\scripts\\lib\\webroute.js:1149"
+        },
+        {
+            "message": "Missing item type\n设置路牌内容。",
+            "line": " app\\scripts\\lib\\webroute.js:1157"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* BASE64解码数据为二进制\n+----------------------------------------------------------\n* @param input [base64]\n* @return [binary]\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1181"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 字节转文本\n+----------------------------------------------------------\n* @param buf 字节数组\n* @param offset 起始值\n* @param lenth 变化量\n* @return [String] 文本 \n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1211"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 字节解码\n+----------------------------------------------------------\n* @param buf 字节数组\n* @param offset 起始值\n* @param offset 变化量\n* @return [String] 文本 \n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:1235"
+        },
+        {
+            "message": "Missing item type\n从路径数据流中解析出一条路径的预览信息。",
+            "line": " app\\scripts\\lib\\webroute.js:1313"
+        },
+        {
+            "message": "Missing item type\n重置解码器。如果此前使用本类对象成功解析完一条路径的所有信息，然后又重新使用本对象的decode方法解析一条新路径的数据，\n这时本解码器会自动先调用reset方法重置解码器。但如果上条路径未解析完或者解析中发生了错误，则不保证还以能用decode解析\n出新路径，而需要调用者先调用reset重置解码器，或者新生成一个PathDecoder对象进行解析。因此，如果希望复用一个解码器进\n行多个路径的解码，建议在每次解析完后调用reset方法重置解码器。但如果是对一条路径进行多次解析（例如先请求预览包，再\n请求详细包，这时需要对两次下载的数据各调用一次decode），则不应该在之间调用reset。本方法没有同步，不保证线程安全，\n调用者应自己注意在调用此方法时没有其他线程正在解析路径或访问解码器。",
+            "line": " app\\scripts\\lib\\webroute.js:1941"
+        },
+        {
+            "message": "Missing item type\n获取已解析的路径。可以在解析完一段预览数据包后，或者在另一线程访问此方法。",
+            "line": " app\\scripts\\lib\\webroute.js:1956"
+        },
+        {
+            "message": "Missing item type\n获取指定策略的最佳路径。",
+            "line": " app\\scripts\\lib\\webroute.js:1965"
+        },
+        {
+            "message": "Missing item type\n预览解析完成时的回调。本方法在接码线程中调用，执行完之前不会进行进一步解码。",
+            "line": " app\\scripts\\lib\\webroute.js:1984"
+        },
+        {
+            "message": "Missing item type\n当一个导航段解析完所有信息时的回调。本方法在接码线程中调用，执行完之前不会进行进一步解码。",
+            "line": " app\\scripts\\lib\\webroute.js:1991"
+        },
+        {
+            "message": "Missing item type\n解码器重置之前的回调。",
+            "line": " app\\scripts\\lib\\webroute.js:2001"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 导航时间\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:2009"
+        },
+        {
+            "message": "Missing item type\n用于求一个导航段或一组导航段的行驶时间， 单位：秒",
+            "line": " app\\scripts\\lib\\webroute.js:2020"
+        },
+        {
+            "message": "Missing item type\n根据语言输出时间字符串。",
+            "line": " app\\scripts\\lib\\webroute.js:2039"
+        },
+        {
+            "message": "Missing item type\n获取驾驶时间。",
+            "line": " app\\scripts\\lib\\webroute.js:2081"
+        },
+        {
+            "message": "Missing item type\n导航段共用属性类。当存在多条路径时，它们可能存在一些重复的导航段，而这些信息是多条路径\n共有的（包括长度，坐标点等），为了减少冗余，这些共用的导航段信息只保存一次，每条路径中\n的导航段仅保存其应用。本类只供本包内部使用，外部无法访问。",
+            "line": " app\\scripts\\lib\\webroute.js:2091"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 导航段类，每条路径都是由多个导航段组成，每个导航段的结尾都存在导航动作，提示用户如何进入\n* 下一个导航段。\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:2137"
+        },
+        {
+            "message": "Missing item type\n获取指定位置的LinkId",
+            "line": " app\\scripts\\lib\\webroute.js:2176"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2197"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2228"
+        },
+        {
+            "message": "Missing item type\n计算指定点到seg终点的剩余距离",
+            "line": " app\\scripts\\lib\\webroute.js:2310"
+        },
+        {
+            "message": "Missing item type\n计算指定点到link终点的剩余距离",
+            "line": " app\\scripts\\lib\\webroute.js:2323"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2352"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2371"
+        },
+        {
+            "message": "Missing item type\n求当前link 中和已知点最近的形状点",
+            "line": " app\\scripts\\lib\\webroute.js:2382"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2420"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2431"
+        },
+        {
+            "message": "Missing item type\n获取导航段结束进入下一导航段时的基本导航动作。",
+            "line": " app\\scripts\\lib\\webroute.js:2453"
+        },
+        {
+            "message": "Missing item type\n获取导航段结束进入下一导航段时的辅助导航动作。",
+            "line": " app\\scripts\\lib\\webroute.js:2462"
+        },
+        {
+            "message": "Missing item type\n获取导航段长度。",
+            "line": " app\\scripts\\lib\\webroute.js:2470"
+        },
+        {
+            "message": "Missing item type\n获取导航段收费道路的长度。",
+            "line": " app\\scripts\\lib\\webroute.js:2482"
+        },
+        {
+            "message": "Missing item type\n获取导航段名称。",
+            "line": " app\\scripts\\lib\\webroute.js:2490"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的预览坐标数组。此方法可以一次性获得原生坐标，无须生成NaviPoint对象，效率要远远高于对每个点调用getPreviewPoint()方法。",
+            "line": " app\\scripts\\lib\\webroute.js:2498"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的预览点的个数。",
+            "line": " app\\scripts\\lib\\webroute.js:2507"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的第index个预览点。",
+            "line": " app\\scripts\\lib\\webroute.js:2517"
+        },
+        {
+            "message": "Missing item type\n获取此导航段中TMC信息。",
+            "line": " app\\scripts\\lib\\webroute.js:2529"
+        },
+        {
+            "message": "Missing item type\n获取此导航段服务端预计的行驶时间,方法只有在请求开启了TMC时才有效；",
+            "line": " app\\scripts\\lib\\webroute.js:2538"
+        },
+        {
+            "message": "Missing item type\n当服务端提供有tmc时间时采用tmc时间，反之采用本地估计时间",
+            "line": " app\\scripts\\lib\\webroute.js:2546"
+        },
+        {
+            "message": "Missing item type\n获取此导航段服务端预计的行驶时间,单位：分钟",
+            "line": " app\\scripts\\lib\\webroute.js:2558"
+        },
+        {
+            "message": "Missing item type\n获取导航段的行驶时间",
+            "line": " app\\scripts\\lib\\webroute.js:2566"
+        },
+        {
+            "message": "Missing item type\n获取导航段的行驶时间",
+            "line": " app\\scripts\\lib\\webroute.js:2576"
+        },
+        {
+            "message": "Missing item type\n获取本导航段是否已经解析出详细导航信息。\n采用分段下载模式时,并非所有导航段都含有详细信息,所以,在获取详细信息之前,一定有用此方法来检查是否含有详细信息",
+            "line": " app\\scripts\\lib\\webroute.js:2592"
+        },
+        {
+            "message": "Missing item type\n获取是否存在路口放大图。",
+            "line": " app\\scripts\\lib\\webroute.js:2608"
+        },
+        {
+            "message": "Missing item type\n获取是否存在用户数据。",
+            "line": " app\\scripts\\lib\\webroute.js:2619"
+        },
+        {
+            "message": "Missing item type\n获取用户数据。",
+            "line": " app\\scripts\\lib\\webroute.js:2630"
+        },
+        {
+            "message": "Missing item type\n获取路口放大图背景图ID。",
+            "line": " app\\scripts\\lib\\webroute.js:2640"
+        },
+        {
+            "message": "Missing item type\n获取路口放大图前景图的ID。",
+            "line": " app\\scripts\\lib\\webroute.js:2650"
+        },
+        {
+            "message": "Missing item type\n获取路口名称。",
+            "line": " app\\scripts\\lib\\webroute.js:2660"
+        },
+        {
+            "message": "Missing item type\n获取路牌名称。",
+            "line": " app\\scripts\\lib\\webroute.js:2671"
+        },
+        {
+            "message": "Missing item type\n获取数组化的路牌列表。",
+            "line": " app\\scripts\\lib\\webroute.js:2682"
+        },
+        {
+            "message": "Missing item type\n获取本导航段下的Link集合。",
+            "line": " app\\scripts\\lib\\webroute.js:2725"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的详细坐标组。此方法可以一次性获得原生坐标，无须生成NaviPoint对象，效率要远远高于对每个点调用getDetailedPoint()方法。",
+            "line": " app\\scripts\\lib\\webroute.js:2736"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的详细坐标点的个数。",
+            "line": " app\\scripts\\lib\\webroute.js:2747"
+        },
+        {
+            "message": "Missing item type\n获取本导航段的第index个详细坐标点。",
+            "line": " app\\scripts\\lib\\webroute.js:2758"
+        },
+        {
+            "message": "Missing item type\n取当前分段的前300米计算起始方向",
+            "line": " app\\scripts\\lib\\webroute.js:2790"
+        },
+        {
+            "message": "Missing item type\n用详细坐标重算segment的实际长度， 代替下载数据中给定的长度\n同时更新各link的长度，以及link终点到本导航段末端的剩余距离",
+            "line": " app\\scripts\\lib\\webroute.js:2870"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:2917"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 导航点类型\n+----------------------------------------------------------\n* 已结束\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:2926"
+        },
+        {
+            "message": "Missing item type\n获取浮点经度。",
+            "line": " app\\scripts\\lib\\webroute.js:2948"
+        },
+        {
+            "message": "Missing item type\n获取浮点纬度。",
+            "line": " app\\scripts\\lib\\webroute.js:2956"
+        },
+        {
+            "message": "Missing item type\n获取整形经度。",
+            "line": " app\\scripts\\lib\\webroute.js:2964"
+        },
+        {
+            "message": "Missing item type\n获取整形纬度。",
+            "line": " app\\scripts\\lib\\webroute.js:2972"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 路径共有属性类。当一次请求多条路径时，存在一些路径的共有属性，为了减少冗余，这些属性统一存储，每条路径保存其应用。\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:2984"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 导航路径。每个NaviPath对应一条导航路径。\n+----------------------------------------------------------\n* @return Number\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:3001"
+        },
+        {
+            "message": "Missing item type\n获取路径的GroupID。此属性在单策略多路径，或多策略多路径时有效。每种策略都可能返回多条路径，它们的\nGroup从0开始编号。",
+            "line": " app\\scripts\\lib\\webroute.js:3031"
+        },
+        {
+            "message": "Missing item type\n获取路径的策略。",
+            "line": " app\\scripts\\lib\\webroute.js:3040"
+        },
+        {
+            "message": "Missing item type\n判断是否本策略中的最佳路径。注意：此方法获得最佳路径并非多策略时的\"推荐道路\"（实际上，多策略时的最\n佳路径始终是strategy=0的路径），而是在多路径时有效，这时每种策略都可能存在一条最好的路径。例如：当\n策略为\"推荐道路\"时，仍然可能存在多条路径，但当中有一条是最好的。如果我们请求没有开启多路径，而是开\n启了多策略，那么返回不同策略的3条路径，它们都是本策略中最好的。",
+            "line": " app\\scripts\\lib\\webroute.js:3048"
+        },
+        {
+            "message": "Missing item type\n获取服务器计算这条路径的时间戳。",
+            "line": " app\\scripts\\lib\\webroute.js:3060"
+        },
+        {
+            "message": "Missing item type\n获取终端名称。",
+            "line": " app\\scripts\\lib\\webroute.js:3069"
+        },
+        {
+            "message": "Missing item type\n获取路径是否经过抽稀。",
+            "line": " app\\scripts\\lib\\webroute.js:3078"
+        },
+        {
+            "message": "Missing item type\n返回本路径的导航段数组。",
+            "line": " app\\scripts\\lib\\webroute.js:3088"
+        },
+        {
+            "message": "Missing item type\n获取导航段个数",
+            "line": " app\\scripts\\lib\\webroute.js:3107"
+        },
+        {
+            "message": "Missing item type\n返回本条道路的驾驶时间。",
+            "line": " app\\scripts\\lib\\webroute.js:3118"
+        },
+        {
+            "message": "Missing item type\n获取取整后的驾驶时间，单位：秒",
+            "line": " app\\scripts\\lib\\webroute.js:3134"
+        },
+        {
+            "message": "Missing item type\n获取参考实时路况算得的行车时间，单位：秒",
+            "line": " app\\scripts\\lib\\webroute.js:3143"
+        },
+        {
+            "message": "Missing item type\n返回以分钟计的tmc时间",
+            "line": " app\\scripts\\lib\\webroute.js:3164"
+        },
+        {
+            "message": "Missing item type\n更新路径信息， 服务端给出的距离值不准确，用坐标重算一遍",
+            "line": " app\\scripts\\lib\\webroute.js:3172"
+        },
+        {
+            "message": "Missing item type\n获取本路径的长度。",
+            "line": " app\\scripts\\lib\\webroute.js:3185"
+        },
+        {
+            "message": "Missing item type\n获取本路径收费路径长度。",
+            "line": " app\\scripts\\lib\\webroute.js:3198"
+        },
+        {
+            "message": "Missing item type\n获取本路径是否是分段路径,当分段下载时,对最后一段调用此方法会返回false;\n此方法可以用来获取此段路径是否是全路径的最后一段",
+            "line": " app\\scripts\\lib\\webroute.js:3215"
+        },
+        {
+            "message": "Missing item type\n获得此路径的详细导航段数,只有分段下载时调用此方法返回的值才有意义",
+            "line": " app\\scripts\\lib\\webroute.js:3223"
+        },
+        {
+            "message": "Missing item type\n获取此路径中是否包含下一次请求的起点坐标信息，只在分段下载模式下有效",
+            "line": " app\\scripts\\lib\\webroute.js:3230"
+        },
+        {
+            "message": "Missing item type\n获取本路径下一次请求的起点信息，只在分段模式下有效",
+            "line": " app\\scripts\\lib\\webroute.js:3237"
+        },
+        {
+            "message": "Missing item type\n判别当前路段一定范围内是否拥堵\n两重判定：拥堵路段达到一定比例，时间较原来时间要长",
+            "line": " app\\scripts\\lib\\webroute.js:3248"
+        },
+        {
+            "message": "Missing item type\n找到指定code 在数组中的位置编号",
+            "line": " app\\scripts\\lib\\webroute.js:3366"
+        },
+        {
+            "message": "Missing item type\n计算剩余TMC时间",
+            "line": " app\\scripts\\lib\\webroute.js:3384"
+        },
+        {
+            "message": "Missing item type\n获得整条路径的locCode（经转换），及对应的路段长度，各分段locCode起始位置",
+            "line": " app\\scripts\\lib\\webroute.js:3404"
+        },
+        {
+            "message": "Missing item type\n计算当前路径剩余距离",
+            "line": " app\\scripts\\lib\\webroute.js:3456"
+        },
+        {
+            "message": "Missing item type\n计算当前路径及当前分段的剩余距离和剩余时间, 单位分别为米 和 分钟",
+            "line": " app\\scripts\\lib\\webroute.js:3492"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 共用Link属性。由于Link的颗粒度很小，有时后可能连续多个Link都拥有许多相同的属性，为了减少冗余，我们\n* 把这些易重复的属性提取出来，单独组成一个共用属性，如果多个Link都含有相同属性，则它们会引用同一个共\n* 有属性。本类型只供本包内部使用，外部无法访问。\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:3544"
+        },
+        {
+            "message": "Missing item type\n获取LinkType。",
+            "line": " app\\scripts\\lib\\webroute.js:3602"
+        },
+        {
+            "message": "Missing item type\n获取Link所在道路的类型。",
+            "line": " app\\scripts\\lib\\webroute.js:3615"
+        },
+        {
+            "message": "Missing item type\n获取RoadClass",
+            "line": " app\\scripts\\lib\\webroute.js:3627"
+        },
+        {
+            "message": "Missing item type\n获取Link所在道路是否城市道路。",
+            "line": " app\\scripts\\lib\\webroute.js:3639"
+        },
+        {
+            "message": "Missing item type\n获取Link所在道路是否收费。",
+            "line": " app\\scripts\\lib\\webroute.js:3650"
+        },
+        {
+            "message": "Missing item type\n获取Link所在道路的名称。",
+            "line": " app\\scripts\\lib\\webroute.js:3663"
+        },
+        {
+            "message": "Missing item type\n给出点的索引，判定给定点是否位于本link段",
+            "line": " app\\scripts\\lib\\webroute.js:3675"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:3684"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:3691"
+        },
+        {
+            "message": "Missing item type\n获取此link上包含的电子眼信息个数",
+            "line": " app\\scripts\\lib\\webroute.js:3714"
+        },
+        {
+            "message": "Missing item type\n获取本Link中第idx个Camera对象,idx从0开始。",
+            "line": " app\\scripts\\lib\\webroute.js:3725"
+        },
+        {
+            "message": "Missing item type\n获取本Link所在道路中是否存在服务区。",
+            "line": " app\\scripts\\lib\\webroute.js:3741"
+        },
+        {
+            "message": "Missing item type\n获取本Link是否含分叉路。",
+            "line": " app\\scripts\\lib\\webroute.js:3749"
+        },
+        {
+            "message": "Missing item type\n获取本Link结尾是否有交通灯。",
+            "line": " app\\scripts\\lib\\webroute.js:3757"
+        },
+        {
+            "message": "Missing item type\n获取Link所在道路的车道数。",
+            "line": " app\\scripts\\lib\\webroute.js:3765"
+        },
+        {
+            "message": "Missing item type\n获取车道信息的背景。",
+            "line": " app\\scripts\\lib\\webroute.js:3773"
+        },
+        {
+            "message": "Missing item type\n获取车道信息的前景转弯箭头。",
+            "line": " app\\scripts\\lib\\webroute.js:3781"
+        },
+        {
+            "message": "Missing item type\n获取Link中的路牌信息。目前服务端未提供此信息，只提供导航段级的路牌。",
+            "line": " app\\scripts\\lib\\webroute.js:3789"
+        },
+        {
+            "message": "Missing item type\n获取本Link坐标在导航段详细坐标数组的start index。",
+            "line": " app\\scripts\\lib\\webroute.js:3797"
+        },
+        {
+            "message": "Missing item type\n获取本Link坐标在导航段详细坐标数组的end index（ 注意：本Link不包含这个结束坐标）。",
+            "line": " app\\scripts\\lib\\webroute.js:3804"
+        },
+        {
+            "message": "Missing item type\n获取本Link的详细坐标点的个数。",
+            "line": " app\\scripts\\lib\\webroute.js:3813"
+        },
+        {
+            "message": "Missing item type\n获取该Link是否是进入不同动态交通城市的Link,主要用于跨城市的动态路径,当过了此Link时重新请求路径",
+            "line": " app\\scripts\\lib\\webroute.js:3823"
+        },
+        {
+            "message": "Missing item type\n判断该Link的尾部是否位于复杂结点处,该方法主要用于客户端解决长时间没有播报的问题.",
+            "line": " app\\scripts\\lib\\webroute.js:3831"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* \n+----------------------------------------------------------\n* \n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:3854"
+        },
+        {
+            "message": "Missing item type\n获取摄像头类型。",
+            "line": " app\\scripts\\lib\\webroute.js:3872"
+        },
+        {
+            "message": "Missing item type\n获取摄像头的整形的坐标。",
+            "line": " app\\scripts\\lib\\webroute.js:3880"
+        },
+        {
+            "message": "Missing item type\n获取整形的经度。",
+            "line": " app\\scripts\\lib\\webroute.js:3888"
+        },
+        {
+            "message": "Missing item type\n获取整形的纬度。",
+            "line": " app\\scripts\\lib\\webroute.js:3896"
+        },
+        {
+            "message": "Missing item type\n获取该摄像头的限速信息(一般测速摄像头才有限速信息)",
+            "line": " app\\scripts\\lib\\webroute.js:3904"
+        },
+        {
+            "message": "Missing item type\n+----------------------------------------------------------\n* 导航抓路\n+----------------------------------------------------------",
+            "line": " app\\scripts\\lib\\webroute.js:3914"
+        },
+        {
+            "message": "Missing item type\n判别gps数据是否有效，有效则保存到列表",
+            "line": " app\\scripts\\lib\\webroute.js:3957"
+        },
+        {
+            "message": "Missing item type\n裁减列表，仅维护短列表",
+            "line": " app\\scripts\\lib\\webroute.js:3990"
+        },
+        {
+            "message": "Missing item type\n返回时间最近的有效GPS坐标",
+            "line": " app\\scripts\\lib\\webroute.js:4010"
+        },
+        {
+            "message": "Missing item type\n判定数据是否合格",
+            "line": " app\\scripts\\lib\\webroute.js:4060"
+        },
+        {
+            "message": "Missing item type\n判断速度是否合格",
+            "line": " app\\scripts\\lib\\webroute.js:4089"
+        },
+        {
+            "message": "Missing item type\n判断时间是否合格",
+            "line": " app\\scripts\\lib\\webroute.js:4099"
+        },
+        {
+            "message": "Missing item type\n接收外部传入的GPS数据",
+            "line": " app\\scripts\\lib\\webroute.js:4206"
+        },
+        {
+            "message": "Missing item type\n通过该接口给VP对象设置路径信息",
+            "line": " app\\scripts\\lib\\webroute.js:4285"
+        },
+        {
+            "message": "Missing item type\n执行路径匹配",
+            "line": " app\\scripts\\lib\\webroute.js:4297"
+        },
+        {
+            "message": "Missing item type\n计算当前车的角度, 结合下一点求角度",
+            "line": " app\\scripts\\lib\\webroute.js:4363"
+        },
+        {
+            "message": "Missing item type\n更新车位，并获得路径与gps的最短距离",
+            "line": " app\\scripts\\lib\\webroute.js:4421"
+        },
+        {
+            "message": "Missing item type\n在比较GPS点与每条几何道路的距离的时候,\n如果每一次的距离都比前一次的距离要近,则说明在逐步接近最匹配的位置\n\n如果每一次的距离都比前一次的距离要远,则说明在逐步远离最匹配的位置,\n如果连续三条道路都是远离的趋势,则可停止比较",
+            "line": " app\\scripts\\lib\\webroute.js:4496"
+        },
+        {
+            "message": "Missing item type\n重置参数",
+            "line": " app\\scripts\\lib\\webroute.js:4560"
+        },
+        {
+            "message": "Missing item type\n重置车位信息",
+            "line": " app\\scripts\\lib\\webroute.js:4573"
+        },
+        {
+            "message": "Missing item type\n设置模拟导航速度",
+            "line": " app\\scripts\\lib\\webroute.js:5527"
+        },
+        {
+            "message": "Missing item type\n是否播报电子眼",
+            "line": " app\\scripts\\lib\\webroute.js:5534"
+        },
+        {
+            "message": "Missing item type\n通知调用者TBT抵达途径点",
+            "line": " app\\scripts\\lib\\webroute.js:5549"
+        },
+        {
+            "message": "Missing item type\n决定本段统一的信息播报标志位",
+            "line": " app\\scripts\\lib\\webroute.js:5751"
+        },
+        {
+            "message": "Missing item type\n更新车道信息，记录下一个要显示车道信息的link编号及其终点到导航段终点的距离\n将过滤无效车道信息的工作提前到DG中完成",
+            "line": " app\\scripts\\lib\\webroute.js:5839"
+        },
+        {
+            "message": "Missing item type\n计算当前车的角度, 结合下一点求角度",
+            "line": " app\\scripts\\lib\\webroute.js:5983"
+        },
+        {
+            "message": "Missing item type\n环岛数路口播报",
+            "line": " app\\scripts\\lib\\webroute.js:6713"
+        },
+        {
+            "message": "Missing item type\n普通路混淆路口播报",
+            "line": " app\\scripts\\lib\\webroute.js:6736"
+        },
+        {
+            "message": "Missing item type\n重新请求路径后的reroute信息播报",
+            "line": " app\\scripts\\lib\\webroute.js:6874"
+        },
+        {
+            "message": "Missing item type\n随机距离播报",
+            "line": " app\\scripts\\lib\\webroute.js:7388"
+        },
+        {
+            "message": "Missing item type\n固定距离播报",
+            "line": " app\\scripts\\lib\\webroute.js:7466"
+        },
+        {
+            "message": "Missing item type\n近接播报",
+            "line": " app\\scripts\\lib\\webroute.js:7521"
+        },
+        {
+            "message": "Missing item type\n播报动作",
+            "line": " app\\scripts\\lib\\webroute.js:7732"
+        },
+        {
+            "message": "Missing item type\n播报主要动作",
+            "line": " app\\scripts\\lib\\webroute.js:7766"
+        },
+        {
+            "message": "Missing item type\n获得主要动作的预录音号",
+            "line": " app\\scripts\\lib\\webroute.js:7836"
+        },
+        {
+            "message": "Missing item type\n播报辅助动作",
+            "line": " app\\scripts\\lib\\webroute.js:7850"
+        },
+        {
+            "message": "Missing item type\n将距离转化为字符串描述",
+            "line": " app\\scripts\\lib\\webroute.js:8020"
+        },
+        {
+            "message": "Missing item type\n播放声音，播报后清空播报内容，以便下次播报",
+            "line": " app\\scripts\\lib\\webroute.js:8183"
+        },
+        {
+            "message": "Missing item type\n获取创建光柱所需信息",
+            "line": " app\\scripts\\lib\\webroute.js:9159"
+        },
+        {
+            "message": "Missing item type\n字段\t\t大小（B）\t\t说明\t\t\t\t\t\t参考类型\nLatitude\t4\t\t当前浮动车的地理纬度，单位1/256秒\tDWORD\nLongitude\t4\t\t当前浮动车的地理经度，单位1/256秒\tDWORD\nTime\t\t2\t\t当前GPS采样的北京时间，单位秒\t\tWORD\nSpeed\t\t1\t\t当前GPS测位速度，单位km/h\t\t\tBYTE",
+            "line": " app\\scripts\\lib\\webroute.js:9682"
+        },
+        {
+            "message": "Missing item type\n字段\t\t大小（B）\t\t说明\t\t\t\t\t参考类型\nLat_off\t\t2\t\tGPS采样纬度偏移值，单位1/256秒\tINT16\nLong_off\t2\t\tGPS采样经度偏移值，单位1/256秒\tINT16\nTime_off\t1\t\tGPS时间偏移差，单位秒\t\t\tBYTE\nSpeed\t\t1\t\tGPS测位速度\t\t\t\t\t\tBYTE",
+            "line": " app\\scripts\\lib\\webroute.js:9703"
+        },
+        {
+            "message": "Missing item type\n字段\t\t\t\t\t大小（bit）\t\t\t说明\t\t\t\t\t参考类型\nState_Exist_ID\t\t\t1\t0x80\t表示是否存在ID字段，默认为0\n0：无ID  1：有ID\n\nState_is_Navi\t\t\t1\t0x40\t表示导航状态，默认为0\n0：非导航状态 1：导航状态\n\nState_is_TrfLgt\t\t\t1\t0x20\t表示是否有红绿灯，默认为0\n0：有红绿灯 1：无红绿灯\n\nState_carriage\t\t\t2 0x00| 0x08 | 0x10\t表示车道位置，默认为00\n00：直行车道\n01：左转车道\n10：右转车道\n\nState_is_Empty\t\t\t1\t0x04\t表示汽车是否空载，默认问0\n0:空载\n1:载客\n\nState_VP_Reliability\t1\t0x02\t表示匹配可信度\n0：不可信\n1： 可信\n\nReserved3\t\t\t\t1\t0x01\t上下午",
+            "line": " app\\scripts\\lib\\webroute.js:9761"
+        },
+        {
+            "message": "Missing item type\n初始化, 必先于其他接口函数调用",
+            "line": " app\\scripts\\lib\\webroute.js:9927"
+        },
+        {
+            "message": "Missing item type\n接口函数，不再使用TBT时用来释放它管理的内部资源\n调用后不可调用其他接口",
+            "line": " app\\scripts\\lib\\webroute.js:9969"
+        },
+        {
+            "message": "Missing item type\n接口函数，调用此接口告知TBT当前的车辆位置",
+            "line": " app\\scripts\\lib\\webroute.js:9986"
+        },
+        {
+            "message": "Missing item type\n接口函数，设置模拟导航的速度\n在系统初始化时，以及模拟导航速度变化时调用此接口",
+            "line": " app\\scripts\\lib\\webroute.js:9995"
+        },
+        {
+            "message": "Missing item type\n接口函数，设置是否播报电子眼\n在系统初始化时，以及电子眼播报设置变化时调用此接口，默认播报电子眼",
+            "line": " app\\scripts\\lib\\webroute.js:10008"
+        },
+        {
+            "message": "Missing item type\n接口函数，设置导航的播报类型\n在系统初始化时，以及播报类型设置变化时调用此接口，默认详细播报",
+            "line": " app\\scripts\\lib\\webroute.js:10019"
+        },
+        {
+            "message": "Missing item type\n接口函数，设置TTS播报每个字需要的时间\n为了获得更好的播报效果，在导航前调用此接口来设置最准确的值",
+            "line": " app\\scripts\\lib\\webroute.js:10032"
+        },
+        {
+            "message": "Missing item type\n接口函数，通知网络请求成功或失败",
+            "line": " app\\scripts\\lib\\webroute.js:10044"
+        },
+        {
+            "message": "Missing item type\n接口函数，选择路径",
+            "line": " app\\scripts\\lib\\webroute.js:10063"
+        },
+        {
+            "message": "Missing item type\n设定导航路径",
+            "line": " app\\scripts\\lib\\webroute.js:10079"
+        },
+        {
+            "message": "Missing item type\n将导航路径通知到各子模块",
+            "line": " app\\scripts\\lib\\webroute.js:10102"
+        },
+        {
+            "message": "Missing item type\n响应内部对象DG发出的重算路请求，转发请求给Frame",
+            "line": " app\\scripts\\lib\\webroute.js:10204"
+        },
+        {
+            "message": "Missing item type\n接口函数，开始GPS导航",
+            "line": " app\\scripts\\lib\\webroute.js:10283"
+        },
+        {
+            "message": "Missing item type\n接口函数，开始模拟导航",
+            "line": " app\\scripts\\lib\\webroute.js:10314"
+        },
+        {
+            "message": "Missing item type\n接口函数，停止模拟导航\n路径信息仍然存在，可以再次导航",
+            "line": " app\\scripts\\lib\\webroute.js:10341"
+        },
+        {
+            "message": "Missing item type\n接口函数，暂停导航",
+            "line": " app\\scripts\\lib\\webroute.js:10358"
+        },
+        {
+            "message": "Missing item type\n接口函数，恢复导航",
+            "line": " app\\scripts\\lib\\webroute.js:10375"
+        },
+        {
+            "message": "Missing item type\n接口函数，停止导航，不论是GPS还是Emulator导航\n路径被销毁，下次导航需要重新请求路径",
+            "line": " app\\scripts\\lib\\webroute.js:10392"
+        },
+        {
+            "message": "Missing item type\n接口，接收外部gps信息",
+            "line": " app\\scripts\\lib\\webroute.js:10447"
+        },
+        {
+            "message": "Missing item type\n请求路径\nTBT要将请求结果状态通过SetRequestRouteState通知TBTFrame",
+            "line": " app\\scripts\\lib\\webroute.js:10481"
+        },
+        {
+            "message": "Missing item type\n接口函数，带起点的路径请求 // need supply",
+            "line": " app\\scripts\\lib\\webroute.js:10553"
+        },
+        {
+            "message": "Missing item type\n将内部算路类型转化为服务器路径请求类型",
+            "line": " app\\scripts\\lib\\webroute.js:10679"
+        },
+        {
+            "message": "Missing item type\n接口函数，负责接收解析各连接所请求到的数据",
+            "line": " app\\scripts\\lib\\webroute.js:10729"
+        },
+        {
+            "message": "Missing item type\n接收Traffic请求到的信息结果，并且解析，周期是1min",
+            "line": " app\\scripts\\lib\\webroute.js:10797"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\lib\\webroute.js:10839"
+        },
+        {
+            "message": "Missing item type\n接口函数，响应外部调用，执行路径重算",
+            "line": " app\\scripts\\lib\\webroute.js:10855"
+        },
+        {
+            "message": "Missing item type\n接口函数，手动播报当前导航信息\n会视当前路况播报，不一定是前一条播报信息的重复",
+            "line": " app\\scripts\\lib\\webroute.js:10878"
+        },
+        {
+            "message": "Missing item type\n接口函数，打开动态交通信息\n系统初始化完默认动态交通信息是打开的",
+            "line": " app\\scripts\\lib\\webroute.js:10889"
+        },
+        {
+            "message": "Missing item type\n接口函数，关闭动态交通信息\n关闭动态交通信息后CreateTMCBar与GetRoadStatus将不能使用",
+            "line": " app\\scripts\\lib\\webroute.js:10897"
+        },
+        {
+            "message": "Missing item type\n接口函数，手动播报移动交通台信息",
+            "line": " app\\scripts\\lib\\webroute.js:11101"
+        },
+        {
+            "message": "Missing item type\n接口函数，打开移动交通台功能, 系统初始化完默认路况是打开的",
+            "line": " app\\scripts\\lib\\webroute.js:11110"
+        },
+        {
+            "message": "Missing item type\n接口函数，关闭路况",
+            "line": " app\\scripts\\lib\\webroute.js:11120"
+        },
+        {
+            "message": "Missing item type\n按被选路径，导航路径，首条路径顺序 获取路径",
+            "line": " app\\scripts\\lib\\webroute.js:11131"
+        },
+        {
+            "message": "Missing item type\n获得当前路径的长度，单位米",
+            "line": " app\\scripts\\lib\\webroute.js:11147"
+        },
+        {
+            "message": "Missing item type\n获得指定导航段的导航描述信息",
+            "line": " app\\scripts\\lib\\webroute.js:11159"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得行程Guide列表",
+            "line": " app\\scripts\\lib\\webroute.js:11172"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得当前路径的导航段个数\n只有在收到SetRequestRouteState发送的接收成功消息后可使用",
+            "line": " app\\scripts\\lib\\webroute.js:11203"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得当前路径的旅行时长，单位分钟",
+            "line": " app\\scripts\\lib\\webroute.js:11217"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段中Link的数量",
+            "line": " app\\scripts\\lib\\webroute.js:11230"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段的旅行时间,单位：分钟",
+            "line": " app\\scripts\\lib\\webroute.js:11247"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段的长度,单位：米",
+            "line": " app\\scripts\\lib\\webroute.js:11264"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段的收费长度,单位：米",
+            "line": " app\\scripts\\lib\\webroute.js:11281"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段的LocationCode的数目",
+            "line": " app\\scripts\\lib\\webroute.js:11298"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个LocationCodeItem",
+            "line": " app\\scripts\\lib\\webroute.js:11319"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个导航段的形状坐标点列表\n当前iSegIndex小于总导航个数时返回形状点数组，否则返回null",
+            "line": " app\\scripts\\lib\\webroute.js:11342"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的形状坐标点列表\n输入参数正确返回列表，否则返回空列表",
+            "line": " app\\scripts\\lib\\webroute.js:11363"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的道路名称",
+            "line": " app\\scripts\\lib\\webroute.js:11389"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的长度，单位：米",
+            "line": " app\\scripts\\lib\\webroute.js:11411"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的旅行时长，单位：分钟",
+            "line": " app\\scripts\\lib\\webroute.js:11429"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的FormWay",
+            "line": " app\\scripts\\lib\\webroute.js:11446"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的RoadClass",
+            "line": " app\\scripts\\lib\\webroute.js:11467"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个Link的LinkType",
+            "line": " app\\scripts\\lib\\webroute.js:11488"
+        },
+        {
+            "message": "Missing item type\n接口函数，获得一个路段的状态  // need supply",
+            "line": " app\\scripts\\lib\\webroute.js:11522"
+        },
+        {
+            "message": "Missing item type\n接口函数，创建一个光柱",
+            "line": " app\\scripts\\lib\\webroute.js:11545"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/5/13\nTime: 11:51 AM\nUse:",
+            "line": " app\\scripts\\model\\mapHandler.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/4/13\nTime: 5:31 PM\nUse:",
+            "line": " app\\scripts\\model\\networkCommunication.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/5/13\nTime: 5:45 PM\nUse:",
+            "line": " app\\scripts\\model\\pathDrawing.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/4/13\nTime: 5:22 PM\nUse:",
+            "line": " app\\scripts\\model\\routeInfo.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: mac\nDate: 13-1-13\nTime: 下午9:25\nTo change this template use File | Settings | File Templates.",
+            "line": " app\\scripts\\util\\mapUtil.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\scripts\\util\\tools.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\scripts\\app.js:1"
+        },
+        {
+            "message": "Missing item type\nbind handler if get prediction data",
+            "line": " app\\scripts\\app.js:83"
+        }
+    ]
+}

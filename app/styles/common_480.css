@@ -1,0 +1,148 @@
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+    #route .route_info {
+        font-size: 16px;
+        height: 48px;
+    }
+
+    #route .route_info .num {
+        font-size: 20px;
+    }
+
+    #route .tabsContent_table thead {
+        font-size: 18px;
+    }
+
+    #route .tabsContent_table_content td p:first-of-type {
+        font-size: 20px;
+    }
+
+    #route .tabsContent_table_content td p:last-of-type, #route .tabsContent_table_content td:last-of-type .unit {
+        font-size: 15px;
+    }
+
+    #route .tabsContent_table_content td:last-of-type .number {
+        font-size: 22px;
+    }
+
+    #route .tabsContent_table th:first-of-type, #route .tabsContent_table td:first-of-type {
+        width: 60px;
+    }
+
+    #route .tabsContent_table th:last-of-type, #route .tabsContent_table td:last-of-type {
+        width: 114px;
+    }
+
+    /*for prediction*/
+    #path_info {
+        padding: 10px 0;
+    }
+
+    #path_info .same_height {
+        height: 172px;
+    }
+
+    #path_info .select {
+        background-size: 54px 40px;
+    }
+
+    #path_info .route_tmc_container {
+        margin-right: 4.5px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    #path_info .route_normal_container {
+        margin-left: 4.5px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    #path_info .route_tmc_title {
+        font-size: 19px;
+    }
+
+    #path_info .route_normal_title {
+        font-size: 19px;
+    }
+
+    #path_info .route_tmc_detail, #path_info .route_normal_detail {
+        font-size: 19px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0px 7.5px;
+    }
+
+    #route_tmc, #route_normal {
+        padding: 0px 7.5px;
+        font-size: 18px;
+    }
+
+    #path_info .route_clock, #path_info .route_distance {
+        line-height: 30px;
+        height: 30px;
+    }
+
+    #path_info .loadingProgressBar {
+        height: 75px;
+    }
+
+    #path_info .loadingProgressBar .firstImg, #path_info .notSupportPredictionTips .firstImg {
+        width: 60px;
+        height: 45px;
+    }
+
+    #path_info .loadingProgressBar .lastImg {
+        width: 135px;
+        height: 45px;
+    }
+
+    #save_time {
+        font-size: 18px;
+    }
+
+    #save_time_number {
+        font-size: 22.5px;
+        padding: 0 3px;
+    }
+
+    #tmc_time, #tmc_distance, #normal_time, #normal_distance {
+        font-size: 21px;
+    }
+
+    #path_info .prediction_model_one, #path_info .prediction_model_two {
+        height: 37.5px;
+        line-height: 37.5px;
+        padding: 0 7.5px;
+        font-size: 18px;
+    }
+
+    #path_info .loadingProgressBar {
+        font-size: 18px;
+    }
+
+    #path_info .notSupportPredictionTips {
+        height: 75px;
+        padding: 0 8px;
+        font-size: 18px;
+    }
+
+    #path_info .notSupportPredictionTips .tips {
+        max-width: 200px;
+    }
+
+    #path_info .tmc_prediction_time {
+        right: 7.5px;
+    }
+
+    #path_info .normal_prediction_time {
+        left: 7.5px;
+    }
+
+    #path_info .heigh_time {
+        font-size: 18px;
+    }
+
+    .pd10 {
+        padding: 7.5px;
+    }
+}

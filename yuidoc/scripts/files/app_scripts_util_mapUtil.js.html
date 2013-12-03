@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>app\scripts\util\mapUtil.js - scripts</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="scripts"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/common.html">common</a></li>
+            
+                <li><a href="../classes/Layer.html">Layer</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Map.html">Map</a></li>
+            
+                <li><a href="../classes/mapHandler.html">mapHandler</a></li>
+            
+                <li><a href="../classes/netService.html">netService</a></li>
+            
+                <li><a href="../classes/PathDrawing.html">PathDrawing</a></li>
+            
+                <li><a href="../classes/PublicModel.html">PublicModel</a></li>
+            
+                <li><a href="../classes/RequestPathFrame类.html">RequestPathFrame类</a></li>
+            
+                <li><a href="../classes/Route.html">Route</a></li>
+            
+                <li><a href="../classes/Toolbar.html">Toolbar</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: app\scripts\util\mapUtil.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * Created with JetBrains WebStorm.
+ * User: mac
+ * Date: 13-1-13
+ * Time: 下午9:25
+ * To change this template use File | Settings | File Templates.
+ */
+define([&#x27;jquerymx&#x27;], function () {
+    /**
+     A utility that public model
+     @class PublicModel
+     @constructor
+     **/
+    $.Class(&#x27;PublicModel&#x27;, {
+        /**
+         The method is Determine whether the mobile device
+         @method isMobileDev.
+         @return {Boolean}
+         **/
+        isMobileDev: function () {
+            var u = navigator.userAgent;
+            return  /AppleWebKit.*Mobile/.test(u);
+        },
+        /**
+         The method is Determine whether the ios device
+         @method isIOS.
+         @return {Boolean}
+         **/
+        isIOS: function () {
+            var exrep = /mac/i;
+            return exrep.test(navigator.userAgent) ? true : false;
+        },
+        /**
+         The method is Determine whether the qq browser
+         @method isQqBrowser.
+         @return {Boolean}
+         **/
+        isQqBrowser: function () {
+            return /QQBrowser/i.test(navigator.userAgent);
+        },
+        isNativeBrowserOfLenovo:function(){
+          return /Lenovo/i.test(navigator.userAgent)
+        },
+        getOrientationProp: function () {
+            var supportsOrientationChange = &quot;onorientationchange&quot; in window;
+            var orientationEvent = supportsOrientationChange ? &quot;orientationchange&quot; : &quot;resize&quot;;
+            return orientationEvent;
+        },
+        // Simple JavaScript Templating
+// by John Resig - http://ejohn.org/ - MIT Licensed
+        /**
+         The method is build string by tmpl
+         @method buildEleStrByTmpl.
+         @return {Function}
+         **/
+        buildEleStrByTmpl: function (str, data) {
+            var cache = {};
+
+            return (function template(str, data) {
+                // Figure out if we&#x27;re getting a template, or if we need to
+                // load the template - and be sure to cache the result.
+                var fn = !/\W/.test(str) ?
+                    cache[str] = cache[str] ||
+                        template(document.getElementById(str).innerHTML) :
+
+                    // Generate a reusable function that will serve as a template
+                    // generator (and which will be cached).
+                    new Function(&quot;obj&quot;,
+                        &quot;var p=[],print=function(){p.push.apply(p,arguments);};&quot; +
+
+                            // Introduce the data as local variables using with(){}
+                            &quot;with(obj){p.push(&#x27;&quot; +
+
+                            // Convert the template into pure JavaScript
+                            str
+                                .replace(/[\r\t\n]/g, &quot; &quot;)
+                                .split(&quot;&lt;%&quot;).join(&quot;\t&quot;)
+                                .replace(/((^|%&gt;)[^\t]*)&#x27;/g, &quot;$1\r&quot;)
+                                .replace(/\t=(.*?)%&gt;/g, &quot;&#x27;,$1,&#x27;&quot;)
+                                .split(&quot;\t&quot;).join(&quot;&#x27;);&quot;)
+                                .split(&quot;%&gt;&quot;).join(&quot;p.push(&#x27;&quot;)
+                                .split(&quot;\r&quot;).join(&quot;\\&#x27;&quot;)
+                            + &quot;&#x27;);}return p.join(&#x27;&#x27;);&quot;);
+
+                // Provide some basic currying to the user
+                return data ? fn(data) : fn;
+            })(str, data);
+        }
+    });
+    return PublicModel
+
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

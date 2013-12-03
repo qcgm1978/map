@@ -1,0 +1,42 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/app/scripts/util/micro-sharing.js" />
+        <item url="file://$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.js" />
+        <item url="file://$PROJECT_DIR$/tasks/tasks.js" />
+        <item url="file://$PROJECT_DIR$/Gruntfile.js" />
+        <item url="file://$PROJECT_DIR$/app/flynavi/app/controller/share-path.js" />
+        <item url="file://$PROJECT_DIR$/dist/flynavi/app/controller/share-path.js" />
+        <item url="file://$PROJECT_DIR$/dist/flynavi/app/controller/test-data-emulation.js" />
+        <item url="file://$PROJECT_DIR$/dist/flynavi/app/model/route-view.js" />
+        <item url="file://$PROJECT_DIR$/app/flynavi/app/model/route-view.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Gruntfile1.js" />
+      <root url="file://$PROJECT_DIR$/Gruntfile1.js" />
+      <root url="file://$PROJECT_DIR$/test-js2c.js" />
+      <root url="file://$PROJECT_DIR$/dist/flynavi/app/model/test.js" />
+      <root url="file://$PROJECT_DIR$/dist/flynavi/app/model/test.js" />
+      <root url="file://$PROJECT_DIR$/app/flynavi/app/model/test.js" />
+      <root url="file://$PROJECT_DIR$/js.js" />
+      <root url="file://$PROJECT_DIR$/js.js" />
+      <root url="file://$PROJECT_DIR$/test2.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/util/micro-sharing.js" />
+      <root url="file://$PROJECT_DIR$/coffee.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/util/micro-sharing.js" />
+      <root url="file://$PROJECT_DIR$/grunt-utility/param-config.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/util/micro-sharing.js" />
+      <root url="file://$PROJECT_DIR$/tasks/tasks.js" />
+      <root url="file://$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.js" />
+      <root url="file://$PROJECT_DIR$/Gruntfile.js" />
+      <root url="file://$PROJECT_DIR$/app/flynavi/app/controller/share-path.js" />
+      <root url="file://$PROJECT_DIR$/dist/flynavi/app/controller/share-path.js" />
+      <root url="file://$PROJECT_DIR$/dist/flynavi/app/controller/test-data-emulation.js" />
+      <root url="file://$PROJECT_DIR$/dist/flynavi/app/model/route-view.js" />
+      <root url="file://$PROJECT_DIR$/app/flynavi/app/model/route-view.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

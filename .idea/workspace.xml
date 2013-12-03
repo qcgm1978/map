@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list readonly="true" id="42351ee3-21ec-4428-b08e-55c178485539" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+    </list>
+    <list id="8bdaea3a-2c20-4b3f-a036-e2c54419e7e9" name="New changelist" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/aller-light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/aller-light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/images/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/banding.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/beautiful_code" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/binary" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/button_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/button_bg_dark.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/button_bg_green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/extras" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/novecento-bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/novecento-bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/novecento-bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/novecento-bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/fonts/novecento-bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/fonts/novecento-bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/images/screenshadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/stylesheets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/stylesheets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/images/underscore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/vendor" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/.coffee.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/.test.coffee.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/.test.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/.test2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/Cakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery-migrate/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/aliases.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/aliases.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/array_comprehensions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/array_comprehensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/arrays.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/arrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/assignment.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/binary/binary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/beautiful_code/binary_search.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/binary_search.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/block_comment.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/block_comment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/blocks.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/booleans.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/binary/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/iScroll4.2.5/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/browser.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/browser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/bubble_sort.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/cake.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/cake.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/cake.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/bin/cake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/cake_tasks.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/cake_tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/chaining.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/classes.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/classes.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/classes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/cluster.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/code.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/coffee-script.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/coffee-script.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/extras/coffee-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/coffee-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/bin/coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/collections.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/command.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/command.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/command.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/comments.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/comparisons.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/comparisons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/compilation.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery-migrate/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/comprehensions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/conditionals.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/conditionals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/constructor_destructuring.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/constructor_destructuring.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/control_flow.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/default_args.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/default_args.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/do.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/do.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/css/docs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/embedded.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/embedded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/error_messages.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/eval.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/exception_handling.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/existence.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/existence.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/expressions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/expressions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/expressions_assignment.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/expressions_assignment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/expressions_comprehension.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/expressions_comprehension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/expressions_try.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/expressions_try.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/fat_arrow.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/fat_arrow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/formatting.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/function_invocation.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/functions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/functions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/grammar.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/grammar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/grammar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/helpers.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/helpers.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/helpers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/heredocs.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/heredocs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/heregexes.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/heregexes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/css/idle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/index.coffee.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/index.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/interpolation.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/interpolation.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/interpolation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/javascript_literals.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/vendor/jquery-1.6.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/jquery-migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/jquery-migrate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery-migrate/jquery-migrate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquerymx/jquerymx1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor/jslitmus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/lexer.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/lexer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/lexer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/linked_list.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/literate.litcoffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/location.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/luhn_algorithm.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/merge_sort.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/multiple_return_values.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/multiple_return_values.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/nodes.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/nodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/nodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/public/stylesheets/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/public/stylesheets/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/numbers.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/object_comprehensions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/object_comprehensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/object_extraction.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/object_extraction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/objects.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/objects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/objects_and_arrays.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/objects_and_arrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/objects_reserved.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/objects_reserved.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/operators.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/option_parser.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/optparse.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/optparse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/optparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/overview.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/overview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/fastdom/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/jquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/parallel_assignment.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/parallel_assignment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/patterns_and_splats.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/patterns_and_splats.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/poignant.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/potion.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/prototypes.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/prototypes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/beautiful_code/quicksort_runtime.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/range_comprehensions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/range_comprehensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/ranges.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/regexps.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/beautiful_code/regular_expression_matcher.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/repl.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/repl.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/repl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/repl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/rewriter.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/rewriter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/rewriter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/vendor/runner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/scope.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/scope.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/scope.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/scope.litcoffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/computer_science/selection_sort.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/slices.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/slices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/slicing_and_splicing.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/soaks.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/soaks.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/soaks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/sourcemap.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/sourcemap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/lib/coffee-script/sourcemap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/src/sourcemap.litcoffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/speed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/splats.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/splats.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/splices.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/splices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/strict.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/strings.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/strings.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/strings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/switch.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/switch_with_no_expression.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/switch_with_no_expression.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.coffee.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.extension.coffee.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.extension.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.extension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test.unknownextension" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test/importing/test2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/try.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/try.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/underscore-min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/underscore.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/docs/underscore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/docs/underscore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/underscore/test/utility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/examples/web_server.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/coffee/while.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/bower_components/coffee-script/documentation/js/while.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/map1.iml" afterPath="$PROJECT_DIR$/.idea/map1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list default="true" id="8672855c-ca51-480b-ac39-114d8b1ba196" name="Failed commit: Default" comment="test data modularize">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/tasks.coffee" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tasks/tasks.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.coffee" afterPath="$PROJECT_DIR$/Gruntfile.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js" afterPath="$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    </list>
+    <ignored path="map1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/app/bower_components/jquery/jquery.min.js" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="false" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="map1" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../portal_new/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="444" column="61" selection-start="15603" selection-end="16001" vertical-scroll-proportion="-8.84" vertical-offset="8215" max-vertical-offset="8835">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portalPc.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../portal_new/portalPc.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="27" selection-start="13" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="2223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="194" column="60" selection-start="5127" selection-end="5127" vertical-scroll-proportion="0.5658627" vertical-offset="3533" max-vertical-offset="5282">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twoCoffee.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twoCoffee.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="0" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/utility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="35" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/tasks.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="15" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/scripts/controller/Map.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/dist/start.html" />
+        <option value="$PROJECT_DIR$/dist/scripts/util/cache.js" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/app_flynavi.js" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/share-path.coffee" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.coffee" />
+        <option value="$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js" />
+        <option value="$PROJECT_DIR$/grunt-utility/test.js" />
+        <option value="$PROJECT_DIR$/grunt-utility/param-config.coffee" />
+        <option value="$PROJECT_DIR$/tasks/utility.js" />
+        <option value="$PROJECT_DIR$/tasks/task.coffee" />
+        <option value="$PROJECT_DIR$/../portal_new/portalPc/tasks-portal.coffee" />
+        <option value="$PROJECT_DIR$/tasks/tasks.coffee" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.coffee" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="bare" pattern="file:Gruntfile1.coffee" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1231" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TaskProblemsInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="false" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="map">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="bare" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flynavi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flynavi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="64" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="58" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="42" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="184" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="86" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="73" />
+    <property name="last_opened_file_path" value="F:/Program Files/Notepad++/notepad++.exe" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="72" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="759" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="75" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="72" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="101" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="688" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.CoffeeScript" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="flynavi_test" serverId="90c32f65-50e3-4997-846e-722de45f1233">
+    <servers>
+      <server id="35502e25-4406-4541-a360-d126ecbe5de0">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="58a9aac2-f025-43c4-a060-ac99785e433d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="5bfec6f3-676f-40fa-966d-542852d9d141">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6a764e80-a501-4f55-98ba-f07ce3037fb5">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="8340898a-5131-44f7-8352-e2f7f8ea37d5">
+        <serverdata />
+      </server>
+      <server id="8587b6da-bb72-4e8f-ba3e-f39987af617b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="90c32f65-50e3-4997-846e-722de45f1233">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/flynavi-web-mobile" local="$PROJECT_DIR$/dist" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="9d897dd3-6c29-4465-a600-fbfe1e76aabb">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="bb61cadb-dc12-4bb4-a171-83e8eba3ffa3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="e0de170b-7dca-4377-bbca-c40afd96f6ab">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PHPnow-1.5.6\htdocs\map" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\dist\scripts\util" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\flynavi\app\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\styles" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\wechat\resources\style" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app" />
+      <recent name="F:\PHPnow-1.5.6\htdocs\map\app\relative-files" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <test-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>BDD</ui>
+      <require />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="commandLine" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\qcgm1978\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\PHPnow-1.5.6\htdocs\map" />
+          <option name="myCopyRoot" value="F:\PHPnow-1.5.6\htdocs\map" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\PHPnow-1.5.6\htdocs\map\.idea" />
+          <option name="myCopyRoot" value="F:\PHPnow-1.5.6\htdocs\map\.idea" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\PHPnow-1.5.6\htdocs\map" />
+          <option name="myCopyRoot" value="F:\PHPnow-1.5.6\htdocs\map" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42351ee3-21ec-4428-b08e-55c178485539" name="Default" comment="" />
+      <changelist id="8bdaea3a-2c20-4b3f-a036-e2c54419e7e9" name="New changelist" comment="" />
+      <created>1372224729996</created>
+      <updated>1372224729996</updated>
+    </task>
+    <task id="LOCAL-00001" summary="extract img to common folder">
+      <created>1372239424108</created>
+      <updated>1372239424108</updated>
+    </task>
+    <task id="LOCAL-00002" summary="extract img to common folder">
+      <created>1372239439107</created>
+      <updated>1372239439107</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build file optimization">
+      <created>1372751366108</created>
+      <updated>1372751366108</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modfiy gruntfile">
+      <created>1372758306107</created>
+      <updated>1372758306107</updated>
+    </task>
+    <task id="LOCAL-00005" summary="perhaps webstorm ide info">
+      <created>1384251733278</created>
+      <updated>1384251733278</updated>
+    </task>
+    <task id="LOCAL-00006" summary="perhaps webstorm ide info">
+      <created>1384251763522</created>
+      <updated>1384251763522</updated>
+    </task>
+    <task id="LOCAL-00007" summary="safari not support requestAnimationFram, so no execute it">
+      <created>1384257018539</created>
+      <updated>1384257018539</updated>
+    </task>
+    <task id="LOCAL-00008" summary="set ui of scale btn">
+      <created>1384313675708</created>
+      <updated>1384313675708</updated>
+    </task>
+    <task id="LOCAL-00009" summary="recover setInterval for compatibility">
+      <created>1384319588025</created>
+      <updated>1384319588025</updated>
+    </task>
+    <task id="LOCAL-00010" summary="recover style of scale btn">
+      <created>1384323162922</created>
+      <updated>1384323162922</updated>
+    </task>
+    <task id="LOCAL-00011" summary="recover setTimeout method">
+      <created>1384323472113</created>
+      <updated>1384323472113</updated>
+    </task>
+    <task id="LOCAL-00012" summary="environment replaced dynamically">
+      <created>1384326561312</created>
+      <updated>1384326561312</updated>
+    </task>
+    <task id="LOCAL-00013" summary="execute hiding directly">
+      <created>1384331301222</created>
+      <updated>1384331301222</updated>
+    </task>
+    <task id="LOCAL-00014" summary="environment param integrated into grunt cli">
+      <created>1384334178502</created>
+      <updated>1384334178502</updated>
+    </task>
+    <task id="LOCAL-00015" summary="create route-view again">
+      <created>1384397244087</created>
+      <updated>1384397244087</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create route-view again">
+      <created>1384397260507</created>
+      <updated>1384397260507</updated>
+    </task>
+    <task id="LOCAL-00017" summary="change environment param">
+      <created>1384746396660</created>
+      <updated>1384746396660</updated>
+    </task>
+    <task id="LOCAL-00018" summary="format unified">
+      <created>1384746450231</created>
+      <updated>1384746450231</updated>
+    </task>
+    <task id="LOCAL-00019" summary="route-view.js added">
+      <created>1384746590797</created>
+      <updated>1384746590797</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix markdown bug">
+      <created>1384751862918</created>
+      <updated>1384751862918</updated>
+    </task>
+    <task id="LOCAL-00021" summary="micro sharing module added">
+      <created>1384862239005</created>
+      <updated>1384862239005</updated>
+    </task>
+    <task id="LOCAL-00022" summary="micro sharing module added">
+      <created>1384942386510</created>
+      <updated>1384942386510</updated>
+    </task>
+    <task id="LOCAL-00023" summary="micro sharing module added">
+      <created>1384942402437</created>
+      <updated>1384942402437</updated>
+    </task>
+    <task id="LOCAL-00024" summary="micro sharing module added">
+      <created>1384942466556</created>
+      <updated>1384942466556</updated>
+    </task>
+    <task id="LOCAL-00025" summary="building optimization">
+      <created>1385022136307</created>
+      <updated>1385022136307</updated>
+    </task>
+    <task id="LOCAL-00026" summary="exclude jpg file as bug of imagemin">
+      <created>1385090401784</created>
+      <updated>1385090401784</updated>
+    </task>
+    <task id="LOCAL-00027" summary="replace ref in cache.js dynamically when building">
+      <created>1385346444832</created>
+      <updated>1385346444832</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Access project-specific configuration data defined in the Gruntfile when building">
+      <created>1385352218062</created>
+      <updated>1385352218062</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Static file asset revisioning through content hashing">
+      <created>1385358893992</created>
+      <updated>1385358893992</updated>
+    </task>
+    <task id="LOCAL-00030" summary="excluding img assert revisioning in js files">
+      <created>1385363177554</created>
+      <updated>1385363177554</updated>
+    </task>
+    <task id="LOCAL-00031" summary="del uselessness">
+      <created>1385364998652</created>
+      <updated>1385364998652</updated>
+    </task>
+    <task id="LOCAL-00032" summary="manifest generated automatically">
+      <created>1385367452150</created>
+      <updated>1385367452150</updated>
+    </task>
+    <task id="LOCAL-00033" summary="svn optimization">
+      <created>1385367943529</created>
+      <updated>1385367943529</updated>
+    </task>
+    <task id="LOCAL-00034" summary="move file">
+      <created>1385534219298</created>
+      <updated>1385534219298</updated>
+    </task>
+    <task id="LOCAL-00035" summary="an online whitelist wildcard flag is added about manifest">
+      <created>1385540060287</created>
+      <updated>1385540060287</updated>
+    </task>
+    <task id="LOCAL-00036" summary="css files optimization">
+      <created>1385543107210</created>
+      <updated>1385543107210</updated>
+    </task>
+    <task id="LOCAL-00037" summary="building optimization">
+      <created>1385620939346</created>
+      <updated>1385620939346</updated>
+    </task>
+    <task id="LOCAL-00038" summary="building optimization">
+      <created>1385621242822</created>
+      <updated>1385621242822</updated>
+    </task>
+    <task id="LOCAL-00039" summary="remove unused css">
+      <created>1385626672329</created>
+      <updated>1385626672329</updated>
+    </task>
+    <task id="LOCAL-00040" summary="exclude html tag about uncss">
+      <created>1385690251181</created>
+      <updated>1385690251181</updated>
+    </task>
+    <task id="LOCAL-00041" summary="not reference uncss for bugs">
+      <created>1385702770646</created>
+      <updated>1385702770646</updated>
+    </task>
+    <task id="LOCAL-00042" summary="optimization">
+      <created>1385704869731</created>
+      <updated>1385704869731</updated>
+    </task>
+    <task id="LOCAL-00043" summary="optimization">
+      <created>1385707044019</created>
+      <updated>1385707044019</updated>
+    </task>
+    <task id="LOCAL-00044" summary="handling path sharing">
+      <created>1385711209851</created>
+      <updated>1385711209851</updated>
+    </task>
+    <task id="LOCAL-00045" summary="pass source val to iphone app">
+      <created>1385716653839</created>
+      <updated>1385716653839</updated>
+    </task>
+    <task id="LOCAL-00046" summary="test data modularize">
+      <created>1385719643906</created>
+      <updated>1385719643906</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1231" height="1040" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33222592" sideWeight="0.49957156" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935733" sideWeight="0.61878455" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990575" sideWeight="0.65524864" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3556127" sideWeight="0.6677741" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6629834" sideWeight="0.50042844" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8110497" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31893688" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3447514" sideWeight="0.49957156" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990575" sideWeight="0.6718232" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6629834" sideWeight="0.50042844" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8110497" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3200443" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935733" sideWeight="0.61878455" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2527849" sideWeight="0.65524864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="format unified" />
+    <MESSAGE value="route-view.js added" />
+    <MESSAGE value="fix markdown bug" />
+    <MESSAGE value="micro sharing module added" />
+    <MESSAGE value="exclude jpg file as bug of imagemin" />
+    <MESSAGE value="replace ref in cache.js dynamically" />
+    <MESSAGE value="replace ref in cache.js dynamically when building" />
+    <MESSAGE value="Access project-specific configuration data defined in the Gruntfile when building" />
+    <MESSAGE value="Static file asset revisioning through content hashing" />
+    <MESSAGE value="excluding img assert revisioning in js files" />
+    <MESSAGE value="del uselessness" />
+    <MESSAGE value="manifest generated automatically" />
+    <MESSAGE value="svn optimization" />
+    <MESSAGE value="move img files" />
+    <MESSAGE value="move file" />
+    <MESSAGE value="an online whitelist wildcard flag is added about manifest" />
+    <MESSAGE value="css files optimization" />
+    <MESSAGE value="building optimization" />
+    <MESSAGE value="remove unused css" />
+    <MESSAGE value="exclude html tag about uncss" />
+    <MESSAGE value="not reference uncss for bugs" />
+    <MESSAGE value="optimization" />
+    <MESSAGE value="handling path sharing" />
+    <MESSAGE value="pass source val to iphone app" />
+    <MESSAGE value="test data modularize" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data modularize" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/share-path.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/controller_start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/app_flynavi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3610" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="18" selection-start="1612" selection-end="1618" vertical-scroll-proportion="0.33333334" vertical-offset="613" max-vertical-offset="3895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/test-data-emulation.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flynavi/app/controller/controller_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="2470" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portal_new/tasks-portal/tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/tasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="776" selection-end="776" vertical-scroll-proportion="0.56173915" vertical-offset="57" max-vertical-offset="1064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portal_new/portalPc.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="13" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/tasks.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="15" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../portal_new/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="444" column="61" selection-start="15603" selection-end="16001" vertical-scroll-proportion="-8.84" vertical-offset="8215" max-vertical-offset="8835">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="557">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twoCoffee.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="0" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="60" selection-start="5127" selection-end="5127" vertical-scroll-proportion="0.5658627" vertical-offset="3533" max-vertical-offset="5282">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>bare</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="bare" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

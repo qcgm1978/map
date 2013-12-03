@@ -1,0 +1,21 @@
+@media only screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2) {
+    #path_info .level_light {
+        width: 20px;
+    }
+
+    #mask_layer .traffic_index {
+        font-size: 16px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-shadow: 0 1px
+    }
+
+    #tmc_distance, #tmc_time, #normal_distance, #normal_time {
+        font-size: 16px;
+    }
+
+    #path_info .path_info {
+        height: 40px;
+    }
+}

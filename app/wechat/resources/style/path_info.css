@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+#path_info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+#route_tmc .light_bar, #route_normal .light_bar {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    margin: 0 7px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #c7c7c7;
+}
+
+#route_tmc .light_bar {
+    top: 2px;
+}
+
+#route_normal .light_bar {
+    bottom: 2px;
+}
+
+#route_tmc .light_bar blockquote:first-child, #route_normal .light_bar blockquote:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#route_tmc .light_bar blockquote:last-child, #route_normal .light_bar blockquote:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#route_tmc .light_bar_seg, #route_normal .light_bar_seg {
+    height: 6px;
+    margin: 0px;
+    float: left;
+}
+
+#route_normal *, #route_tmc * {
+    margin-left: 2%;
+    display: block;
+}
+
+#route_tmc {
+
+    position: relative;
+}
+
+.route_selected {
+    background: url('../images_poi/bg_selected_info.png') repeat;
+}
+
+#route_normal {
+
+    position: relative;
+}
+
+.route_unselected {
+    background: url('../images_poi/bg_path_info.png') repeat;
+}
+
+#path_info .path_info {
+    height: 50px;
+    box-pack: start;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -o-box-pack: start;
+}
+
+#mask_layer .traffic_index {
+    font-size: 30px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    text-shadow: 0 1px white;
+    background-size: cover;
+}
+
+#save_time {
+    font-size: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65px;
+    height: 100%;
+    z-index: 2;
+    background: url('../images_poi/bg_save_time.png') no-repeat;
+    background-size: contain;
+    background-position: right;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+}
+
+#save_time_number {
+    background: url('../images_poi/bg_save_time_num.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 18%;
+    width: 30px;
+    height: 30px;
+}
+
+#bg_save_time {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}

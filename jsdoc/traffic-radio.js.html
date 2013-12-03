@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: scripts/lib/traffic-radio.js</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Source: scripts/lib/traffic-radio.js</h1>
+    
+    
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source"><code>/**
+ * Created with JetBrains WebStorm.
+ * User: qcgm1978
+ * Date: 7/24/13
+ * Time: 3:45 PM
+ * Use:
+ */
+MRoute.TrafficRadio = Class({
+
+    m_pstFrame:null,
+    naviPath:null,
+
+    m_bIsLoginSuccess:false, // 是否登录成功
+    m_bJustReqSuccess:false, // 刚请求成功了态势数据
+    m_ePicState:0, // 是否在显示情报板
+
+    m_nPID:0, // 终端打包PCD或fcd数据时使用该ID，使用此ID作为PCD或fcd的上传ID
+    m_strPID:"00000000",
+    m_bisForce:false, //是否强制请求路况信息
+    m_pPFcdBuf:null, //请求路况信息的PCD或FCD数据
+    m_pResultBuf:null,
+
+    timer:null,
+
+    m_arrDescription:[],
+
+    m_strAddress:"",
+    m_strPinCode:"", // 后台形成的临时PIN码，终端每次请求都必须带此PIN码回来
+    m_pstrUsercode:"",
+    m_pstrUserbatch:"",
+    m_strUserID:"", // 唯一用户标识(DeviceID/SimID/UUID)
+    m_strTimeStamp:"", // 结果时机戳
+    m_strDescription:"",
+
+    TIME_INTERVAL:300000, // 5分钟timer
+    TMC_ROUTE_RANGE:10000, // 经路查找形状点的距离范围
+    MIN_DIS_TO_DEST:1000, // 能播报态势的最小距目的地范围(小于此范围不播报态势)
+    DIFF_DIS_BETWEEN_POINT:500, // 两次态势播报的最小距离差值
+
+    MAX_DESCRIPTION_NUM:5,
+
+
+    "initialize":function (pstFrame, strUserCode, strBatch, strDeviceId) {
+        this.m_pstFrame = pstFrame;
+        this.m_strAddress = "http://211.151.71.28:8888/RouteStatusService/Handle.do?";
+        //this.m_strAddress = "http://trafficapp.autonavi.com:8888/RouteStatusService/Handle.do?";
+        this.m_pstrUsercode = strUserCode;
+        this.m_pstrUserbatch = strBatch;
+        this.m_strUserID = strDeviceId;
+
+        this.start();
+    },
+
+
+    /**
+     * 设置关联路径，
+     * @param path
+     */
+    SetNaviRoute:function (path) {
+        this.naviPath = path;
+    },
+
+    /**
+     * 请求前方路况播报
+     * @param pcdData
+     * @param ptList        [I]前方路径的经纬度序列
+     * @param bUpload
+     * @param bHand
+     * @constructor
+     */
+    RequestTraffic:function (pcdData, ptList, bUpload, bHand) {
+        if (!this.m_bIsLoginSuccess) {
+            return false;
+        }
+
+        if (pcdData == null || pcdData.length == 0) {
+            if (this.m_pPFcdBuf == null || this.m_pPFcdBuf.length == 0) {
+                return false;
+            }
+            pcdData = this.m_pPFcdBuf;
+        }
+
+        return this.requestTmcStateData(pcdData, ptList, bUpload, bHand);
+    },
+
+
+    /**
+     * 设置网络请求状态
+     */
+//    SetNetRequestState:function (iConnectID, eNetState) {
+//
+//    },
+
+
+    /**
+     * 解析数据
+     * @param iConnectID
+     * @param data
+     */
+    receiveNetData:function (iConnectID, data) {
+        if (data == null || data.length == 0) {
+            return;
+        }
+
+        // 若是压缩数据，先解压，反之直接赋值
+        // js版假定已完成解压
+        this.m_pResultBuf = "" + data;
+
+        var bRet = false,
+            CnID = MRoute.ConnectId;
+
+        switch (iConnectID) {
+            case CnID.CONNECTID_TRAFFIC: // 解析前方态势数据
+                bRet = this.parseReqDataResult(this.m_pResultBuf);
+                if (bRet && this.m_arrDescription.length > 0) {
+                    this.playTmcState(this.m_arrDescription);
+                }
+                break;
+            case CnID.CONNECTID_LOGON: // 解析登录结果
+                bRet = this.parseLogonResult(this.m_pResultBuf);
+                break;
+            case CnID.CONNECTID_LOGOFF: // 解析注销结果
+                bRet = this.parseLogoffResult(this.m_pResultBuf);
+                break;
+            case CnID.CONNECTID_PIC:  // 解析概要图数据
+                //bRet = this.parseBoardPicResult(this.m_pResultBuf);
+                break;
+            case CnID.CONNECTID_ROUTE:
+                bRet = this.parseRouteTrafficResult(this.m_pResultBuf);
+                break;
+            default:
+                break;
+        }
+    },
+
+    /**
+     * 更新PCD或FCD数据
+     * @param data
+     * @param result
+     */
+    UpdatePF:function (data, result) {
+        if (data == null || data.length == 0) {
+            return;
+        }
+        this.m_pPFcdBuf = data;
+        this.m_bisForce = !!((result == MRoute.ProbeResult.ProbeResult_Turning));
+
+        //通知请求前方路况
+        this.m_pstFrame.NoticeRequestTrafficInfo();
+    },
+
+    /**
+     * 设置请求参数
+     * @param x
+     * @param y
+     * @param iSegNo
+     * @param iStartSegLen
+     */
+    SetTmcReqParam:function (x, y, iSegNo, iStartSegLen) {
+        if (this.naviPath == null) {
+            return "";
+        }
+
+        var dist = 0,
+            sList = "",
+            segNum = this.naviPath.getSegmentCount();
+        for (var i = iSegNo; i &lt; segNum; i++) {
+            var curSeg = this.naviPath.getSegmentByID(i);
+            if (curSeg != null) {
+                var tmcRecords = curSeg.getTmcInfo();
+                if (tmcRecords == null || tmcRecords.length == 0) {
+                    continue;
+                }
+                for (var j = 0; j &lt; tmcRecords.length; j++) {
+                    dist += tmcRecords[j].getLength();
+                    if (i == iSegNo && dist &lt; iStartSegLen) {
+                        continue;
+                    }
+                    var code = tmcRecords[j].getLCode();
+                    if (sList.length > 0) {
+                        sList += ",";
+                    }
+                    sList += code.toString();
+                    if (dist > 50000) {
+                        break;
+                    }
+                }
+            }
+            if (dist > 50000) {
+                break;
+            }
+        }
+
+        if (sList.length == 0) {
+            return false;
+        }
+
+        var size = 180;
+        // 写入xml头, type=80表示请求内容中屏蔽items和evaluation元素
+        var sParam = "&lt;\?xml version=\"1.0\" encoding=\"gbk\"\?>&lt;request>";
+
+        // 写入当前位置x，y
+        sParam += "&lt;frontQuery x=\"" + x + "\" y=\"" + y + "\" type=\"80\" descSize =\"" + size + "\">&lt;list>";
+
+        // 写入xml尾
+        sParam += sList;
+        sParam += "&lt;/list>&lt;/frontQuery>&lt;/request>";
+
+        return sParam;
+    },
+
+
+    //请求整条路径的态势数据
+//    RequestRouteTraffic:function (iGPSGeoX, iGPSGeoY, iSegNo, iStartSegLen) {
+//
+//    },
+
+    loginFailedCount:0,
+
+    ThreadProc:function () {
+        this.m_pstFrame.NoticeRequestTrafficInfo();
+    },
+
+    start:function () {
+        if (this.timer != null) {
+            this.stop();
+        }
+
+        var self = this;
+        this.timer = window.setInterval(function () {
+            self.ThreadProc();
+        }, 60000); //1000*60*2
+
+    },
+
+    stop:function () {
+        if (this.timer) {
+            window.clearInterval(this.timer);
+            this.timer = null;
+        }
+    },
+
+    Login:function () {
+        if (this.m_bIsLoginSuccess) {
+            return;
+        }
+
+        var strBuf = this.m_strAddress + "cmdtype=logon&usercode=" + this.m_pstrUsercode;
+        strBuf += "&userbatch=";
+        strBuf += this.m_pstrUserbatch;
+        strBuf += "&deviceid=";
+        strBuf += this.m_strUserID;
+
+        this.m_pstFrame.NetRequestHTTP(MRoute.ConnectId.CONNECTID_LOGON, strBuf, null, null, false);
+    },
+
+    Logout:function () {
+        if (!this.m_bIsLoginSuccess) {
+            return true;
+        }
+
+        var strBuf = this.m_strAddress + "cmdtype=logout&pincode=" + this.m_strPinCode;
+
+        this.m_pstFrame.NetRequestHTTP(MRoute.ConnectId.CONNECTID_LOGOFF, strBuf, null, null, false);
+        return true;
+    },
+
+    //判断是否符合请求态势时机，请求态势播报数据
+    requestTmcStateData:function (pPcdBuf, ptList, bUpload, bHand) {
+
+        if (pPcdBuf == null || pPcdBuf.length == 0) {
+            return false;
+        }
+
+        var strBuf,
+            bForce = false,
+            bReqPic = false,
+            bShowPic = this.m_pstFrame.GetShowTrafficPic();
+        if (!this.m_pstFrame.GetPlayTrafficVoice() && !bShowPic) {
+            bForce = true;
+        }
+
+        if (bShowPic
+            && this.m_ePicState != MRoute.PicState.Traffic_Pic_Show
+            && this.m_ePicState != MRoute.PicState.Traffic_Pic_Change) {
+            bReqPic = true;
+        }
+
+        strBuf = this.m_strAddress + "cmdtype=trafficinfo&pincode=" + this.m_strPinCode;
+        strBuf += "&datatype=1";
+        strBuf += "&gpsdata=";
+
+        var strBin = pPcdBuf.substring(0, 3) + this.m_strPID + pPcdBuf.substring(11);
+        strBuf += MRoute.Base64.encode(strBin);
+
+//        var  strBase64 = MRoute.Base64.encode(strBin);
+//        //urlEncode need supply
+//        strBuf += strBase64;
+
+        // 未经压缩
+        strBuf += "&compress=0";
+
+        // 预测点列表
+        var bHavePt = ptList != null && ptList.length > 0 && (ptList.length % 2 == 0);
+        if (bHavePt) {
+            strBuf += "&frontcoords=";
+            for (var i = 0; i &lt; ptList.length; i++) {
+                if (i > 0) {
+                    strBuf += ",";
+                }
+                strBuf += ptList[i].toString();
+            }
+        }
+
+        // 合成请求标志
+        var dwFlag = 0;
+        if (bForce || bUpload) {
+            dwFlag |= MRoute.RadioFlag.FLAG_FORCE_UPLOAD;
+        }
+        if (bReqPic) {
+            dwFlag |= MRoute.RadioFlag.FLAG_REGION_BOARD;
+        }
+        if (this.m_bisForce || bHand) {
+            dwFlag |= MRoute.RadioFlag.FLAG_NO_FILTER;
+        }
+        if (bHavePt) {
+            dwFlag |= MRoute.RadioFlag.FLAG_ASSIST_ROAD;
+        }
+
+        dwFlag |= MRoute.RadioFlag.FLAG_INCIDENT;
+        dwFlag |= MRoute.RadioFlag.FLAG_DESCRIPTION;
+
+        strBuf += "&flag=" + dwFlag;
+
+        this.m_pstFrame.NetRequestHTTP(MRoute.ConnectId.CONNECTID_TRAFFIC, strBuf, null, null, false);
+        return true;
+    },
+
+    //播报当前路况
+    playTmcState:function (arrStr) {
+        if (!arrStr || arrStr.length == 0) {
+            return false;
+        }
+        if (this.m_pstFrame.GetPlayTrafficVoice()) {
+            for (var i = 0; i &lt; arrStr.length; i++) {
+                this.m_pstFrame.PlayNaviSound(arrStr[i]);
+            }
+        }
+        this.m_arrDescription = [];
+        return true;
+    },
+
+    _getText_:function (node) {
+        return node.childNodes[0].nodeValue;
+    },
+
+    _parseState_:function (root) {
+        var status = -1,
+            node;
+        node = root.firstChild;
+        if (node && node.nodeName == "status") {
+            status = Number(this._getText_(node));
+        }
+        else {
+            return null;
+        }
+
+        node = node.nextSibling;
+        if (node && node.nodeName == "timestamp") {
+            this.m_strTimeStamp = this._getText_(node);
+        }
+        else {
+            return null;
+        }
+
+        if (status != 0) {
+            if (status == 2) {
+                this.m_bIsLoginSuccess = false;
+            }
+            return null;
+        }
+
+        return node;
+    },
+
+    _getRoot_:function (buf) {
+        var parser = new DOMParser(),
+            xmlDom = parser.parseFromString(buf, "text/xml");
+
+        if (!xmlDom || !xmlDom.documentElement) {
+            return null;
+        }
+
+        var root = xmlDom.documentElement;
+        if (!root.nodeName || root.nodeName != "response") {
+            return null;
+        }
+
+        return root;
+    },
+
+
+    //解析登录返回的结果
+    parseLogonResult:function (buf) {
+
+        var root = this._getRoot_(buf);
+        if (!root) {
+            return false;
+        }
+
+        // 属性验证
+        if (root.getAttribute("type") != "logon") {
+            return false;
+        }
+
+        var node = this._parseState_(root);
+        if (!node) {
+            return false;
+        }
+
+        node = node.nextSibling;
+        if (node && node.nodeName == "pincode") {
+            this.m_strPinCode = this._getText_(node);
+        }
+        else {
+            return false;
+        }
+
+        // not used
+        node = node.nextSibling;
+        if (node && node.nodeName == "pid") {
+            var str = this._getText_(node);
+            if (str.length > 9) {
+                var strLow = str.slice(str.length - 9),
+                    strMid,
+                    strHigh,
+                    id = Number(strLow);
+                if (str.length > 18) {
+                    strMid = str.slice(str.length - 18, str.length - 9);
+                    strHigh = str.slice(0, str.length - 18);
+                    id += Number(strMid) * Math.pow(10, 9) + Number(strHigh) * Math.pow(10, 18);
+                }
+                else {
+                    strHigh = str.slice(0, str.length - 9);
+                    id += Number(strHigh) * Math.pow(10, 9);
+                }
+                this.m_nPID = id;
+
+            }
+            else {
+                this.m_nPID = Number(str);
+            }
+        }
+        else {
+            return false;
+        }
+
+        this.m_bIsLoginSuccess = true;
+        return true;
+    },
+
+
+    //解析注销返回的结果
+    parseLogoffResult:function (buf) {
+
+        var root = this._getRoot_(buf);
+        if (!root) {
+            return false;
+        }
+
+        // 属性验证
+        if (root.getAttribute("type") != "logout") {
+            return false;
+        }
+
+        if (!this._parseState_(root)) {
+            return false;
+        }
+
+        this.m_bIsLoginSuccess = false;
+        return true;
+    },
+
+    //解析数据请求的结果
+    parseReqDataResult:function (buf) {
+        var root = this._getRoot_(buf);
+        if (!root) {
+            return false;
+        }
+
+        // 属性验证
+        if (root.getAttribute("type") != "trafficinfo") {
+            return false;
+        }
+
+        var node = this._parseState_(root);
+        if (!node) {
+            return false;
+        }
+
+        node = node.nextSibling;
+        if (node && node.nodeName == "front") {
+            for (var child = node.firstChild; child != null; child = child.nextSibling) {
+                if (this.m_arrDescription.length &lt; this.MAX_DESCRIPTION_NUM) {
+                    var str = this._getText_(child);
+                    if (str && str.length > 0) {
+                        this.m_arrDescription.push(str);
+                        if (!this.m_bJustReqSuccess) {
+                            this.m_bJustReqSuccess = true;
+                        }
+                    }
+
+                }
+            }
+        }
+        else {
+            return false;
+        }
+
+        if (this.m_pstFrame.GetShowTrafficPic()) {
+            node = node.nextSibling;
+            if (node && node.nodeName == "url") {
+                var strBuf = this.m_strAddress + "cmdtype=boardpic&pincode=" + this.m_strPinCode;
+                strBuf += "&picid=" + this._getText_(node);
+                strBuf += "&size=480x320" + "&whscale=true";
+                this.m_pstFrame.NetRequestHTTP(MRoute.ConnectId.CONNECTID_PIC,
+                    strBuf, null, null, false);
+            }
+        }
+        return true;
+    },
+
+    //解析概要图数据的结果
+//    parseBoardPicResult:function (buf) {
+//    },
+
+
+
+    /**
+     * 解析数据
+     * @param data
+     */
+    ParserTmc:function (data) {
+        var nCode = 0,
+            nStart = -1,
+            nEnd = -1,
+            info = "";
+        if (data != null && data.length > 0) {
+            nStart = data.indexOf("&lt;description>");
+            nEnd = data.indexOf("&lt;/description>");
+            if (nStart != -1 && nEnd > nStart) {
+                nCode = 1;
+                info = data.substring(nStart + 13, nEnd);
+            }
+            else {
+                nStart = data.indexOf("&lt;error>");
+                nEnd = data.indexOf("&lt;/error>");
+                if (nStart != -1 && nEnd > nStart) {
+                    nCode = 2;
+                    info = data.substring(nStart + 7, nEnd);
+                }
+            }
+        }
+
+        return [nCode, info];
+    },
+
+    //解析请求路径的前方态势数据的结果,暂时没有用到
+    parseRouteTrafficResult:function (buf) {
+        console.log("parse 前方态势数据"+buf);
+        var res = this.ParserTmc(buf),
+            code = res[0],
+            str = res[1];
+        if (code != 1) {
+            return false;
+        }
+        this.m_pstFrame.PlayNaviSound(2, str);
+
+    }
+
+});</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="mapHandler.html">mapHandler</a></li><li><a href="MapModel.Constant.html">Constant</a></li><li><a href="_.html">RequestPathFrame类</a></li><li><a href="RequestTraffic.html">RequestTraffic</a></li></ul><h3>Global</h3><ul><li><a href="global.html#_calCarAngle_">_calCarAngle_</a></li><li><a href="global.html#_CheckGPS_">_CheckGPS_</a></li><li><a href="global.html#_CheckGPSSpeed_">_CheckGPSSpeed_</a></li><li><a href="global.html#_CheckGPSTime_">_CheckGPSTime_</a></li><li><a href="global.html#_decode_">_decode_</a></li><li><a href="global.html#_getPath_">_getPath_</a></li><li><a href="global.html#_getPos_">_getPos_</a></li><li><a href="global.html#_getTime_">_getTime_</a></li><li><a href="global.html#_hasCrossingImage_">_hasCrossingImage_</a></li><li><a href="global.html#_hasDetailedInfo_">_hasDetailedInfo_</a></li><li><a href="global.html#_hasUserData_">_hasUserData_</a></li><li><a href="global.html#_matchProc_">_matchProc_</a></li><li><a href="global.html#_notifyNaviRoute_">_notifyNaviRoute_</a></li><li><a href="global.html#_PruneList_">_PruneList_</a></li><li><a href="global.html#_resetVP_">_resetVP_</a></li><li><a href="global.html#_setCarLoc_">_setCarLoc_</a></li><li><a href="global.html#_setNaviRoute_">_setNaviRoute_</a></li><li><a href="global.html#_switchType_">_switchType_</a></li><li><a href="global.html#_tParseTrafficRadio_">_tParseTrafficRadio_</a></li><li><a href="global.html#_updateCarLoc_">_updateCarLoc_</a></li><li><a href="global.html#_updateLaneInfo_">_updateLaneInfo_</a></li><li><a href="global.html#_updatePlayToken_">_updatePlayToken_</a></li><li><a href="global.html#addIcon.">addIcon.</a></li><li><a href="global.html#addMarker.">addMarker.</a></li><li><a href="global.html#addOnePolyline.">addOnePolyline.</a></li><li><a href="global.html#addTmcLayer.">addTmcLayer.</a></li><li><a href="global.html#animateDisplayLayer.">animateDisplayLayer.</a></li><li><a href="global.html#arcTan">arcTan</a></li><li><a href="global.html#buildEleStrByTmpl.">buildEleStrByTmpl.</a></li><li><a href="global.html#buildInfowindowStr.">buildInfowindowStr.</a></li><li><a href="global.html#byte2text">byte2text</a></li><li><a href="global.html#calcNearestPtId">calcNearestPtId</a></li><li><a href="global.html#calcRoadClass">calcRoadClass</a></li><li><a href="global.html#callback.">callback.</a></li><li><a href="global.html#CarLocationChange.">CarLocationChange.</a></li><li><a href="global.html#CloseTMC">CloseTMC</a></li><li><a href="global.html#CloseTrafficRadio">CloseTrafficRadio</a></li><li><a href="global.html#createTMCBar">createTMCBar</a></li><li><a href="global.html#CreateTMCBar">CreateTMCBar</a></li><li><a href="global.html#decodebase64">decodebase64</a></li><li><a href="global.html#decodePreviewInfo">decodePreviewInfo</a></li><li><a href="global.html#decryptBin">decryptBin</a></li><li><a href="global.html#defaults">defaults</a></li><li><a href="global.html#Destroy">Destroy</a></li><li><a href="global.html#distUpdate">distUpdate</a></li><li><a href="global.html#drawNormalPath.">drawNormalPath.</a></li><li><a href="global.html#drawPath.">drawPath.</a></li><li><a href="global.html#drawRapidPath.">drawRapidPath.</a></li><li><a href="global.html#ecryptBin">ecryptBin</a></li><li><a href="global.html#enableDragInfoWin.">enableDragInfoWin.</a></li><li><a href="global.html#flushNaviSound">flushNaviSound</a></li><li><a href="global.html#formatMinute.">formatMinute.</a></li><li><a href="global.html#generateInfoWindow.">generateInfoWindow.</a></li><li><a href="global.html#generateLngLat.">generateLngLat.</a></li><li><a href="global.html#generateMap.">generateMap.</a></li><li><a href="global.html#getAngle">getAngle</a></li><li><a href="global.html#getAssistAction">getAssistAction</a></li><li><a href="global.html#getBackgroundImage">getBackgroundImage</a></li><li><a href="global.html#getBackgroundLane">getBackgroundLane</a></li><li><a href="global.html#getBasicAction">getBasicAction</a></li><li><a href="global.html#getBestPath">getBestPath</a></li><li><a href="global.html#getCameras">getCameras</a></li><li><a href="global.html#getCameraType">getCameraType</a></li><li><a href="global.html#getContent">getContent</a></li><li><a href="global.html#getCoordinate">getCoordinate</a></li><li><a href="global.html#getCoordsArray.">getCoordsArray.</a></li><li><a href="global.html#getDetailedCoors">getDetailedCoors</a></li><li><a href="global.html#getDetailedCoorsLngLat">getDetailedCoorsLngLat</a></li><li><a href="global.html#getDetailedPoint">getDetailedPoint</a></li><li><a href="global.html#getDetailedPointsCount">getDetailedPointsCount</a></li><li><a href="global.html#getDistance">getDistance</a></li><li><a href="global.html#getDriveTimeMinute">getDriveTimeMinute</a></li><li><a href="global.html#getEndCoorIndex">getEndCoorIndex</a></li><li><a href="global.html#getEndPointName">getEndPointName</a></li><li><a href="global.html#getEstimateTime">getEstimateTime</a></li><li><a href="global.html#getForegroundImage">getForegroundImage</a></li><li><a href="global.html#getForegroundLane">getForegroundLane</a></li><li><a href="global.html#getGroup">getGroup</a></li><li><a href="global.html#getIntersectionName">getIntersectionName</a></li><li><a href="global.html#getIntX">getIntX</a></li><li><a href="global.html#getIntY">getIntY</a></li><li><a href="global.html#getIsDivided">getIsDivided</a></li><li><a href="global.html#getLaneCount">getLaneCount</a></li><li><a href="global.html#getLastPtId">getLastPtId</a></li><li><a href="global.html#getLCode">getLCode</a></li><li><a href="global.html#getLength">getLength</a></li><li><a href="global.html#getLengthString">getLengthString</a></li><li><a href="global.html#getLink">getLink</a></li><li><a href="global.html#GetLinkCoor">GetLinkCoor</a></li><li><a href="global.html#getLinkCount">getLinkCount</a></li><li><a href="global.html#getLinkForm">getLinkForm</a></li><li><a href="global.html#GetLinkFormWay">GetLinkFormWay</a></li><li><a href="global.html#getLinkId">getLinkId</a></li><li><a href="global.html#getLinkLength">getLinkLength</a></li><li><a href="global.html#GetLinkLength">GetLinkLength</a></li><li><a href="global.html#GetLinkLinkType">GetLinkLinkType</a></li><li><a href="global.html#getLinkName">getLinkName</a></li><li><a href="global.html#GetLinkNum">GetLinkNum</a></li><li><a href="global.html#GetLinkRoadClass">GetLinkRoadClass</a></li><li><a href="global.html#GetLinkRoadName">GetLinkRoadName</a></li><li><a href="global.html#getLinks">getLinks</a></li><li><a href="global.html#getLinkTime">getLinkTime</a></li><li><a href="global.html#GetLinkTime">GetLinkTime</a></li><li><a href="global.html#getLinkType">getLinkType</a></li><li><a href="global.html#getLocationCode">getLocationCode</a></li><li><a href="global.html#getLocCodeList">getLocCodeList</a></li><li><a href="global.html#getMainActionVoiceID">getMainActionVoiceID</a></li><li><a href="global.html#GetNaviGuideList">GetNaviGuideList</a></li><li><a href="global.html#getNavSegLength">getNavSegLength</a></li><li><a href="global.html#getNavSegTime">getNavSegTime</a></li><li><a href="global.html#getNextRoadName">getNextRoadName</a></li><li><a href="global.html#getNormalPathInfo.">getNormalPathInfo.</a></li><li><a href="global.html#getOrigDriveTime">getOrigDriveTime</a></li><li><a href="global.html#getPaths">getPaths</a></li><li><a href="global.html#getPos.">getPos.</a></li><li><a href="global.html#getPreviewCoors">getPreviewCoors</a></li><li><a href="global.html#getPreviewPointsCount">getPreviewPointsCount</a></li><li><a href="global.html#getPriviewPoint">getPriviewPoint</a></li><li><a href="global.html#getRapidPathInfo.">getRapidPathInfo.</a></li><li><a href="global.html#getRawAngle">getRawAngle</a></li><li><a href="global.html#getRecentPt">getRecentPt</a></li><li><a href="global.html#getRemainDistAndTime">getRemainDistAndTime</a></li><li><a href="global.html#getRemainLinkDist">getRemainLinkDist</a></li><li><a href="global.html#getRemainRouteDist">getRemainRouteDist</a></li><li><a href="global.html#getRemainSegDist">getRemainSegDist</a></li><li><a href="global.html#getRemainTMCTime">getRemainTMCTime</a></li><li><a href="global.html#getRoadClass">getRoadClass</a></li><li><a href="global.html#getRoadName">getRoadName</a></li><li><a href="global.html#getRoadSigns">getRoadSigns</a></li><li><a href="global.html#GetRoadStatus">GetRoadStatus</a></li><li><a href="global.html#GetRouteLength">GetRouteLength</a></li><li><a href="global.html#getRouteLength.">getRouteLength.</a></li><li><a href="global.html#GetRouteTime">GetRouteTime</a></li><li><a href="global.html#getRouteTime.">getRouteTime.</a></li><li><a href="global.html#GetSegChargeLength">GetSegChargeLength</a></li><li><a href="global.html#GetSegCoor">GetSegCoor</a></li><li><a href="global.html#GetSegLength">GetSegLength</a></li><li><a href="global.html#GetSegLocationCode">GetSegLocationCode</a></li><li><a href="global.html#GetSegLocationCodeNum">GetSegLocationCodeNum</a></li><li><a href="global.html#getSegmentCount">getSegmentCount</a></li><li><a href="global.html#GetSegmentDescribe">GetSegmentDescribe</a></li><li><a href="global.html#GetSegmentNum">GetSegmentNum</a></li><li><a href="global.html#getSegments">getSegments</a></li><li><a href="global.html#GetSegTime">GetSegTime</a></li><li><a href="global.html#getSignpost">getSignpost</a></li><li><a href="global.html#getSomeLenRouteTraffic">getSomeLenRouteTraffic</a></li><li><a href="global.html#getStartCoorIndex">getStartCoorIndex</a></li><li><a href="global.html#getStartDirection">getStartDirection</a></li><li><a href="global.html#getStartPtId">getStartPtId</a></li><li><a href="global.html#getStrategy">getStrategy</a></li><li><a href="global.html#getTime">getTime</a></li><li><a href="global.html#getTimeStamp">getTimeStamp</a></li><li><a href="global.html#getTmcInfo">getTmcInfo</a></li><li><a href="global.html#getTmcTime">getTmcTime</a></li><li><a href="global.html#getTmcTimeMinute">getTmcTimeMinute</a></li><li><a href="global.html#getTollDistance">getTollDistance</a></li><li><a href="global.html#getTrafficIndiceCol">getTrafficIndiceCol</a></li><li><a href="global.html#getType">getType</a></li><li><a href="global.html#getUserData">getUserData</a></li><li><a href="global.html#getX">getX</a></li><li><a href="global.html#getY">getY</a></li><li><a href="global.html#getZoom.">getZoom.</a></li><li><a href="global.html#GPSTimer_Tick">GPSTimer_Tick</a></li><li><a href="global.html#handleZoomChangeEve.">handleZoomChangeEve.</a></li><li><a href="global.html#hasMixFork">hasMixFork</a></li><li><a href="global.html#hasTrafficLight">hasTrafficLight</a></li><li><a href="global.html#init.">init.</a></li><li><a href="global.html#initialize">initialize</a></li><li><a href="global.html#initMapZoom.">initMapZoom.</a></li><li><a href="global.html#isAtService">isAtService</a></li><li><a href="global.html#isBestPath">isBestPath</a></li><li><a href="global.html#isCityRoad">isCityRoad</a></li><li><a href="global.html#isConnected.">isConnected.</a></li><li><a href="global.html#isConnectLocalNet.">isConnectLocalNet.</a></li><li><a href="global.html#isContain">isContain</a></li><li><a href="global.html#isIOS.">isIOS.</a></li><li><a href="global.html#isLineSimplified">isLineSimplified</a></li><li><a href="global.html#isMobileDev.">isMobileDev.</a></li><li><a href="global.html#isQqBrowser.">isQqBrowser.</a></li><li><a href="global.html#isRouteBlocked">isRouteBlocked</a></li><li><a href="global.html#isToll">isToll</a></li><li><a href="global.html#js_getDPI.">js_getDPI.</a></li><li><a href="global.html#judgeVal.">judgeVal.</a></li><li><a href="global.html#lastRerouteNotifyTime">lastRerouteNotifyTime</a></li><li><a href="global.html#m_eRPNetState">m_eRPNetState</a></li><li><a href="global.html#m_nArriveSegId">m_nArriveSegId</a></li><li><a href="global.html#oldVal">oldVal</a></li><li><a href="global.html#onPreviewOk">onPreviewOk</a></li><li><a href="global.html#onResetting">onResetting</a></li><li><a href="global.html#onSegmentOk">onSegmentOk</a></li><li><a href="global.html#openInfoWin.">openInfoWin.</a></li><li><a href="global.html#OpenTMC">OpenTMC</a></li><li><a href="global.html#OpenTrafficRadio">OpenTrafficRadio</a></li><li><a href="global.html#ParserTmc">ParserTmc</a></li><li><a href="global.html#parseUrl.">parseUrl.</a></li><li><a href="global.html#PauseNavi">PauseNavi</a></li><li><a href="global.html#playAction">playAction</a></li><li><a href="global.html#playAssitAction">playAssitAction</a></li><li><a href="global.html#playCountCommon">playCountCommon</a></li><li><a href="global.html#playCountRound">playCountRound</a></li><li><a href="global.html#playFixedDist">playFixedDist</a></li><li><a href="global.html#playMainAction">playMainAction</a></li><li><a href="global.html#PlayNaviManual">PlayNaviManual</a></li><li><a href="global.html#playProximity">playProximity</a></li><li><a href="global.html#playRandomDist">playRandomDist</a></li><li><a href="global.html#playRouteReady">playRouteReady</a></li><li><a href="global.html#PlayTrafficRadioManual">PlayTrafficRadioManual</a></li><li><a href="global.html#promptNoNet.">promptNoNet.</a></li><li><a href="global.html#promptUser.">promptUser.</a></li><li><a href="global.html#pushGPSInfo">pushGPSInfo</a></li><li><a href="global.html#pushGPSLogLatLon">pushGPSLogLatLon</a></li><li><a href="global.html#receiveNetData">receiveNetData</a></li><li><a href="global.html#ReceiveNetData">ReceiveNetData</a></li><li><a href="global.html#recoverRequestState.">recoverRequestState.</a></li><li><a href="global.html#removePolylines.">removePolylines.</a></li><li><a href="global.html#removeTmcLayer.">removeTmcLayer.</a></li><li><a href="global.html#requestPath.">requestPath.</a></li><li><a href="global.html#RequestRoute">RequestRoute</a></li><li><a href="global.html#RequestRouteHaveStart">RequestRouteHaveStart</a></li><li><a href="global.html#requestTouchstartEvent.">requestTouchstartEvent.</a></li><li><a href="global.html#Reroute">Reroute</a></li><li><a href="global.html#reset">reset</a></li><li><a href="global.html#ResumeNavi">ResumeNavi</a></li><li><a href="global.html#returnFloat1.">returnFloat1.</a></li><li><a href="global.html#RouteDestroy.">RouteDestroy.</a></li><li><a href="global.html#routeGuide.">routeGuide.</a></li><li><a href="global.html#SelectRoute">SelectRoute</a></li><li><a href="global.html#SetCarLocation">SetCarLocation</a></li><li><a href="global.html#setContent">setContent</a></li><li><a href="global.html#setCurDisplayPath.">setCurDisplayPath.</a></li><li><a href="global.html#setCurOverlayDirectionUp.">setCurOverlayDirectionUp.</a></li><li><a href="global.html#setEleyePrompt">setEleyePrompt</a></li><li><a href="global.html#SetEleyePrompt">SetEleyePrompt</a></li><li><a href="global.html#setEmulatorSpeed">setEmulatorSpeed</a></li><li><a href="global.html#SetEmulatorSpeed">SetEmulatorSpeed</a></li><li><a href="global.html#setFitView.">setFitView.</a></li><li><a href="global.html#SetGPSInfo">SetGPSInfo</a></li><li><a href="global.html#setGpsInfo.">setGpsInfo.</a></li><li><a href="global.html#setMapRange.">setMapRange.</a></li><li><a href="global.html#SetNaviRoute">SetNaviRoute</a></li><li><a href="global.html#SetNaviType">SetNaviType</a></li><li><a href="global.html#SetNmea">SetNmea</a></li><li><a href="global.html#setNorthDirctionUp.">setNorthDirctionUp.</a></li><li><a href="global.html#setPathPileOrder.">setPathPileOrder.</a></li><li><a href="global.html#setPathWeight.">setPathWeight.</a></li><li><a href="global.html#SetPlayOneWordUseTime">SetPlayOneWordUseTime</a></li><li><a href="global.html#SetRequestRouteState.">SetRequestRouteState.</a></li><li><a href="global.html#setRequestRouteType.">setRequestRouteType.</a></li><li><a href="global.html#SetRoute">SetRoute</a></li><li><a href="global.html#setScrollEleHeight.">setScrollEleHeight.</a></li><li><a href="global.html#setScrollUpdated.">setScrollUpdated.</a></li><li><a href="global.html#SetTmcReqParam">SetTmcReqParam</a></li><li><a href="global.html#setTouchEvent.">setTouchEvent.</a></li><li><a href="global.html#setType">setType</a></li><li><a href="global.html#setUrl.">setUrl.</a></li><li><a href="global.html#setZoom.">setZoom.</a></li><li><a href="global.html#show.">show.</a></li><li><a href="global.html#showRoadSegInfo.">showRoadSegInfo.</a></li><li><a href="global.html#showRouteInfo.">showRouteInfo.</a></li><li><a href="global.html#StartEmulatorNavi">StartEmulatorNavi</a></li><li><a href="global.html#StartGpsNavi">StartGpsNavi</a></li><li><a href="global.html#startRequest.">startRequest.</a></li><li><a href="global.html#StopEmulatorNavi">StopEmulatorNavi</a></li><li><a href="global.html#StopNavi">StopNavi</a></li><li><a href="global.html#toggleLoadingEffect.">toggleLoadingEffect.</a></li><li><a href="global.html#toggleMarker.">toggleMarker.</a></li><li><a href="global.html#toString">toString</a></li><li><a href="global.html#triggerRequestEvent.">triggerRequestEvent.</a></li><li><a href="global.html#truncateStr.">truncateStr.</a></li><li><a href="global.html#unit_conversion.">unit_conversion.</a></li><li><a href="global.html#unitConversion.">unitConversion.</a></li><li><a href="global.html#UpdatePF">UpdatePF</a></li><li><a href="global.html#updateRouteInfo">updateRouteInfo</a></li><li><a href="global.html#zoomOut.">zoomOut.</a></li><li><a href="global.html#轮询gps信息的参数设置">轮询gps信息的参数设置</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a> on Tue Jul 30 2013 13:40:16 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>app\scripts\lib\navi.js - scripts</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="scripts"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/common.html">common</a></li>
+            
+                <li><a href="../classes/Layer.html">Layer</a></li>
+            
+                <li><a href="../classes/Link.html">Link</a></li>
+            
+                <li><a href="../classes/Map.html">Map</a></li>
+            
+                <li><a href="../classes/mapHandler.html">mapHandler</a></li>
+            
+                <li><a href="../classes/netService.html">netService</a></li>
+            
+                <li><a href="../classes/PathDrawing.html">PathDrawing</a></li>
+            
+                <li><a href="../classes/PublicModel.html">PublicModel</a></li>
+            
+                <li><a href="../classes/RequestPathFrame类.html">RequestPathFrame类</a></li>
+            
+                <li><a href="../classes/Route.html">Route</a></li>
+            
+                <li><a href="../classes/Toolbar.html">Toolbar</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: app\scripts\lib\navi.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * Created with JetBrains WebStorm.
+ * User: qcgm1978
+ * Date: 7/24/13
+ * Time: 3:22 PM
+ * Use:
+ */
+MRoute.NaviDirection = Class({
+    angle: 0,		// 整数方向角（0-4096），以正东方向为0度角，360度角对应TRIGONOMETRIC_MAXS*4
+    TRIGONOMETRIC_BITS : 12,
+    TRIGONOMETRIC_MAXS : 0x1000,
+    TRIGONOMETRIC_MASK : 0x0FFF,
+    TRIGONOMETRIC_LIMIT : 0x7FFFF,
+    DEGREE_TO_RAW : 45.511111,
+
+    costab : [
+        0x1000, 0x0FFF, 0x0FFF, 0x0FFF, 0x0FFE, 0x0FFE, 0x0FFD, 0x0FFC,
+        0x0FFB, 0x0FF9, 0x0FF8, 0x0FF6, 0x0FF4, 0x0FF2, 0x0FF0, 0x0FEE,
+        0x0FEC, 0x0FE9, 0x0FE7, 0x0FE4, 0x0FE1, 0x0FDE, 0x0FDA, 0x0FD7,
+        0x0FD3, 0x0FCF, 0x0FCB, 0x0FC7, 0x0FC3, 0x0FBF, 0x0FBA, 0x0FB6,
+        0x0FB1, 0x0FAC, 0x0FA7, 0x0FA1, 0x0F9C, 0x0F96, 0x0F91, 0x0F8B,
+        0x0F85, 0x0F7F, 0x0F78, 0x0F72, 0x0F6B, 0x0F64, 0x0F5D, 0x0F56,
+        0x0F4F, 0x0F48, 0x0F40, 0x0F39, 0x0F31, 0x0F29, 0x0F21, 0x0F18,
+        0x0F10, 0x0F08, 0x0EFF, 0x0EF6, 0x0EED, 0x0EE4, 0x0EDB, 0x0ED1,
+        0x0EC8, 0x0EBE, 0x0EB4, 0x0EAA, 0x0EA0, 0x0E96, 0x0E8B, 0x0E81,
+        0x0E76, 0x0E6B, 0x0E60, 0x0E55, 0x0E4A, 0x0E3F, 0x0E33, 0x0E28,
+        0x0E1C, 0x0E10, 0x0E04, 0x0DF8, 0x0DEB, 0x0DDF, 0x0DD2, 0x0DC6,
+        0x0DB9, 0x0DAC, 0x0D9F, 0x0D91, 0x0D84, 0x0D77, 0x0D69, 0x0D5B,
+        0x0D4D, 0x0D3F, 0x0D31, 0x0D23, 0x0D14, 0x0D06, 0x0CF7, 0x0CE8,
+        0x0CD9, 0x0CCA, 0x0CBB, 0x0CAC, 0x0C9D, 0x0C8D, 0x0C7D, 0x0C6E,
+        0x0C5E, 0x0C4E, 0x0C3E, 0x0C2D, 0x0C1D, 0x0C0D, 0x0BFC, 0x0BEB,
+        0x0BDA, 0x0BCA, 0x0BB8, 0x0BA7, 0x0B96, 0x0B85, 0x0B73, 0x0B62,
+        0x0B50, 0x0B3E, 0x0B2C, 0x0B1A, 0x0B08, 0x0AF6, 0x0AE3, 0x0AD1,
+        0x0ABE, 0x0AAC, 0x0A99, 0x0A86, 0x0A73, 0x0A60, 0x0A4D, 0x0A39,
+        0x0A26, 0x0A12, 0x09FF, 0x09EB, 0x09D7, 0x09C4, 0x09B0, 0x099C,
+        0x0987, 0x0973, 0x095F, 0x094B, 0x0936, 0x0921, 0x090D, 0x08F8,
+        0x08E3, 0x08CE, 0x08B9, 0x08A4, 0x088F, 0x087A, 0x0864, 0x084F,
+        0x0839, 0x0824, 0x080E, 0x07F8, 0x07E2, 0x07CD, 0x07B7, 0x07A0,
+        0x078A, 0x0774, 0x075E, 0x0748, 0x0731, 0x071B, 0x0704, 0x06ED,
+        0x06D7, 0x06C0, 0x06A9, 0x0692, 0x067B, 0x0664, 0x064D, 0x0636,
+        0x061F, 0x0608, 0x05F0, 0x05D9, 0x05C2, 0x05AA, 0x0593, 0x057B,
+        0x0563, 0x054C, 0x0534, 0x051C, 0x0504, 0x04EC, 0x04D5, 0x04BD,
+        0x04A5, 0x048C, 0x0474, 0x045C, 0x0444, 0x042C, 0x0413, 0x03FB,
+        0x03E3, 0x03CA, 0x03B2, 0x0399, 0x0381, 0x0368, 0x0350, 0x0337,
+        0x031F, 0x0306, 0x02ED, 0x02D5, 0x02BC, 0x02A3, 0x028A, 0x0271,
+        0x0259, 0x0240, 0x0227, 0x020E, 0x01F5, 0x01DC, 0x01C3, 0x01AA,
+        0x0191, 0x0178, 0x015F, 0x0146, 0x012D, 0x0114, 0x00FB, 0x00E2,
+        0x00C8, 0x00AF, 0x0096, 0x007D, 0x0064, 0x004B, 0x0032, 0x0019,
+        0x0000
+    ],
+
+    tantab : [
+        0x0000, 0x000A, 0x0014, 0x001E, 0x0028, 0x0032, 0x003D, 0x0047,
+        0x0051, 0x005B, 0x0065, 0x006F, 0x007A, 0x0084, 0x008E, 0x0098,
+        0x00A2, 0x00AC, 0x00B7, 0x00C1, 0x00CB, 0x00D5, 0x00DF, 0x00E9,
+        0x00F3, 0x00FD, 0x0107, 0x0112, 0x011C, 0x0126, 0x0130, 0x013A,
+        0x0144, 0x014E, 0x0158, 0x0162, 0x016C, 0x0176, 0x0180, 0x018A,
+        0x0194, 0x019E, 0x01A8, 0x01B1, 0x01BB, 0x01C5, 0x01CF, 0x01D9,
+        0x01E3, 0x01ED, 0x01F6, 0x0200, 0x020A, 0x0214, 0x021E, 0x0227,
+        0x0231, 0x023B, 0x0244, 0x024E, 0x0258, 0x0261, 0x026B, 0x0275,
+        0x027E, 0x0288, 0x0291, 0x029B, 0x02A5, 0x02AE, 0x02B8, 0x02C1,
+        0x02CA, 0x02D4, 0x02DD, 0x02E7, 0x02F0, 0x02F9, 0x0303, 0x030C,
+        0x0315, 0x031F, 0x0328, 0x0331, 0x033A, 0x0343, 0x034D, 0x0356,
+        0x035F, 0x0368, 0x0371, 0x037A, 0x0383, 0x038C, 0x0395, 0x039E,
+        0x03A7, 0x03B0, 0x03B9, 0x03C2, 0x03CB, 0x03D3, 0x03DC, 0x03E5,
+        0x03EE, 0x03F6, 0x03FF, 0x0408, 0x0411, 0x0419, 0x0422, 0x042A,
+        0x0433, 0x043B, 0x0444, 0x044C, 0x0455, 0x045D, 0x0466, 0x046E,
+        0x0477, 0x047F, 0x0487, 0x048F, 0x0498, 0x04A0, 0x04A8, 0x04B0,
+        0x04B9, 0x04C1, 0x04C9, 0x04D1, 0x04D9, 0x04E1, 0x04E9, 0x04F1,
+        0x04F9, 0x0501, 0x0509, 0x0511, 0x0518, 0x0520, 0x0528, 0x0530,
+        0x0538, 0x053F, 0x0547, 0x054F, 0x0556, 0x055E, 0x0566, 0x056D,
+        0x0575, 0x057C, 0x0584, 0x058B, 0x0593, 0x059A, 0x05A1, 0x05A9,
+        0x05B0, 0x05B7, 0x05BF, 0x05C6, 0x05CD, 0x05D4, 0x05DC, 0x05E3,
+        0x05EA, 0x05F1, 0x05F8, 0x05FF, 0x0606, 0x060D, 0x0614, 0x061B,
+        0x0622, 0x0629, 0x0630, 0x0637, 0x063D, 0x0644, 0x064B, 0x0652,
+        0x0659, 0x065F, 0x0666, 0x066D, 0x0673, 0x067A, 0x0680, 0x0687,
+        0x068D, 0x0694, 0x069A, 0x06A1, 0x06A7, 0x06AE, 0x06B4, 0x06BB,
+        0x06C1, 0x06C7, 0x06CD, 0x06D4, 0x06DA, 0x06E0, 0x06E6, 0x06ED,
+        0x06F3, 0x06F9, 0x06FF, 0x0705, 0x070B, 0x0711, 0x0717, 0x071D,
+        0x0723, 0x0729, 0x072F, 0x0735, 0x073B, 0x0741, 0x0746, 0x074C,
+        0x0752, 0x0758, 0x075D, 0x0763, 0x0769, 0x076E, 0x0774, 0x077A,
+        0x077F, 0x0785, 0x078B, 0x0790, 0x0796, 0x079B, 0x07A1, 0x07A6,
+        0x07AB, 0x07B1, 0x07B6, 0x07BC, 0x07C1, 0x07C6, 0x07CC, 0x07D1,
+        0x07D6, 0x07DB, 0x07E1, 0x07E6, 0x07EB, 0x07F0, 0x07F5, 0x07FA,
+        0x0800, 0x0800
+    ],
+
+    dirtab : [
+        &quot;东&quot;,
+        &quot;东北&quot;,
+        &quot;北&quot;,
+        &quot;西北&quot;,
+        &quot;西&quot;,
+        &quot;西南&quot;,
+        &quot;南&quot;,
+        &quot;东南&quot;
+    ],
+
+    dirtab_en : [
+        &quot;east&quot;,
+        &quot;northeast&quot;,
+        &quot;north&quot;,
+        &quot;northwest&quot;,
+        &quot;west&quot;,
+        &quot;southwest&quot;,
+        &quot;south&quot;,
+        &quot;southeast&quot;
+    ],
+
+    &quot;initialize&quot;:function(x1, y1, x2, y2){
+        var cy = parseInt((y1 + y2)/CoordFactor/2 * this.DEGREE_TO_RAW),
+            dx = x2 - x1,
+            dy = y2 - y1;
+        dx = (dx * this.intCos(cy)) &gt;&gt; 12;
+
+        // problem
+        this.angle = this.arcTan(dx,dy);
+    },
+
+
+    /**
+     * 获取p1 -&gt; p2 的角度。
+     * @return 返回角度的返回为[0,360)。
+     */
+    getAngle:function(){
+        return this.angle / this.DEGREE_TO_RAW;
+    },
+
+    /**
+     * 获取内部使用的p1 -&gt; p2 的角度。
+     * @return 返回角度的返回为[0,TRIGONOMETRIC_MAXS * 4)
+     */
+    getRawAngle:function(){
+        return this.angle;
+    },
+
+    /**
+     * 重置toString方法。将返回方向字符串，缺省为中文。
+     */
+    toString:function(lang){
+        var idx;
+        if(lang){
+            idx = this.angle + (this.TRIGONOMETRIC_MAXS &gt;&gt; 2);
+            if (idx &gt;= this.TRIGONOMETRIC_MAXS * 4)
+                idx -= this.TRIGONOMETRIC_MAXS * 4;
+            idx = idx / (this.TRIGONOMETRIC_MAXS &gt;&gt; 1);
+            if(lang == &quot;en&quot;){
+                return this.dirtab_en[idx];
+            }else{
+                return this.dirtab[idx];
+            }
+        }else{
+            idx = this.angle + (this.TRIGONOMETRIC_MAXS &gt;&gt; 2);
+            if (idx &gt;= this.TRIGONOMETRIC_MAXS * 4){
+                idx -= this.TRIGONOMETRIC_MAXS * 4;
+            }
+            idx = idx / (this.TRIGONOMETRIC_MAXS &gt;&gt; 1);
+            return this.dirtab[idx];
+        }
+    },
+
+    intCos:function(x){
+        if(x &lt;= 0){
+            return this.TRIGONOMETRIC_MAXS;
+        }
+        if(x &gt;= this.TRIGONOMETRIC_MAXS){
+            return 0;
+        }
+
+        var i = parseInt(x &gt;&gt; 4),
+            e = parseInt(x &amp; 15),
+            a = parseInt(this.costab[i]),
+            b = parseInt(this.costab[i + 1]);
+
+        return a - (((a - b) * e) &gt;&gt; 4);
+    },
+
+    /**
+     * 计算向量方向角。
+     * @param x 向量的x分量。
+     * @param y 向量的y分量。
+     * @return  返回以x正方向为0度方向的象限角，每个象限划分为TRIGONOMETRIC_MAXS度，因此
+     * 返回值范围为[0, TRIGONOMETRIC_MAXS *4)。
+     * @exception ArithmeticException x与y的绝对值中较小的不能大于TRIGONOMETRIC_LIMIT，否则
+     * 会抛出此异常。
+     */
+    arcTan:function(x, y){
+        // y==0时，可能是0度或180度，注意：x=0，y=0时将返回0。
+        if (y == 0){
+            return (x &gt;= 0) ? 0 : this.TRIGONOMETRIC_MAXS * 2;
+        }
+        // x==0时，可能是90度或270度。
+        if (x == 0){
+            return (y &gt; 0)  ? this.TRIGONOMETRIC_MAXS : this.TRIGONOMETRIC_MAXS *3;
+        }
+        var X = Math.abs(x),
+            Y = Math.abs(y);
+        var max0 = Math.max(Y, X),
+            min0 = Math.min(Y,X);
+
+        if(min0 &gt; this.TRIGONOMETRIC_LIMIT){
+            throw Error(&quot;out of range&quot;);
+        }
+
+        // w = 2^TRIGONOMETRIC_BITS * min(x,y)/max(x,y)
+        var w = (min0 &lt;&lt; this.TRIGONOMETRIC_BITS) / max0,
+
+            i = w &gt;&gt; 4, //  0 =&lt; i &lt;= 2^8
+            e = w &amp; 0xf,
+            a = this.tantab[i    ],
+            b = this.tantab[i + 1];
+
+        w = a - (((a - b) * e) &gt;&gt; 4);
+        if (Y &gt; X){
+            w = this.TRIGONOMETRIC_MAXS - w;
+        }
+        if (x &gt; 0 ){
+            if(y &gt; 0){	   	// 第一象限
+                return w;
+            }
+            else{				// 第四象限
+                return this.TRIGONOMETRIC_MAXS * 4 - w;
+            }
+        }else{
+            if ( y &gt; 0){		// 第二象限
+                return this.TRIGONOMETRIC_MAXS * 2 - w;
+            }
+            if ( y &lt; 0){		// 第四象限
+                return this.TRIGONOMETRIC_MAXS * 2 + w;
+            }
+        }
+        return w;
+    }
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

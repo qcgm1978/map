@@ -1,0 +1,418 @@
+{
+    "project": {
+        "name": "flynavi",
+        "description": "flynavi subproject of map development repository",
+        "version": "0.0.0",
+        "url": "testwww.flynavi.cn/webflynavi/start.html?name=地图选点&lng=116.309272&lat=39.979194#share"
+    },
+    "files": {
+        "app\\flynavi\\app\\controller\\controller_maskerlayer.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_maskerlayer.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\controller\\controller_nav.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_nav.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\controller\\controller_navControl.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_navControl.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\controller\\controller_naviInfo.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_naviInfo.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\controller\\controller_start.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_start.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\controller\\controller_toolbar.js": {
+            "name": "app\\flynavi\\app\\controller\\controller_toolbar.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\model\\map-model.js": {
+            "name": "app\\flynavi\\app\\model\\map-model.js",
+            "modules": {},
+            "classes": {
+                "MapModel.Constant": 1,
+                "mapHandler": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\model\\networkCommunication-raxtone.js": {
+            "name": "app\\flynavi\\app\\model\\networkCommunication-raxtone.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\util\\tools_flynavi.js": {
+            "name": "app\\flynavi\\app\\util\\tools_flynavi.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app\\flynavi\\app\\app_flynavi.js": {
+            "name": "app\\flynavi\\app\\app_flynavi.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "MapModel.Constant": {
+            "name": "MapModel.Constant",
+            "shortname": "MapModel.Constant",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 1,
+            "description": "network service module"
+        },
+        "mapHandler": {
+            "name": "mapHandler",
+            "shortname": "mapHandler",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 37,
+            "description": "地图操作类",
+            "extends": "MapModel.mapHandler"
+        }
+    },
+    "classitems": [
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_maskerlayer.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-16 上午9:48",
+            "version": "V1.0\nModification History:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_nav.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 3/26/13\nTime: 4:38 PM\nUse:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_navControl.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-12 下午2:14",
+            "version": "V1.0\nModification History:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_naviInfo.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-11 下午4:00",
+            "version": "V1.0\nModification History:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_start.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 1/11/13\nTime: 7:04 PM\nUse:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\controller\\controller_toolbar.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-12 下午2:32",
+            "version": "V1.0\nModification History:",
+            "class": "MapModel.Constant"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 69,
+            "description": "The method to set polyline order",
+            "itemtype": "method",
+            "name": "setPathPileOrder.",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "number"
+                }
+            ],
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 216,
+            "constant": "轮询gps信息的参数设置",
+            "default": "WatchGPS类的类属性，默认值",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 222,
+            "description": "1秒获取一个GPS点",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 226,
+            "description": "无条件重新获取GPS位置",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\map-model.js",
+            "line": 464,
+            "description": "匹配交通颜色",
+            "class": "mapHandler"
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\networkCommunication-raxtone.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/12/13\nTime: 5:54 PM\nUse:",
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\networkCommunication-raxtone.js",
+            "line": 13,
+            "description": "会话协议报文加解密密钥",
+            "final": 1,
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\networkCommunication-raxtone.js",
+            "line": 41,
+            "description": "解密\n\n* @param bytes\n* @returns {String} decoded utf8 format str",
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\model\\networkCommunication-raxtone.js",
+            "line": 56,
+            "description": "加密\n\n* @param arr\n* @returns {Array} encoded binary arr",
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\util\\tools_flynavi.js",
+            "line": 1,
+            "copyright": "Shanghai RaxTone-Tech Co.,Ltd.",
+            "title": ":",
+            "description": ":",
+            "author": "wangyonggang qq:135274859",
+            "date": "13-7-16 下午1:46",
+            "version": "V1.0\nModification History:",
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\util\\tools_flynavi.js",
+            "line": 12,
+            "description": "The method is to conversion unit",
+            "itemtype": "method",
+            "name": "unit_conversion.",
+            "params": [
+                {
+                    "name": "m",
+                    "description": "number"
+                },
+                {
+                    "name": "decimal",
+                    "description": "number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\app_flynavi.js",
+            "line": 1,
+            "description": "Created with JetBrains WebStorm.\nUser: qcgm1978\nDate: 6/27/13\nTime: 3:45 PM\nUse:",
+            "class": ""
+        },
+        {
+            "file": "app\\flynavi\\app\\app_flynavi.js",
+            "line": 66,
+            "params": [
+                {
+                    "name": "appRet!~YUIDOC_LINE~!the",
+                    "description": "ret val of app module. false if no network connection, null if no shared data, object if shared data exists",
+                    "type": "Boolean|Null|Object"
+                }
+            ],
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\flynavi\\app\\controller\\controller_maskerlayer.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\flynavi\\app\\controller\\controller_maskerlayer.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\flynavi\\app\\controller\\controller_maskerlayer.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\flynavi\\app\\controller\\controller_navControl.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\flynavi\\app\\controller\\controller_navControl.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\flynavi\\app\\controller\\controller_navControl.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\flynavi\\app\\controller\\controller_naviInfo.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\flynavi\\app\\controller\\controller_naviInfo.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\flynavi\\app\\controller\\controller_naviInfo.js:1"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\flynavi\\app\\controller\\controller_toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\flynavi\\app\\controller\\controller_toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\flynavi\\app\\controller\\controller_toolbar.js:1"
+        },
+        {
+            "message": "unknown tag: constant",
+            "line": " app\\flynavi\\app\\model\\map-model.js:216"
+        },
+        {
+            "message": "unknown tag: copyright",
+            "line": " app\\flynavi\\app\\util\\tools_flynavi.js:1"
+        },
+        {
+            "message": "unknown tag: date",
+            "line": " app\\flynavi\\app\\util\\tools_flynavi.js:1"
+        },
+        {
+            "message": "unknown tag: version",
+            "line": " app\\flynavi\\app\\util\\tools_flynavi.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\flynavi\\app\\controller\\controller_maskerlayer.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 3/26/13\nTime: 4:38 PM\nUse:",
+            "line": " app\\flynavi\\app\\controller\\controller_nav.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\flynavi\\app\\controller\\controller_navControl.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\flynavi\\app\\controller\\controller_naviInfo.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 1/11/13\nTime: 7:04 PM\nUse:",
+            "line": " app\\flynavi\\app\\controller\\controller_start.js:1"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\flynavi\\app\\controller\\controller_toolbar.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\flynavi\\app\\model\\map-model.js:216"
+        },
+        {
+            "message": "Missing item type\n1秒获取一个GPS点",
+            "line": " app\\flynavi\\app\\model\\map-model.js:222"
+        },
+        {
+            "message": "Missing item type\n无条件重新获取GPS位置",
+            "line": " app\\flynavi\\app\\model\\map-model.js:226"
+        },
+        {
+            "message": "Missing item type\n匹配交通颜色",
+            "line": " app\\flynavi\\app\\model\\map-model.js:464"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 7/12/13\nTime: 5:54 PM\nUse:",
+            "line": " app\\flynavi\\app\\model\\networkCommunication-raxtone.js:1"
+        },
+        {
+            "message": "Missing item type\n会话协议报文加解密密钥",
+            "line": " app\\flynavi\\app\\model\\networkCommunication-raxtone.js:13"
+        },
+        {
+            "message": "Missing item type\n解密\n\n* @param bytes\n* @returns {String} decoded utf8 format str",
+            "line": " app\\flynavi\\app\\model\\networkCommunication-raxtone.js:41"
+        },
+        {
+            "message": "Missing item type\n加密\n\n* @param arr\n* @returns {Array} encoded binary arr",
+            "line": " app\\flynavi\\app\\model\\networkCommunication-raxtone.js:56"
+        },
+        {
+            "message": "Missing item type\n:",
+            "line": " app\\flynavi\\app\\util\\tools_flynavi.js:1"
+        },
+        {
+            "message": "Missing item type\nCreated with JetBrains WebStorm.\nUser: qcgm1978\nDate: 6/27/13\nTime: 3:45 PM\nUse:",
+            "line": " app\\flynavi\\app\\app_flynavi.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " app\\flynavi\\app\\app_flynavi.js:66"
+        }
+    ]
+}

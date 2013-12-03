@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--cancel comments automatically when building-->
+<!--<html manifest='app.manifest'>-->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-app-status-bar-style" content="black"/>
+    <!--<meta name="apple-itunes-app" content="app-id=570886583"/>-->
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png"/>
+    <link rel="apple-touch-start-image" href="images/start-320-460.jpg"/>
+    <!-- build:css styles/combination.css -->
+    <link rel="stylesheet" href="styles/public.css">
+    <link rel="stylesheet" href="styles/webInfo.css">
+    <link rel="stylesheet" href="styles/toolbar.css">
+    <link rel="stylesheet" href="styles/ratio-common.css" >
+    <link rel="stylesheet" href="styles/top_navi.css">
+    <link rel="stylesheet" href="styles/navi_info.css">
+    <link rel="stylesheet" href="styles/navi.css">
+    <link rel="stylesheet" href="styles/map.css">
+    <link rel="stylesheet" href='styles/route.css'>
+    <link rel="stylesheet"  href="styles/common_480.css">
+    <link rel="stylesheet"  href="styles/mobile480.css">
+    <link rel="stylesheet" href="styles/ratio.css">
+    <link rel="stylesheet" href="styles/common_320.css">
+    <!-- endbuild -->
+    <title>飞路快导航</title>
+
+</head>
+<body>
+<div id="start">
+    <img src='flynavi/resources/images/start-640-920.jpg'>
+</div>
+<div id="map_layer"></div>
+<div id="main">
+<!--todo-->
+<!--<div id='page_header_test'></div>-->
+<!-- top navi-->
+<header id="header">
+    <div class="a-inav header_toolbar">
+        <section>
+            <a class="logo" href="javascript:void(0);">
+                <nav></nav>
+            </a>
+        </section>
+        <section>
+            <span>飞路快导航</span>
+        </section>
+        <section>
+            <a href="javascript:void(0);" class="other">
+                <nav></nav>
+            </a>
+        </section>
+    </div>
+    <div class="c-inav header_toolbar none">
+        <section>
+            <a class="back" id="h5back_btn" href="javascript:void(0);">
+                <span><em></em></span>
+                <nav id="h5back_nick"></nav>
+            </a>
+        </section>
+        <section>
+            <span id="route_type_name">路线规划</span>
+        </section>
+        <section>
+            <a href="javascript:void(0);" class="other route-button">
+                <nav></nav>
+            </a>
+        </section>
+    </div>
+    <div class="e-inav header_toolbar none">
+        <section>
+            <a class="back" href="javascript:void(0);">
+                <nav></nav>
+            </a>
+        </section>
+        <section>
+            <span>路书</span>
+        </section>
+        <section>
+            <a href="javascript:void(0);" class="other">
+                <nav></nav>
+            </a>
+        </section>
+    </div>
+</header>
+<div id='map_container'>
+</div>
+<div id="mask_layer">
+    <div id="compass"></div>
+    <div id="tmc_btn"></div>
+    <div id="positioning">
+        <div id="positionLight"></div>
+    </div>
+    <div id="zoom_in"></div>
+    <div id="zoom_out"></div>
+    <div id="path_info" class="css3center">
+        <div class="route_tmc_container same_height select">
+            <div class="route_tmc_title pd10">
+                甩堵路线
+            </div>
+            <div class="route_tmc_detail">
+                <blockquote id="save_time">
+                </blockquote>
+                <div id="route_tmc">
+                    <div class="route_clock">
+                        <span id="tmc_time"></span>
+                    </div>
+                    <div class="route_distance">
+                        <span id='tmc_distance'></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prediction_model">
+                <div class="loadingProgressBar css3center">
+                    <div><img class="firstImg" src="flynavi/resources/images/loading-a1.gif"></div>
+                    <div><span>加载中...</span></div>
+                </div>
+                <div class="notSupportPredictionTips css3center">
+                    <div><img class="firstImg" src="flynavi/resources/images/loading-b1.png"></div>
+                    <div class="tips"><span>温馨提示：只支持同城内路线信息分析！</span></div>
+                </div>
+                <div class="navi_info_container prediction_model_container">
+                    <div class="prediction_model_one">
+                        <p>10分钟后出发预计 </p>
+
+                        <div class="tmc_prediction_time"><span id="tmc_withTime_one" class="heigh_time"></span></div>
+                    </div>
+                    <div class="prediction_model_two">
+                        <p>20分钟后出发预计</p>
+
+                        <div class="tmc_prediction_time"><span id="tmc_withTime_two" class="heigh_time"></span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="route_normal_container same_height unselect">
+            <div class="route_normal_title pd10">
+                常规路线
+            </div>
+            <div class="route_normal_detail">
+                <div id="route_normal">
+                    <div class="route_clock">
+                        <span id="normal_time"></span>
+                    </div>
+                    <div class="route_distance">
+                        <span id='normal_distance'></span>
+                    </div>
+                </div>
+            </div>
+            <div class="prediction_model">
+                <div class="loadingProgressBar css3center">
+                    <img class="firstImg" src="flynavi/resources/images/loading-a1.gif">
+                </div>
+                <div class="navi_info_container prediction_model_container">
+                    <div class="prediction_model_one">
+                        <div class="ormal_prediction_time"><span id="normal_withTime_one" class="heigh_time"></span>
+                        </div>
+                    </div>
+                    <div class="prediction_model_two">
+                        <div class="ormal_prediction_time"><span id="normal_withTime_two" class="heigh_time"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navi">
+        <section>
+            <span id="share_title">飞享位置 </span><span id="share_name"></span><br>
+            <span id="share_address"></span>
+        </section>
+        <section>
+                <span id="icon_request_path" class="navi_navi" href="javascript:void(0);">
+                    <nav></nav>
+                </span>
+        </section>
+    </div>
+    <div id="route">
+        <div class="h50 header"></div>
+        <div class="content">
+            <div class="route_info css3center">
+                <div class="route_info_one route_info_flex route_info_flex_start">主干路<span id="highway"
+                                                                                           class="num"></span>条
+                </div>
+                <div class="route_info_two route_info_flex">次要路<span id="trunk" class="num"></span>条</div>
+                <div class="route_info_three route_info_flex route_info_flex_end">红绿灯<span id="trafficlights"
+                                                                                           class="num"></span>个
+                </div>
+            </div>
+            <div id="tabsContent">
+                <div data-tab="A">
+                    <table class="tabsContent_table">
+                        <thead>
+                        <tr>
+                            <th>转向</th>
+                            <th>道路信息</th>
+                            <th>平均车速</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div id="scroll_first">
+                        <table class="tabsContent_table tabsContent_table_content">
+
+                        </table>
+                    </div>
+                </div>
+                <div data-tab="B">
+                    <table class="tabsContent_table">
+                        <thead>
+                        <tr>
+                            <th>转向</th>
+                            <th>道路信息</th>
+                            <th>平均车速</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div id="scroll_second">
+                        <table class="tabsContent_table tabsContent_table_content">
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="css3center hidden" id="loading">
+    <img src="images/loading.gif" width="27px" height="27px">
+
+    <div id="loading_text">规划中...</div>
+</div>
+<div id="no_get_gps" class="css3center hidden">请确保你的GPS打开，且允许网页使用你的当前位置！</div>
+<div id="no_get_path" class="css3center hidden">规划失败！等会再试^^</div>
+<div id="no_get_net" class="css3center hidden">亲，需要网络，快检查一下^^</div>
+<div class="info css3center" id="link_bar">
+    <div class="footer">
+        <div class="imgWrap css3center download">
+            <a href="#"><!--<img src="flynavi/resources/images/downloadbtn.png"/>--></a>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- ref:js http://webapi.amap.com/maps?v=1.2&key=0aa17a679101794a2bc8979b3eb332a7-->
+
+<!-- endref -->
+
+<script data-main="scripts/util/cache.js" src="bower_components/requirejs/require.js"></script>
+
+<!--weinre remote debug file for testing browsers excluding chrome, uc, firefox, and safari. Debug in safari, chrome 28v perhaps conflict to it -->
+<!--<script src="http://192.168.2.170:8081/target/target-script-min.js#anonymous"></script>-->
+</body>
+</html>

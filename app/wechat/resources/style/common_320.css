@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+.toolbar {
+    width: 84px;
+    height: 35px;
+}
+
+.toolbar span {
+    width: 36px;
+    height: 33px;
+}
+#route .header {
+    height: 45px;
+}
+
+#route_tabs {
+    left: 54px;
+}
+
+#route_tabs li {
+    width: 80px;
+    height: 40px;
+}
+
+.tabsContent_table thead {
+    font-size: 18px;
+}
+
+.tabsContent_table_content td p:first-of-type {
+    font-size: 18px;
+}
+
+.tabsContent_table_content td p:last-of-type {
+    font-size: 12px;
+}
+
+.tabsContent_table_content td:last-of-type .number {
+    font-size: 18px;
+}
+
+.tabsContent_table_content td:last-of-type .unit {
+    font-size: 12px;
+}
+
+.tabsContent_table th:first-of-type, .tabsContent_table td:first-of-type {
+    width: 70px;
+}
+
+.tabsContent_table th:last-of-type, .tabsContent_table td:last-of-type {
+    width: 89px;
+}
+.info {
+    font-size: 15px;
+}
+#path_info .path_info {
+    height: 40px;
+}
+#path_info .level_light{
+    width:20px;
+}
+
+.logo{
+    width: 45px;
+    height: 39px;
+}
+
+#tmc_distance,#tmc_time,#normal_distance,#normal_time{
+    font-size: 16px;
+}
+#layer{
+    width:220px;
+    margin-left: -110px;
+}
+#share_title, #share_name {
+    font-size: 16px;
+}
+#share_address {
+    font-size: 14px;
+}
+
+#share_address {
+    font-size: 14px;
+}
