@@ -107,10 +107,14 @@ require(['tools', 'mapUtil'], function () {
                 ',"lat":' +
                 this.shareInfo.lat +
                 ',"source":' +
-                this.shareInfo.source
-            '}';
+                this.shareInfo.source +
+                ',"type":' +
+                this.shareInfo.type +
+                ',"leaveMessage":"' +
+                this.shareInfo.leaveMessage+
+            '"}';
 //        todo change to a global variable
-            var appStoreUri = encodeURI('Raxtone-Flynavi://' + infoJson);
+            var appStoreUri = encodeURI('Raxtone-Flynavi://{"LaunchType":' + infoJson + '}');
             _tryOpenFlySoftware(appStoreUri);
         };
         this.redirectStartPage = function () {
