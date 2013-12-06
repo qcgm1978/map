@@ -9,7 +9,7 @@
       verify: "beta",
       formal: "release"
     };
-    grunt.executeCustomTasks = function(arg, arg1, arr) {
+    grunt.config.set('executeCustomTasks', function(arg, arg1, arr) {
       var str;
       str = constructPromptStr();
       _ret = getVerInfo(arg1, arg);
@@ -25,7 +25,7 @@
           return runCustomTasks(arr, arg1);
         }
       }
-    };
+    });
     setArg = function() {
       if (_ret.verName === 'formal') {
         _ret.verName = '';

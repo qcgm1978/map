@@ -134,6 +134,10 @@ module.exports = (grunt) ->
 					"dist/styles/combination.css": [
 						"app/start.html"
 					]
+		csscss:
+				dist:
+								src: ['dist/**/*.css']
+
 		imagemin:
 			dist:
 				files: [

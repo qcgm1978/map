@@ -23,7 +23,7 @@
       return arr = ["regex-replace", 'rev', 'usemin', "htmlmin:navi", 'manifest:generate'];
     };
     return grunt.task.registerTask('default', 'execute tasks by param by grunt cli', function(arg, arg1) {
-      return grunt.executeCustomTasks(arg, arg1, getTasksArr());
+      return grunt.config.get('executeCustomTasks')(arg, arg1, getTasksArr());
     });
   };
 

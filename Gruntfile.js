@@ -164,6 +164,11 @@
           }
         }
       },
+      csscss: {
+        dist: {
+          src: ['dist/**/*.css']
+        }
+      },
       imagemin: {
         dist: {
           files: [

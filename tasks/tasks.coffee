@@ -35,6 +35,6 @@ module.exports = (grunt) ->
 	        ]
 
 	grunt.task.registerTask('default', 'execute tasks by param by grunt cli', (arg, arg1) ->
-	    grunt.executeCustomTasks(arg, arg1,getTasksArr())
+      grunt.config.get('executeCustomTasks')(arg, arg1,getTasksArr())
 
 	)
