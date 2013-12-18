@@ -111,10 +111,13 @@ require(['tools', 'mapUtil'], function () {
                 ',"type":' +
                 this.shareInfo.type +
                 ',"leaveMessage":"' +
-                this.shareInfo.leaveMessage+
-            '"}';
-//        todo change to a global variable
-            var appStoreUri = encodeURI('Raxtone-Flynavi://{"LaunchType":' + infoJson + '}');
+                this.shareInfo.leaveMessage +
+                '"}';
+            var isHd = ''
+            if (/ipad/i.test(navigator.userAgent)) {
+                isHd = 'HD'
+            }
+            var appStoreUri = encodeURI('Raxtone-Flynavi' + isHd + '://{"LaunchType":' + infoJson + '}');
             _tryOpenFlySoftware(appStoreUri);
         };
         this.redirectStartPage = function () {
