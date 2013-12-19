@@ -32,24 +32,20 @@
         }
       },
       yuidoc: {
-        scripts: {
-          name: "scripts",
-          description: "<%= flynavi.description %>",
-          version: "<%= flynavi.version %>",
-          url: "<%= flynavi.homepage %>",
-          options: {
-            paths: "app/scripts/",
-            outdir: "yuidoc/scripts/"
-          }
-        },
         flynavi: {
           name: "<%= flynavi.name %>",
           description: "<%= flynavi.description %>",
           version: "<%= flynavi.version %>",
           url: "<%= flynavi.homepage %>",
           options: {
-            paths: "app/flynavi/app/",
-            outdir: "yuidoc/flynavi/"
+            paths: "app/",
+            outdir: "yuidoc/"
+          }
+        },
+        test: {
+          options: {
+            paths: "app/scripts/model/",
+            outdir: 'yuidoc-test/'
           }
         }
       },
