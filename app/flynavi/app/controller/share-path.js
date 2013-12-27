@@ -2,7 +2,7 @@
 (function() {
   'use strict';
   define([], function() {
-    if ($.isEmptyObject(mapHandler.curInfo || $.isEmptyObject(mapHandler.shareInfo || mapHandler.shareInfo.source !== 2))) {
+    if ($.isEmptyObject(mapHandler.curInfo) || $.isEmptyObject(mapHandler.shareInfo) || Number(mapHandler.shareInfo.source) !== 2) {
       return;
     }
     return $('#icon_request_path').trigger('touchstart');

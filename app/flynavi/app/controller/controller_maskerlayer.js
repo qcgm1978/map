@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  MaskLayer
  * @author wangyonggang qq:135274859
- * @date 13-7-16 上午9:48
- * @version V1.0
- * Modification History:
+ * @classdesc 根据元素状态动态修改动态图层按钮背景，并添加或删除tcmLayer
  */
 define(['jquerymx'],function(){
     $.Controller('MaskLayer', {

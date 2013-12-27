@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  Util.common
  * @author wangyonggang qq:135274859
- * @date 13-1-11 下午12:14
- * @version V1.0
- * Modification History:
+ * @classdesc 提供一些常用方法
  */
 define([ 'jquerymx'], function () {
     /**

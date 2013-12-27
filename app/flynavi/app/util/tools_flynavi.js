@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  Util.common
  * @author wangyonggang qq:135274859
- * @date 13-7-16 下午1:46
- * @version V1.0
- * Modification History:
+ * @classdesc 提供距离单位转换的方法
  */
 define(['tools'], function () {
     Util.common('Util.common', {

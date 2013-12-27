@@ -98,6 +98,7 @@ require(['app', 'navInfo', 'trafficLayer'], function (appRet) {
             if (this.mapObj == null) {
                 return;
             }
+            require(['sharePath'])
             if (this.mapObj && this.curMarker) {
                 this.moveCurMarker();
             }
@@ -180,6 +181,6 @@ require(['app', 'navInfo', 'trafficLayer'], function (appRet) {
             })
         })
     }
-    require(['sharePath'])
+
     return true;
 })

@@ -27,11 +27,10 @@
       }
     });
     setArg = function() {
-      if (_ret.verName === 'formal') {
-        _ret.verName = '';
-      }
+      grunt.log.writeln(_ret.environ);
       grunt.config.set('state', _ret.verName);
-      return grunt.config.set('date', _ret.verNum);
+      grunt.config.set('date', _ret.verNum);
+      return grunt.config.set('environ', _ret.environ);
     };
     pushCompressTask = function(arr, arg1) {
       if (_ret.verName !== 'test') {
@@ -55,12 +54,18 @@
       return promptInputErr(arg, arg1, str);
     };
     getVerInfo = function(arg1, arg) {
-      var verName, verNum;
+      var verEnviron, verName, verNum;
       verNum = parseInt(arg1);
       verName = environmentObj[arg];
+      if (arg === 'formal') {
+        verEnviron = '';
+      } else {
+        verEnviron = arg;
+      }
       return {
         verNum: verNum,
-        verName: verName
+        verName: verName,
+        environ: verEnviron
       };
     };
     return runCustomTasks = function(arr, arg1) {

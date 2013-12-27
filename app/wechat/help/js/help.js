@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  help
  * @author wangyonggang qq:135274859
- * @date 13-5-23 下午5:10
- * @version V1.0
- * Modification History:
+ * @classdesc 更新页面缓存，根据设备动态修改链接地址
  */
 void function(){
     var cache = window.applicationCache;

@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  NaviInfo
  * @author wangyonggang qq:135274859
- * @date 13-7-11 下午4:00
- * @version V1.0
- * Modification History:
+ * @classdesc 路线预测模块事件处理，数据处理
  */
 define(['fastdom', 'jquerymx'], function (fastdom) {
     $.Controller('NaviInfo', {

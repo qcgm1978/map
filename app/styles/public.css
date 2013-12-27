@@ -25,22 +25,23 @@ img {
     text-decoration: none;
 }*/
 #start {
-    width: 100%;
-    height: 100%;
-    /* background-image: url('../images/start-320-460.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;*/
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     z-index: 2001;
-}
+    background: url(../flynavi/resources/images/start-640-920.jpg) no-repeat;
+    background-size: 100% 100%;
 
-#start img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+}
+/*ipad*/
+
+@media only screen and (min-device-width : 768px) and (max-device-height : 1024px)  {
+    #start  {
+        background: url('../flynavi/resources/images/web-wap-sharelocbg.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
 }
 
 #main {

@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  broadcast
  * @author wangyonggang qq:135274859
- * @date 13-5-31 上午9:36
- * @version V1.0
- * Modification History:
+ * @classdesc 根据url显示数据
  */
 function parseUrl(url) {
     var str = decodeURI(url),

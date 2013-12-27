@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  NavControl
  * @author wangyonggang qq:135274859
- * @date 13-7-12 下午2:14
- * @version V1.0
- * Modification History:
+ * @classdesc 顶部导航控制页面流程
  */
 define(['jquerymx'],function(){
 

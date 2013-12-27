@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  Util.common
  * @author wangyonggang qq:135274859
- * @date 13-6-28 上午11:14
- * @version V1.0
- * Modification History:
+ * @classdesc 提供一些常用方法，如字符串转换，判断是否是微信浏览器，百度浏览器，ios系统
  */
 Util.common('Util.common',{
     truncateStr: function (str, maxLength) {

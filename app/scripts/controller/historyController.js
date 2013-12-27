@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  FlySharedHistory
  * @author wangyonggang qq:135274859
- * @date 13-7-18 上午10:39
- * @version V1.0
- * Modification History:
+ * @classdesc 通过对url的hash值的监听控制页面流程
  */
 //history event controller using hash
 define(['jquerymx'], function () {

@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  Toolbar
  * @author wangyonggang qq:135274859
- * @date 13-6-27 上午11:06
- * @version V1.0
- * Modification History:
+ * @classdesc 显示路书页面路书信息
  */
 
 

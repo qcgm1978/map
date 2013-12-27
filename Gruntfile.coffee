@@ -5,6 +5,45 @@ module.exports = (grunt) ->
 	flynaviConfig = grunt.file.readJSON("package.json")
 	grunt.initConfig(
 		flynavi: flynaviConfig
+		pkg:grunt.file.readJSON("package.json")
+		readme_generator :
+						my_generator: #Thank you @JFusco
+									options:
+
+											# Task-specific options go here.
+													# detailed explanation is under options
+											# Default options:
+											readme_folder: "readme"
+											output: "README.md"
+											table_of_contents: true
+											toc_extra_links: []
+											generate_changelog: false
+											changelog_folder: "changelogs"
+											changelog_version_prefix: null
+											changelog_insert_before: null
+											banner: null
+											has_travis: true
+											github_username: "aponxi"
+											travis_branch: "master"
+											generate_footer: true
+											generate_title: true
+											package_title: null
+											package_name: null
+											package_desc: null
+											informative: true
+											h1: "#"
+											h2: "##"
+											h3:'###'
+											back_to_top_custom: null
+
+									order:
+											"installation.md": "Installation"
+											"usage.md": "Usage"
+											'deploy-diagram.md':'Deploy Diagram'
+											'protocal.md':'Ajax Protocal'
+											"functionality.md":'Functionality'
+											'doc-location.md':'Document Location'
+											"deployment.md":'Deployment'
 		rev:
 			dist:
 				files:
@@ -120,6 +159,12 @@ module.exports = (grunt) ->
 			cache:
 				files:
 					"dist/scripts/util/cache.js": "app/scripts/util/cache.js"
+			sharePath:
+				files:
+					'dist/flynavi/app/controller/share-path.js':'app/flynavi/app/controller/share-path.js'
+			routeView:
+								files:
+										'dist/flynavi/app/model/route-view.js':'app/flynavi/app/model/route-view.js '
 		uncss :
 			dist:
 				options:
@@ -220,7 +265,7 @@ module.exports = (grunt) ->
 				,
 					name: "replace code environment variable"
 					search: "(test|verify)?(www.flynavi.cn)"
-					replace: "<%= grunt.config('state') %>www.flynavi.cn"
+					replace: '<%= grunt.config("environ") %>www.flynavi.cn'
 					flags: "g"
 				,
 					name: "cancel Comments To Manifest"

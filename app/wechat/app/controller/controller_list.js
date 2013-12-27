@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  PoiListController
  * @author wangyonggang qq:135274859
- * @date 13-5-30 下午5:16
- * @version V1.0
- * Modification History:
+ * @classdesc poi列表控制器
  */
 $.Controller('PoiListController', {
     defaults: {

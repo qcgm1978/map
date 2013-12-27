@@ -1,11 +1,8 @@
 /**
  * @COPYRIGHT Shanghai RaxTone-Tech Co.,Ltd.
- * @Title:
- * @Description:
+ * @module  ToolbarNav
  * @author wangyonggang qq:135274859
- * @date 13-7-12 下午2:32
- * @version V1.0
- * Modification History:
+ * @classdesc 获取路书页面信息（主干路，次要路，红绿灯）并显示在路书页面
  */
 define(['jquerymx'],function(){
     Toolbar('ToolbarNav',{
